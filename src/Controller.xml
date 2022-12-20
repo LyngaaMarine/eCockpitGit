@@ -1,0 +1,1195 @@
+<ExportFile>
+  <StructuredView Guid="{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">4c8869b9-ea0d-419e-9ed6-ad003f253fa6</Single>
+        <Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="Name" Type="string">Controller</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">bea1a3b5-ae75-4017-9169-f7fa8997cab0</Single>
+            </Key>
+            <Value>
+              <Single Type="{bea1a3b5-ae75-4017-9169-f7fa8997cab0}" Method="IArchivable">
+                <Single Name="DataSets" Type="{71cd9501-9dbb-41d2-b89e-d84e71de8bc0}" Method="IArchivable">
+                  <Single Name="InstanceData" Type="{d70d6a1c-00b3-452c-8b40-d96b93eed218}" Method="IArchivable">
+                    <Dictionary2 Name="DataSubsets">
+                      <Entry>
+                        <Key>
+                          <Single Type="string">ID_ETH_PROTOCOL2</Single>
+                        </Key>
+                        <Value>
+                          <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                            <Single Name="Key" Type="string">ID_ETH_PROTOCOL2</Single>
+                            <Array Name="Data" Type="byte">AAAAAA==</Array>
+                          </Single>
+                        </Value>
+                      </Entry>
+                      <Entry>
+                        <Key>
+                          <Single Type="string">SHOW_ETHERCAT_COMMUNICATION_PORT</Single>
+                        </Key>
+                        <Value>
+                          <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                            <Single Name="Key" Type="string">SHOW_ETHERCAT_COMMUNICATION_PORT</Single>
+                            <Array Name="Data" Type="byte">AA==</Array>
+                          </Single>
+                        </Value>
+                      </Entry>
+                      <Entry>
+                        <Key>
+                          <Single Type="string">StoredDeviceTypeIdKey</Single>
+                        </Key>
+                        <Value>
+                          <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                            <Single Name="Key" Type="string">StoredDeviceTypeIdKey</Single>
+                            <Array Name="Data" Type="byte">OWM5YjIxY2UtOGY1Ni00ODE5LTk4ZDgtZWE3YzljNTY1Zjhk</Array>
+                          </Single>
+                        </Value>
+                      </Entry>
+                      <Entry>
+                        <Key>
+                          <Single Type="string">SERIES_750_TCP_ADDRESSINFO</Single>
+                        </Key>
+                        <Value>
+                          <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                            <Single Name="Key" Type="string">SERIES_750_TCP_ADDRESSINFO</Single>
+                            <Array Name="Data" Type="byte">AAEAAAD/////AQAAAAAAAAAMAgAAAE5XYWdvLkRldmljZURyaXZlci5CbCwgVmVyc2lvbj01LjAuMi4xMzI1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAADhXYWdvLkRldmljZURyaXZlci5CbC5Db21tdW5pY2F0aW9uLkNvbW1vbkRldmljZUFkZHJlc3NlcwMAAAANTGlzdGAxK19pdGVtcwxMaXN0YDErX3NpemUPTGlzdGAxK192ZXJzaW9uBAAAOFdhZ28uRGV2aWNlRHJpdmVyLkJsLkNvbW11bmljYXRpb24uQ29tbW9uRGV2aWNlQWRkcmVzc1tdAgAAAAgIAgAAAAkDAAAAAgAAAAIAAAAHAwAAAAABAAAABAAAAAQ2V2Fnby5EZXZpY2VEcml2ZXIuQmwuQ29tbXVuaWNhdGlvbi5Db21tb25EZXZpY2VBZGRyZXNzAgAAAAkEAAAACQUAAAANAgUEAAAAMldhZ28uRGV2aWNlRHJpdmVyLkJsLkNvbW11bmljYXRpb24uSXBEZXZpY2VBZGRyZXNzAwAAAAdBZGRyZXNzAklkBUxhYmVsAQABCAIAAAAGBgAAAAsxOTIuMTY4LjEuMQEAAAAGBwAAAAtJUCBhZGRyZXNzOgUFAAAAM1dhZ28uRGV2aWNlRHJpdmVyLkJsLkNvbW11bmljYXRpb24uTWFjRGV2aWNlQWRkcmVzcwMAAAAHQWRkcmVzcwJJZAVMYWJlbAEAAQgCAAAABggAAAARMDA6MDA6MDA6MDA6MDA6MDAoAAAABgkAAAAMTUFDIGFkZHJlc3M6Cw==</Array>
+                          </Single>
+                        </Value>
+                      </Entry>
+                      <Entry>
+                        <Key>
+                          <Single Type="string">CONNECTOR_LIST</Single>
+                        </Key>
+                        <Value>
+                          <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                            <Single Name="Key" Type="string">CONNECTOR_LIST</Single>
+                            <Array Name="Data" Type="byte">AAEAAAD/////AQAAAAAAAAAMAgAAAE5XYWdvLkRldmljZURyaXZlci5CbCwgVmVyc2lvbj01LjAuMi4xMzI1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAADFXYWdvLkRldmljZURyaXZlci5CbC5Db25uZWN0b3JzLkNvbm5lY3RvckluZm9MaXN0AwAAAA1MaXN0YDErX2l0ZW1zDExpc3RgMStfc2l6ZQ9MaXN0YDErX3ZlcnNpb24EAAArV2Fnby5EZXZpY2VEcml2ZXIuQmwuQ29ubmVjdG9ycy5Db25uZWN0b3JbXQIAAAAICAIAAAAJAwAAAAsAAAABAAAABwMAAAAAAQAAAAsAAAAEKVdhZ28uRGV2aWNlRHJpdmVyLkJsLkNvbm5lY3RvcnMuQ29ubmVjdG9yAgAAAAkEAAAACQUAAAAJBgAAAAkHAAAACQgAAAAJCQAAAAkKAAAACQsAAAAJDAAAAAkNAAAACQ4AAAAMDwAAAGNXYWdvLldBQy5JbnRlcmZhY2VzLkRldmljZURyaXZlciwgVmVyc2lvbj03LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPTYwMjI4NzBjZDg5YmMzZjEFBAAAAClXYWdvLkRldmljZURyaXZlci5CbC5Db25uZWN0b3JzLkNvbm5lY3RvcgcAAAAaUHJvdG9jb2wuQ29tbXVuaWNhdGlvblR5cGUTUHJvdG9jb2wuUHJvdG9jb2xJZBVQcm90b2NvbC5Qcm90b2NvbE5hbWULQ29ubmVjdG9ySWQJSXNFbmFibGVkHERvZXNBbGxvd0RldmljZUNvbW11bmljYXRpb24WQ29ubmVjdGVkRGV2aWNlcy5Db3VudAQDAQAAAAA8V2Fnby5XQUMuSW50ZXJmYWNlcy5EZXZpY2VEcml2ZXIuQmwuQnVzQ2F0ZWdvcnkrQ2F0ZWdvcnlUeXBlDwAAAAtTeXN0ZW0uR3VpZAgBAQgCAAAABfD///88V2Fnby5XQUMuSW50ZXJmYWNlcy5EZXZpY2VEcml2ZXIuQmwuQnVzQ2F0ZWdvcnkrQ2F0ZWdvcnlUeXBlAQAAAAd2YWx1ZV9fAAgPAAAAAQAAAATv////C1N5c3RlbS5HdWlkCwAAAAJfYQJfYgJfYwJfZAJfZQJfZgJfZwJfaAJfaQJfagJfawAAAAAAAAAAAAAACAcHAgICAgICAgJBmmJZXyjbEamLCAAgDJpmBhIAAAAJTW9kYnVzVENQBwAAAAEAAAAAAAEFAAAABAAAAAHt////8P///wAAAAAB7P///+////9BmmJZXyjbEamLCAAgDJpmCRIAAAAIAAAAAQAAAAAAAQYAAAAEAAAAAev////w////AQAAAAHq////7////xgXwOS1bwxHo0SjoEu88EkGFwAAAAlNb2RidXNVRFAJAAAAAQAAAAAAAQcAAAAEAAAAAej////w////AAAAAAHn////7////xgXwOS1bwxHo0SjoEu88EkJFwAAAAoAAAABAAAAAAABCAAAAAQAAAAB5v////D///8AAAAAAeX////v////LOzlUhek3EKWAkqBG3AOawYcAAAADkdlbmVyaWNJcEJhc2VkHwAAAAEAAAAAAAEJAAAABAAAAAHj////8P///wEAAAAB4v///+////8s7OVSF6TcQpYCSoEbcA5rCRwAAAAgAAAAAQAAAAAAAQoAAAAEAAAAAeH////w////AAAAAAHg////7////xhX+20N9wZPjHntyvgjgdUGIQAAAABCAAAAAQAAAAAAAQsAAAAEAAAAAd7////w////AAAAAAHd////7////3lK78yx3uNCm9hquN7pJKoGJAAAABZXYWdvU2VyaWU3NTBUY3BTZXJ2aWNlNAAAAAEBAAAAAAEMAAAABAAAAAHb////8P///wAAAAAB2v///+////+T4w3RBKqnRZcy+BPp6qieBicAAAADVGNwTQAAAAEAAAAAAAENAAAABAAAAAHY////8P///wAAAAAB1////+////9Q/etomJdcR7KJLRWOaem+BioAAAAZV2Fnb1NlcmllNzUwU2VyaWFsU2VydmljZQMAAAABAQAAAAABDgAAAAQAAAAB1f////D///8BAAAAAdT////v////js7LzJbMKkyYFwo3h/RNVAYtAAAACFdhZ29LQnVzAQAAAAEAAAAAAAs=</Array>
+                          </Single>
+                        </Value>
+                      </Entry>
+                      <Entry>
+                        <Key>
+                          <Single Type="string">SERIES_750_SERIAL_ADDRESSINFO</Single>
+                        </Key>
+                        <Value>
+                          <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                            <Single Name="Key" Type="string">SERIES_750_SERIAL_ADDRESSINFO</Single>
+                            <Array Name="Data" Type="byte">AAEAAAD/////AQAAAAAAAAAMAgAAAE5XYWdvLkRldmljZURyaXZlci5CbCwgVmVyc2lvbj01LjAuMi4xMzI1LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPW51bGwFAQAAADhXYWdvLkRldmljZURyaXZlci5CbC5Db21tdW5pY2F0aW9uLkNvbW1vbkRldmljZUFkZHJlc3NlcwMAAAANTGlzdGAxK19pdGVtcwxMaXN0YDErX3NpemUPTGlzdGAxK192ZXJzaW9uBAAAOFdhZ28uRGV2aWNlRHJpdmVyLkJsLkNvbW11bmljYXRpb24uQ29tbW9uRGV2aWNlQWRkcmVzc1tdAgAAAAgIAgAAAAkDAAAAAQAAAAEAAAAHAwAAAAABAAAABAAAAAQ2V2Fnby5EZXZpY2VEcml2ZXIuQmwuQ29tbXVuaWNhdGlvbi5Db21tb25EZXZpY2VBZGRyZXNzAgAAAAkEAAAADQMFBAAAADZXYWdvLkRldmljZURyaXZlci5CbC5Db21tdW5pY2F0aW9uLlNlcmlhbERldmljZUFkZHJlc3MDAAAAB0FkZHJlc3MCSWQFTGFiZWwBAAIIAgAAAAYFAAAABENPTTECAAAACgs=</Array>
+                          </Single>
+                        </Value>
+                      </Entry>
+                    </Dictionary2>
+                  </Single>
+                  <Single Name="FormatId" Type="System.Guid">824fb0a2-6152-4203-83ec-e85e325894ab</Single>
+                </Single>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">f510a7b2-520e-48ef-bb36-b2a989f83887</Single>
+            </Key>
+            <Value>
+              <Single Type="{f510a7b2-520e-48ef-bb36-b2a989f83887}" Method="IArchivable">
+                <Single Name="X" Type="double">-425</Single>
+                <Single Name="Y" Type="double">-245</Single>
+                <Single Name="Width" Type="double">130</Single>
+                <Single Name="Height" Type="double">130</Single>
+                <Single Name="Identifier" Type="string">1</Single>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">77a9fbcd-c13e-46c5-a2d6-3ecf1ca358ff</Single>
+            </Key>
+            <Value>
+              <Single Type="{77a9fbcd-c13e-46c5-a2d6-3ecf1ca358ff}" Method="IArchivable">
+                <List2 Name="ProtocolAddresses">
+                  <Single Type="{2dba0800-3684-4923-8611-10477cd43030}" Method="IArchivable">
+                    <Single Name="Address" Type="string">192.168.1.1</Single>
+                    <Single Name="Protocol" Type="System.Guid">ccef4a79-deb1-42e3-9bd8-6ab8dee924aa</Single>
+                    <Single Name="PresentationHint" Type="int">1</Single>
+                  </Single>
+                  <Single Type="{2dba0800-3684-4923-8611-10477cd43030}" Method="IArchivable">
+                    <Single Name="Address" Type="string">00:00:00:00:00:00</Single>
+                    <Single Name="Protocol" Type="System.Guid">ccef4a79-deb1-42e3-9bd8-6ab8dee924aa</Single>
+                    <Single Name="PresentationHint" Type="int">3</Single>
+                  </Single>
+                </List2>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">cca5bbbe-1509-4e60-8b56-91274e3b7eab</Single>
+            </Key>
+            <Value>
+              <Single Type="{cca5bbbe-1509-4e60-8b56-91274e3b7eab}" Method="IArchivable">
+                <Single Name="SelectedConnection" Type="string">ETHERNET</Single>
+                <Single Name="SelectedConnectionName" Type="string">ETHERNET</Single>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">cdadfc2b-8598-4621-ad56-5b1df7db910f</Single>
+            </Key>
+            <Value>
+              <Single Type="{cdadfc2b-8598-4621-ad56-5b1df7db910f}" Method="IArchivable">
+                <Single Name="DeviceIdentification" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+                  <Single Name="Type" Type="int">4096</Single>
+                  <Single Name="Id" Type="string">1006 1101</Single>
+                  <Single Name="Version" Type="string">5.16.3.16</Single>
+                  <Null Name="BaseName" />
+                </Single>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">604f7eb2-7cf9-4234-bba6-1bd5b6e8d031</Single>
+            </Key>
+            <Value>
+              <Single Type="{604f7eb2-7cf9-4234-bba6-1bd5b6e8d031}" Method="IArchivable">
+                <List2 Name="PhysicalConnections" />
+                <List2 Name="PhysicalPorts">
+                  <Single Type="{69533e76-f0d6-4bc2-961e-90fffa88389e}" Method="IArchivable">
+                    <Single Name="Position" Type="int">0</Single>
+                    <Single Name="Id" Type="int">1</Single>
+                    <Single Name="Name" Type="string">X1</Single>
+                    <Single Name="InterfaceTypeName" Type="string">Ethernet</Single>
+                    <Single Name="ProtocolId" Type="System.Guid">52803a9c-4c2d-4d7d-b2c9-948cb194921b</Single>
+                    <Single Name="PortColorProtocolId" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                    <List2 Name="IdentInfo" />
+                    <Single Name="Direction" Type="int">3</Single>
+                  </Single>
+                  <Single Type="{69533e76-f0d6-4bc2-961e-90fffa88389e}" Method="IArchivable">
+                    <Single Name="Position" Type="int">1</Single>
+                    <Single Name="Id" Type="int">2</Single>
+                    <Single Name="Name" Type="string">X2</Single>
+                    <Single Name="InterfaceTypeName" Type="string">Ethernet</Single>
+                    <Single Name="ProtocolId" Type="System.Guid">52803a9c-4c2d-4d7d-b2c9-948cb194921b</Single>
+                    <Single Name="PortColorProtocolId" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                    <List2 Name="IdentInfo" />
+                    <Single Name="Direction" Type="int">3</Single>
+                  </Single>
+                </List2>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">c0ff5015-89ec-4113-a771-1a7e491ef54c</Single>
+            </Key>
+            <Value>
+              <Single Type="{c0ff5015-89ec-4113-a771-1a7e491ef54c}" Method="IArchivable">
+                <Single Name="ShowEthercatCommunicationPort" Type="bool">False</Single>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">cef287f7-704a-4fd2-bd09-07c9e494333c</Single>
+            </Key>
+            <Value>
+              <Single Type="{cef287f7-704a-4fd2-bd09-07c9e494333c}" Method="IArchivable">
+                <Single Name="PluginDataset" Type="{f679d830-a6b4-445b-94f7-d4d71e75a70e}" Method="IArchivable">
+                  <Dictionary2 Name="PluginDataDictionary">
+                    <Entry>
+                      <Key>
+                        <Single Type="{6d998475-ab3d-4e37-ac7e-d0e7f304c48e}" Method="IArchivable">
+                          <Single Name="CategoryId" Type="System.Guid">ce11a25f-cb7c-4944-95b3-afd7f81eeae0</Single>
+                          <Single Name="PluginName" Type="string">6852454a-f3d3-45d7-9451-220d2db0d204</Single>
+                        </Single>
+                      </Key>
+                      <Value>
+                        <Single Type="{d70d6a1c-00b3-452c-8b40-d96b93eed218}" Method="IArchivable">
+                          <Dictionary2 Name="DataSubsets">
+                            <Entry>
+                              <Key>
+                                <Single Type="string">Device Licensing Info</Single>
+                              </Key>
+                              <Value>
+                                <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                                  <Single Name="Key" Type="string">Device Licensing Info</Single>
+                                  <Array Name="Data" Type="byte">PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48RGV2aWNlTGljZW5zaW5nSW5mbyB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hLWluc3RhbmNlIiB4bWxuczp4c2Q9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1hIj48RGV2aWNlSWQ+NGM4ODY5YjktZWEwZC00MTllLTllZDYtYWQwMDNmMjUzZmE2PC9EZXZpY2VJZD48UG9zaXRpb24+MDwvUG9zaXRpb24+PExpY2Vuc2VOZWVkcyAvPjxBcHBsaWNhdGlvbklkcyAvPjxEZXZpY2VJbmZvPjxEZXZpY2VJZD40Yzg4NjliOS1lYTBkLTQxOWUtOWVkNi1hZDAwM2YyNTNmYTY8L0RldmljZUlkPjxQb3NpdGlvbj4wPC9Qb3NpdGlvbj48RGV2aWNlTmFtZT5Db250cm9sbGVyPC9EZXZpY2VOYW1lPjxEZXZpY2VUeXBlPlBGQzEwMCAyRVRIIEVDTzwvRGV2aWNlVHlwZT48TGljZW5zZXMgLz48U3RvcmFnZUxvY2F0aW9uPkRldmljZTwvU3RvcmFnZUxvY2F0aW9uPjxJc0luRXZhbHVhdGlvbk1vZGU+ZmFsc2U8L0lzSW5FdmFsdWF0aW9uTW9kZT48UmVtYWluaW5nRXZhbHVhdGlvblRpbWVEYXlzPjA8L1JlbWFpbmluZ0V2YWx1YXRpb25UaW1lRGF5cz48UmVtYWluaW5nRXZhbHVhdGlvblRpbWVIb3Vycz4wPC9SZW1haW5pbmdFdmFsdWF0aW9uVGltZUhvdXJzPjxSZW1haW5pbmdFdmFsdWF0aW9uVGltZU1pbnV0ZXM+MDwvUmVtYWluaW5nRXZhbHVhdGlvblRpbWVNaW51dGVzPjwvRGV2aWNlSW5mbz48U3VwcG9ydGVkU3RvcmFnZXMgLz48Q3VycmVudFN0b3JhZ2U+RGV2aWNlPC9DdXJyZW50U3RvcmFnZT48SXNPdXRPZlN5bmM+ZmFsc2U8L0lzT3V0T2ZTeW5jPjxIYXNQb3VDcmVhdGluZ0NvbmZpcm1lZD5mYWxzZTwvSGFzUG91Q3JlYXRpbmdDb25maXJtZWQ+PEhhc1RhcmdldFZpc3VDcmVhdGluZ0NvbmZpcm1lZD5mYWxzZTwvSGFzVGFyZ2V0VmlzdUNyZWF0aW5nQ29uZmlybWVkPjxDb25maXJtZWRGZWF0dXJlTGljZW5zZVByb2R1Y3RDb2Rlcz48c2hvcnQ+MjEyPC9zaG9ydD48c2hvcnQ+MjEzPC9zaG9ydD48c2hvcnQ+MjE2PC9zaG9ydD48L0NvbmZpcm1lZEZlYXR1cmVMaWNlbnNlUHJvZHVjdENvZGVzPjwvRGV2aWNlTGljZW5zaW5nSW5mbz4=</Array>
+                                </Single>
+                              </Value>
+                            </Entry>
+                          </Dictionary2>
+                        </Single>
+                      </Value>
+                    </Entry>
+                  </Dictionary2>
+                </Single>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">f9d7f06c-0fe3-45d8-802f-c516acbd06b8</Single>
+            </Key>
+            <Value>
+              <Single Type="{f9d7f06c-0fe3-45d8-802f-c516acbd06b8}" Method="IArchivable">
+                <Dictionary2 Name="Datasets">
+                  <Entry>
+                    <Key>
+                      <Single Type="int">7</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="{71cd9501-9dbb-41d2-b89e-d84e71de8bc0}" Method="IArchivable">
+                        <Single Name="InstanceData" Type="{d70d6a1c-00b3-452c-8b40-d96b93eed218}" Method="IArchivable">
+                          <Dictionary2 Name="DataSubsets">
+                            <Entry>
+                              <Key>
+                                <Single Type="string">MarkDataPointsAsAlwaysMappingForMaster</Single>
+                              </Key>
+                              <Value>
+                                <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                                  <Single Name="Key" Type="string">MarkDataPointsAsAlwaysMappingForMaster</Single>
+                                  <Array Name="Data" Type="byte">CgVGYWxzZRIIc3RkOkJPT0w=</Array>
+                                </Single>
+                              </Value>
+                            </Entry>
+                            <Entry>
+                              <Key>
+                                <Single Type="string">VersionSettings</Single>
+                              </Key>
+                              <Value>
+                                <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                                  <Single Name="Key" Type="string">VersionSettings</Single>
+                                  <Array Name="Data" Type="byte">CgwKCjUuMC4yLjEzMjUQARoSCUGaYllfKNsREamLCAAgDJpmIhkKCDEuMS4xLjE2EgkxMDA2IDAwMDEYiYAC</Array>
+                                </Single>
+                              </Value>
+                            </Entry>
+                          </Dictionary2>
+                        </Single>
+                        <Single Name="FormatId" Type="System.Guid">10e1918f-5eb6-43b2-aa91-32936a89e50c</Single>
+                      </Single>
+                    </Value>
+                  </Entry>
+                  <Entry>
+                    <Key>
+                      <Single Type="int">8</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="{71cd9501-9dbb-41d2-b89e-d84e71de8bc0}" Method="IArchivable">
+                        <Single Name="InstanceData" Type="{d70d6a1c-00b3-452c-8b40-d96b93eed218}" Method="IArchivable">
+                          <Dictionary2 Name="DataSubsets" />
+                        </Single>
+                        <Single Name="FormatId" Type="System.Guid">10e1918f-5eb6-43b2-aa91-32936a89e50c</Single>
+                      </Single>
+                    </Value>
+                  </Entry>
+                  <Entry>
+                    <Key>
+                      <Single Type="int">9</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="{71cd9501-9dbb-41d2-b89e-d84e71de8bc0}" Method="IArchivable">
+                        <Single Name="InstanceData" Type="{d70d6a1c-00b3-452c-8b40-d96b93eed218}" Method="IArchivable">
+                          <Dictionary2 Name="DataSubsets">
+                            <Entry>
+                              <Key>
+                                <Single Type="string">MarkDataPointsAsAlwaysMappingForMaster</Single>
+                              </Key>
+                              <Value>
+                                <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                                  <Single Name="Key" Type="string">MarkDataPointsAsAlwaysMappingForMaster</Single>
+                                  <Array Name="Data" Type="byte">CgVGYWxzZRIIc3RkOkJPT0w=</Array>
+                                </Single>
+                              </Value>
+                            </Entry>
+                            <Entry>
+                              <Key>
+                                <Single Type="string">VersionSettings</Single>
+                              </Key>
+                              <Value>
+                                <Single Type="{2d01384c-f221-44a3-bb36-0e8a8e51df4a}" Method="IArchivable">
+                                  <Single Name="Key" Type="string">VersionSettings</Single>
+                                  <Array Name="Data" Type="byte">CgwKCjUuMC4yLjEzMjUQARoSCRgXwOS1bwxHEaNEo6BLvPBJIhkKCDEuMS4xLjE2EgkxMDA2IDAwMDEYiYAC</Array>
+                                </Single>
+                              </Value>
+                            </Entry>
+                          </Dictionary2>
+                        </Single>
+                        <Single Name="FormatId" Type="System.Guid">10e1918f-5eb6-43b2-aa91-32936a89e50c</Single>
+                      </Single>
+                    </Value>
+                  </Entry>
+                  <Entry>
+                    <Key>
+                      <Single Type="int">10</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="{71cd9501-9dbb-41d2-b89e-d84e71de8bc0}" Method="IArchivable">
+                        <Single Name="InstanceData" Type="{d70d6a1c-00b3-452c-8b40-d96b93eed218}" Method="IArchivable">
+                          <Dictionary2 Name="DataSubsets" />
+                        </Single>
+                        <Single Name="FormatId" Type="System.Guid">10e1918f-5eb6-43b2-aa91-32936a89e50c</Single>
+                      </Single>
+                    </Value>
+                  </Entry>
+                </Dictionary2>
+              </Single>
+            </Value>
+          </Entry>
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">432aa59f-884f-43af-b7ed-60da67c22612</Single>
+            </Key>
+            <Value>
+              <Single Type="{432aa59f-884f-43af-b7ed-60da67c22612}" Method="IArchivable">
+                <Single Name="DeviceTypeGuid" Type="System.Guid">9c9b21ce-8f56-4819-98d8-ea7c9c565f8d</Single>
+                <Single Name="DeviceTypeVersion" Type="string">1.5.14.13</Single>
+                <Single Name="TemplateIdentifier" Type="string"></Single>
+                <Single Name="Classification" Type="int">1</Single>
+                <Single Name="DeviceCategory" Type="int">6</Single>
+                <Array Name="Manifest" Type="byte">H4sIAAAAAAAEAO1a62+jSBL/ftL+D5x1n+7E+x05WSU4nrEmk1hxZrLSsmc1TeFwi8EHOI///qrBxjw8thMpm8wpGckDTXV31a9eVNH9Xx/nEXcPaRYm8XFPFqTerye//K0/uBl/JXEYQJZzSBFnR49ZeNy7y/PFkSg+PDwID6qQpDNRkSRZ/O3rxYTewZzwYZzlJKbQq2b5+2f1cEeOY3uOfO57xYsksH9mj/u0DHEV36Y0MIjBK8T2eE21A962LIk3AlWyNFWjpuL1OLFa65LM4cTUpel46OB+fXE9VhLAfUhhkIYoO3fztIDjnpPMF0kW5lA+K7lqkTYYLPhT1/yZpqfYvmHzoMrAa2AoPNHA4xU18HyqaDroZM0frnp76qxWOlEF5K52v6I4zTKYe1EI2Wqk4uXbiBuGETBpkO0jd5wms5TMByQn7u3ppytukgT5A0nBhb87V86X8ejGRemvoZAvSZ/cge04Q+MUwTy1zxiYwxWYwxJMx1TO3LUG3DoC7reRe0tmiVAfFCaQhoBgC+OAItjCt1Dwo6jHORHJspLPgyaVVyspww1clehnF28o+tnFAaKfRS8QHSfVRT+LapYitgwBLbm2VN2cmR1nTbNlQ20M2VjTkHVB1gS5MmWb2p4iU+CtQDd4zZJthMi3eCAmtalu6IHlN3RT+BX6mSxJnHJ+85k7d676YuVtBc1V6kN6uZx7yLOEovOWzLyyPlzRFvBkzHv74uq6eoZxaRkQmi9TnMd2YGrvi53haoJDcpih5k+MvlhdtyAZQEbTcJEjHputtj19E+urMec6g4mLSLvDW9l21zAKPtz7SCVg1O1V4WwAk6esoSdxh7T9UZxDihBCA4FqlKuuRmgiSo8bouQwZoIVViQJ+mpsEKZAy8GzJM+TeY8bZeePiyikYX7cy9Ml5ofx3VMWUhJVq5Zco/GcX1+e3/RqPDAdJnGMayYpxzbHnIDI5wlNInar24ZiE03mFUsPeFn2PZ7YlsdLliShS1GbGMYalWy5WCRpDn5zg80WyPZnEvsRpoWV3z0drOrOEjXFFzFgGELke8tM+JqU/5EMpXd9CMgyynfRlDGllGEXGQaSDhfCaNEZ623cf7V73VBKY6lA36UL6+W6SOG/SzSV96GKSUTuYbcmCpK9iiipbpxxcfF6wNtN4EGjkmzKFr4PeTqvmRLliapp+EMkzfNoIGn2hxO8ki5k6eXK+H/2gm+D1/YCVW7FHwV0oArirckmryk+5W1DUniNWLLsmZIEhvfWyI/R94ZJijP8MJ51KCv499B1dIAlhLBvjnMXRv4rqkN5uTreLCq9pT7GyGacv55CWLatK8TwMSKxyBSYks9rgWTwFjWxaPUpCSxFtWRff2v/aAaUTxBjBUB3hqYGzY9jU5Ps9UDXW15AKQQaQZR98GT0AlB528N6yiCe5QPYikZIB/T21q1X4NY7sC9LPqi2yhPMMLymE5O3TVXhA0tWwQZCLBs+9Po8vfbFqjg5oCJSuxVRtx66TGJ4RjXkXH3dWQipLee2wAt8rAlt07bwtUOnvKdYNq/4sm6BYYPtdY2gAcXzRJZfJnJAouzHMn/hz5bZTqnltndRj4IFPKW2wWtUIVhSY7aRiGpaZqBpvq51cwx3DRHJw3soI3BZGI9JfocceG0G/iLfGOQL4SJBSJhRf0EYmm7RedzxiC4F+3lVh6iNdfqUIx+RHcVBsqWnUj2rdFn2ng6y4SavrQWntx5tDbEeEonKnnTVj86K5jOCiDqjSZynhObr7rQmSqZYJfGNhM0uHtYZE0riGDP7uuH9rCZ528bKxScLoGEQUsRlAWkeQsaFR3EYrWOF2J42KY36Au4hOlnFwtVYX2w8bE1cI7/ecaOTUhjyAqycZD5fxujXzN6EdrsTVcMINrC1WEKmyNEpCk0jaDUFd/Bd9Psas/riVpota13DbBmRFKNTClnW6v/tottKhoQ38JifbPqbxe3WFcVDltxCtY3B/ncSLaFjGmz+PjwR8M/4dspi1TXa34/42Ipne+Jbwy78810AvhdPxHydH56NeXviW2Muqb9zwh+SyX7fCf57sO0iVgW+VhI8NLM0cmSL4vDUd1CZ8NzUd57fQRpD/pH8PpJfZ62P5PeR/PZQfSS/j+S3L7cclP46T2rl4mRdlg/DdM6Yrx9PUAWzOJ5gr48nSKs/fsvP+q/x2Xs0J7PWV2028td+yy+ZcEeUfcXPIM8xA2TTefG5ZBon6ZxEwoLl0oKwLOoZcatB8244p/VcN/2JhUDufwbOLyF/SNI/izs3m03j8h5592HKDtRMi5MgbRnq0969LD+ZGKUxsded8uyTENLk/RpQ1dH7HsKDy6BGpB+n586V8J9FE+0G6bsR4PlW4yBHUTLrWE1fbKWE/meIFgHKlNWp2JkyEjWGViteotNdQwApxK3zUk2C1aG46WisSMXps/qzDTe7V+2zk6kYZr0IVkkx4zrvCce9f7v+v34X/mj9/qN+krB1JrA+sDpb6CAL2VN2EXopYefuisnF2dn1eeCT/wFIn9WNNCwAAA==</Array>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">225bfe47-7336-4dbc-9419-4105a7c831fa</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long">638071488186953045</Single>
+      </Single>
+      <Single Name="Object" Type="{225bfe47-7336-4dbc-9419-4105a7c831fa}" Method="IArchivable">
+        <Single Name="UniqueIdGenerator" Type="string">4115</Single>
+        <Null Name="TypeList" />
+        <Single Name="NeedsBusCycle" Type="bool">False</Single>
+        <Single Name="Id" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+          <Single Name="Type" Type="int">4096</Single>
+          <Single Name="Id" Type="string">1006 1101</Single>
+          <Single Name="Version" Type="string">5.16.3.16</Single>
+          <Null Name="BaseName" />
+        </Single>
+        <Single Name="DefaultDeviceInfo" Type="{59a90934-c888-40db-a9df-306fcf36d75c}" Method="IArchivable">
+          <Single Name="Name" Type="string">750-8100 PFC100 2ETH ECO</Single>
+          <Single Name="Description" Type="string">Programmable Ethernet controller</Single>
+          <Single Name="Vendor" Type="string">WAGO</Single>
+          <Single Name="OrderNumber" Type="string">0750-8100</Single>
+          <Array Name="Categories" Type="int">ABAAAA==</Array>
+          <Array Name="Families" Type="string" />
+          <Single Name="Custom" Type="string"></Single>
+          <Null Name="DefaultInstanceName" />
+        </Single>
+        <Single Name="DeviceParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+          <List2 Name="Params">
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="OnlineChangeEnable" Type="bool">False</Single>
+              <Single Name="Id" Type="uint">10001000</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">True</Single>
+              <Single Name="Functional" Type="bool">False</Single>
+              <Single Name="ChannelType" Type="{abf9b454-3972-4b82-88a2-feef15a02f10}">None</Single>
+              <Single Name="DiagType" Type="{55948f0f-941b-4544-a1c2-3169f7256355}">None</Single>
+              <Single Name="CreateDownloadStructure" Type="bool">True</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string">Processor Load Lower Limit</Single>
+                </Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements" />
+                </Single>
+                <Single Name="IoMapping" Type="{d6d934cf-5ec0-42c3-b628-2a7aea7d364c}" Method="IArchivable">
+                  <Single Name="AutomaticAddress" Type="bool">True</Single>
+                  <Single Name="IecAddress" Type="string"></Single>
+                  <Single Name="Mappings" Type="{8a62c05c-4fee-4b4a-8600-a677aedc92c7}" Method="IArchivable">
+                    <List2 Name="Mappings" />
+                  </Single>
+                </Single>
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+                <Single Name="Unit" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="Value" Type="string">80</Single>
+                <Single Name="Type" Type="string">DWORD</Single>
+                <Single Name="Default" Type="string">80</Single>
+                <Single Name="Identifier" Type="string">10001000</Single>
+                <Single Name="UserComment" Type="string"></Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4101</Single>
+                <Single Name="EditorPositionId" Type="long">4102</Single>
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              </Single>
+              <Single Name="SectionId" Type="int">-1</Single>
+              <Single Name="FileType" Type="bool">False</Single>
+              <Single Name="ParamType" Type="string">std:DWORD</Single>
+              <Single Name="DriverSpecific" Type="string"></Single>
+              <Single Name="ConstantValue" Type="bool">False</Single>
+              <Single Name="OnlineHelpUrl" Type="string"></Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="InstanceVariable" Type="string"></Single>
+              <Single Name="PreparedValueAccess" Type="bool">False</Single>
+              <Single Name="UseRefactoring" Type="bool">False</Single>
+              <Single Name="DisableMapping" Type="bool">False</Single>
+              <Single Name="IsBidirectionalOutput" Type="bool">False</Single>
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="CreateInHostConnector" Type="bool">False</Single>
+              <Single Name="CreateInChildConnector" Type="bool">False</Single>
+              <Single Name="OnlineParameter" Type="bool">False</Single>
+              <Single Name="NoManualAddress" Type="bool">False</Single>
+              <Single Name="OnlineChangeEnabled" Type="bool">False</Single>
+              <Single Name="TraceSystemRecord" Type="bool">False</Single>
+              <Single Name="IndexInDevDesc" Type="long">2</Single>
+              <Single Name="MapOnlyNew" Type="bool">False</Single>
+              <Single Name="LogicalParameter" Type="bool">False</Single>
+              <Single Name="MapSize" Type="uint">0</Single>
+              <Single Name="MapOffset" Type="uint">0</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="OnlineChangeEnable" Type="bool">False</Single>
+              <Single Name="Id" Type="uint">10001001</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">True</Single>
+              <Single Name="Functional" Type="bool">False</Single>
+              <Single Name="ChannelType" Type="{abf9b454-3972-4b82-88a2-feef15a02f10}">None</Single>
+              <Single Name="DiagType" Type="{55948f0f-941b-4544-a1c2-3169f7256355}">None</Single>
+              <Single Name="CreateDownloadStructure" Type="bool">True</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string">Processor Load Upper Limit</Single>
+                </Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements" />
+                </Single>
+                <Single Name="IoMapping" Type="{d6d934cf-5ec0-42c3-b628-2a7aea7d364c}" Method="IArchivable">
+                  <Single Name="AutomaticAddress" Type="bool">True</Single>
+                  <Single Name="IecAddress" Type="string"></Single>
+                  <Single Name="Mappings" Type="{8a62c05c-4fee-4b4a-8600-a677aedc92c7}" Method="IArchivable">
+                    <List2 Name="Mappings" />
+                  </Single>
+                </Single>
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+                <Single Name="Unit" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="Value" Type="string">90</Single>
+                <Single Name="Type" Type="string">DWORD</Single>
+                <Single Name="Default" Type="string">90</Single>
+                <Single Name="Identifier" Type="string">10001001</Single>
+                <Single Name="UserComment" Type="string"></Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4103</Single>
+                <Single Name="EditorPositionId" Type="long">4104</Single>
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              </Single>
+              <Single Name="SectionId" Type="int">-1</Single>
+              <Single Name="FileType" Type="bool">False</Single>
+              <Single Name="ParamType" Type="string">std:DWORD</Single>
+              <Single Name="DriverSpecific" Type="string"></Single>
+              <Single Name="ConstantValue" Type="bool">False</Single>
+              <Single Name="OnlineHelpUrl" Type="string"></Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="InstanceVariable" Type="string"></Single>
+              <Single Name="PreparedValueAccess" Type="bool">False</Single>
+              <Single Name="UseRefactoring" Type="bool">False</Single>
+              <Single Name="DisableMapping" Type="bool">False</Single>
+              <Single Name="IsBidirectionalOutput" Type="bool">False</Single>
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="CreateInHostConnector" Type="bool">False</Single>
+              <Single Name="CreateInChildConnector" Type="bool">False</Single>
+              <Single Name="OnlineParameter" Type="bool">False</Single>
+              <Single Name="NoManualAddress" Type="bool">False</Single>
+              <Single Name="OnlineChangeEnabled" Type="bool">False</Single>
+              <Single Name="TraceSystemRecord" Type="bool">False</Single>
+              <Single Name="IndexInDevDesc" Type="long">3</Single>
+              <Single Name="MapOnlyNew" Type="bool">False</Single>
+              <Single Name="LogicalParameter" Type="bool">False</Single>
+              <Single Name="MapSize" Type="uint">0</Single>
+              <Single Name="MapOffset" Type="uint">0</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="OnlineChangeEnable" Type="bool">False</Single>
+              <Single Name="Id" Type="uint">10001002</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">True</Single>
+              <Single Name="Functional" Type="bool">False</Single>
+              <Single Name="ChannelType" Type="{abf9b454-3972-4b82-88a2-feef15a02f10}">None</Single>
+              <Single Name="DiagType" Type="{55948f0f-941b-4544-a1c2-3169f7256355}">None</Single>
+              <Single Name="CreateDownloadStructure" Type="bool">True</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string">Processor Load Processor Share</Single>
+                </Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements" />
+                </Single>
+                <Single Name="IoMapping" Type="{d6d934cf-5ec0-42c3-b628-2a7aea7d364c}" Method="IArchivable">
+                  <Single Name="AutomaticAddress" Type="bool">True</Single>
+                  <Single Name="IecAddress" Type="string"></Single>
+                  <Single Name="Mappings" Type="{8a62c05c-4fee-4b4a-8600-a677aedc92c7}" Method="IArchivable">
+                    <List2 Name="Mappings" />
+                  </Single>
+                </Single>
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+                <Single Name="Unit" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="Value" Type="string">90</Single>
+                <Single Name="Type" Type="string">DWORD</Single>
+                <Single Name="Default" Type="string">90</Single>
+                <Single Name="Identifier" Type="string">10001002</Single>
+                <Single Name="UserComment" Type="string"></Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4105</Single>
+                <Single Name="EditorPositionId" Type="long">4106</Single>
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              </Single>
+              <Single Name="SectionId" Type="int">-1</Single>
+              <Single Name="FileType" Type="bool">False</Single>
+              <Single Name="ParamType" Type="string">std:DWORD</Single>
+              <Single Name="DriverSpecific" Type="string"></Single>
+              <Single Name="ConstantValue" Type="bool">False</Single>
+              <Single Name="OnlineHelpUrl" Type="string"></Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="InstanceVariable" Type="string"></Single>
+              <Single Name="PreparedValueAccess" Type="bool">False</Single>
+              <Single Name="UseRefactoring" Type="bool">False</Single>
+              <Single Name="DisableMapping" Type="bool">False</Single>
+              <Single Name="IsBidirectionalOutput" Type="bool">False</Single>
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="CreateInHostConnector" Type="bool">False</Single>
+              <Single Name="CreateInChildConnector" Type="bool">False</Single>
+              <Single Name="OnlineParameter" Type="bool">False</Single>
+              <Single Name="NoManualAddress" Type="bool">False</Single>
+              <Single Name="OnlineChangeEnabled" Type="bool">False</Single>
+              <Single Name="TraceSystemRecord" Type="bool">False</Single>
+              <Single Name="IndexInDevDesc" Type="long">4</Single>
+              <Single Name="MapOnlyNew" Type="bool">False</Single>
+              <Single Name="LogicalParameter" Type="bool">False</Single>
+              <Single Name="MapSize" Type="uint">0</Single>
+              <Single Name="MapOffset" Type="uint">0</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="OnlineChangeEnable" Type="bool">False</Single>
+              <Single Name="Id" Type="uint">10001010</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">True</Single>
+              <Single Name="Functional" Type="bool">False</Single>
+              <Single Name="ChannelType" Type="{abf9b454-3972-4b82-88a2-feef15a02f10}">None</Single>
+              <Single Name="DiagType" Type="{55948f0f-941b-4544-a1c2-3169f7256355}">None</Single>
+              <Single Name="CreateDownloadStructure" Type="bool">True</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string">Processor Load Should Throw ProcessorLoadWatchdog_Exception</Single>
+                </Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements" />
+                </Single>
+                <Single Name="IoMapping" Type="{d6d934cf-5ec0-42c3-b628-2a7aea7d364c}" Method="IArchivable">
+                  <Single Name="AutomaticAddress" Type="bool">True</Single>
+                  <Single Name="IecAddress" Type="string"></Single>
+                  <Single Name="Mappings" Type="{8a62c05c-4fee-4b4a-8600-a677aedc92c7}" Method="IArchivable">
+                    <List2 Name="Mappings" />
+                  </Single>
+                </Single>
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+                <Single Name="Unit" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="Value" Type="string">FALSE</Single>
+                <Single Name="Type" Type="string">bool</Single>
+                <Single Name="Default" Type="string">FALSE</Single>
+                <Single Name="Identifier" Type="string">10001010</Single>
+                <Single Name="UserComment" Type="string"></Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4107</Single>
+                <Single Name="EditorPositionId" Type="long">4108</Single>
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              </Single>
+              <Single Name="SectionId" Type="int">-1</Single>
+              <Single Name="FileType" Type="bool">False</Single>
+              <Single Name="ParamType" Type="string">std:bool</Single>
+              <Single Name="DriverSpecific" Type="string"></Single>
+              <Single Name="ConstantValue" Type="bool">False</Single>
+              <Single Name="OnlineHelpUrl" Type="string"></Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="InstanceVariable" Type="string"></Single>
+              <Single Name="PreparedValueAccess" Type="bool">False</Single>
+              <Single Name="UseRefactoring" Type="bool">False</Single>
+              <Single Name="DisableMapping" Type="bool">False</Single>
+              <Single Name="IsBidirectionalOutput" Type="bool">False</Single>
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="CreateInHostConnector" Type="bool">False</Single>
+              <Single Name="CreateInChildConnector" Type="bool">False</Single>
+              <Single Name="OnlineParameter" Type="bool">False</Single>
+              <Single Name="NoManualAddress" Type="bool">False</Single>
+              <Single Name="OnlineChangeEnabled" Type="bool">False</Single>
+              <Single Name="TraceSystemRecord" Type="bool">False</Single>
+              <Single Name="IndexInDevDesc" Type="long">5</Single>
+              <Single Name="MapOnlyNew" Type="bool">False</Single>
+              <Single Name="LogicalParameter" Type="bool">False</Single>
+              <Single Name="MapSize" Type="uint">0</Single>
+              <Single Name="MapOffset" Type="uint">0</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="OnlineChangeEnable" Type="bool">False</Single>
+              <Single Name="Id" Type="uint">10001100</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">True</Single>
+              <Single Name="Functional" Type="bool">False</Single>
+              <Single Name="ChannelType" Type="{abf9b454-3972-4b82-88a2-feef15a02f10}">None</Single>
+              <Single Name="DiagType" Type="{55948f0f-941b-4544-a1c2-3169f7256355}">None</Single>
+              <Single Name="CreateDownloadStructure" Type="bool">True</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string">Keep output values in stop</Single>
+                </Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements" />
+                </Single>
+                <Single Name="IoMapping" Type="{d6d934cf-5ec0-42c3-b628-2a7aea7d364c}" Method="IArchivable">
+                  <Single Name="AutomaticAddress" Type="bool">True</Single>
+                  <Single Name="IecAddress" Type="string"></Single>
+                  <Single Name="Mappings" Type="{8a62c05c-4fee-4b4a-8600-a677aedc92c7}" Method="IArchivable">
+                    <List2 Name="Mappings" />
+                  </Single>
+                </Single>
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+                <Single Name="Unit" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="Value" Type="string">FALSE</Single>
+                <Single Name="Type" Type="string">bool</Single>
+                <Single Name="Default" Type="string">FALSE</Single>
+                <Single Name="Identifier" Type="string">10001100</Single>
+                <Single Name="UserComment" Type="string"></Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4109</Single>
+                <Single Name="EditorPositionId" Type="long">4110</Single>
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              </Single>
+              <Single Name="SectionId" Type="int">-1</Single>
+              <Single Name="FileType" Type="bool">False</Single>
+              <Single Name="ParamType" Type="string">std:bool</Single>
+              <Single Name="DriverSpecific" Type="string"></Single>
+              <Single Name="ConstantValue" Type="bool">False</Single>
+              <Single Name="OnlineHelpUrl" Type="string"></Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="InstanceVariable" Type="string"></Single>
+              <Single Name="PreparedValueAccess" Type="bool">False</Single>
+              <Single Name="UseRefactoring" Type="bool">False</Single>
+              <Single Name="DisableMapping" Type="bool">False</Single>
+              <Single Name="IsBidirectionalOutput" Type="bool">False</Single>
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="CreateInHostConnector" Type="bool">False</Single>
+              <Single Name="CreateInChildConnector" Type="bool">False</Single>
+              <Single Name="OnlineParameter" Type="bool">False</Single>
+              <Single Name="NoManualAddress" Type="bool">False</Single>
+              <Single Name="OnlineChangeEnabled" Type="bool">False</Single>
+              <Single Name="TraceSystemRecord" Type="bool">False</Single>
+              <Single Name="IndexInDevDesc" Type="long">0</Single>
+              <Single Name="MapOnlyNew" Type="bool">False</Single>
+              <Single Name="LogicalParameter" Type="bool">False</Single>
+              <Single Name="MapSize" Type="uint">0</Single>
+              <Single Name="MapOffset" Type="uint">0</Single>
+            </Single>
+            <Single Type="{8c994079-f3c6-4484-9643-9258628feecd}" Method="IArchivable">
+              <Single Name="OnlineChangeEnable" Type="bool">False</Single>
+              <Single Name="Id" Type="uint">10001101</Single>
+              <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+              <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              <Single Name="Download" Type="bool">True</Single>
+              <Single Name="Functional" Type="bool">False</Single>
+              <Single Name="ChannelType" Type="{abf9b454-3972-4b82-88a2-feef15a02f10}">None</Single>
+              <Single Name="DiagType" Type="{55948f0f-941b-4544-a1c2-3169f7256355}">None</Single>
+              <Single Name="CreateDownloadStructure" Type="bool">True</Single>
+              <Single Name="DalaElement" Type="{08a69302-82ff-4bf9-a55d-a6014ee63990}" Method="IArchivable">
+                <Single Name="VisibleName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string">Keep output values in exception</Single>
+                </Single>
+                <Single Name="Description" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="SubElements" Type="{45b6f676-61a0-4c78-a679-8c725851fa1e}" Method="IArchivable">
+                  <List2 Name="elements" />
+                </Single>
+                <Single Name="IoMapping" Type="{d6d934cf-5ec0-42c3-b628-2a7aea7d364c}" Method="IArchivable">
+                  <Single Name="AutomaticAddress" Type="bool">True</Single>
+                  <Single Name="IecAddress" Type="string"></Single>
+                  <Single Name="Mappings" Type="{8a62c05c-4fee-4b4a-8600-a677aedc92c7}" Method="IArchivable">
+                    <List2 Name="Mappings" />
+                  </Single>
+                </Single>
+                <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+                <Single Name="Unit" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                  <Single Name="Namespace" Type="string"></Single>
+                  <Single Name="Identifier" Type="string"></Single>
+                  <Single Name="Default" Type="string"></Single>
+                </Single>
+                <Single Name="Value" Type="string">FALSE</Single>
+                <Single Name="Type" Type="string">bool</Single>
+                <Single Name="Default" Type="string">FALSE</Single>
+                <Single Name="Identifier" Type="string">10001101</Single>
+                <Single Name="UserComment" Type="string"></Single>
+                <Null Name="FilterFlags" />
+                <Single Name="PositionId" Type="long">4111</Single>
+                <Single Name="EditorPositionId" Type="long">4112</Single>
+                <Single Name="OfflineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">ReadWrite</Single>
+                <Single Name="OnlineAccess" Type="{f7a1fdea-1444-4931-82ab-fdb68bf81bcf}">Read</Single>
+              </Single>
+              <Single Name="SectionId" Type="int">-1</Single>
+              <Single Name="FileType" Type="bool">False</Single>
+              <Single Name="ParamType" Type="string">std:bool</Single>
+              <Single Name="DriverSpecific" Type="string"></Single>
+              <Single Name="ConstantValue" Type="bool">False</Single>
+              <Single Name="OnlineHelpUrl" Type="string"></Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="InstanceVariable" Type="string"></Single>
+              <Single Name="PreparedValueAccess" Type="bool">False</Single>
+              <Single Name="UseRefactoring" Type="bool">False</Single>
+              <Single Name="DisableMapping" Type="bool">False</Single>
+              <Single Name="IsBidirectionalOutput" Type="bool">False</Single>
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="CreateInHostConnector" Type="bool">False</Single>
+              <Single Name="CreateInChildConnector" Type="bool">False</Single>
+              <Single Name="OnlineParameter" Type="bool">False</Single>
+              <Single Name="NoManualAddress" Type="bool">False</Single>
+              <Single Name="OnlineChangeEnabled" Type="bool">False</Single>
+              <Single Name="TraceSystemRecord" Type="bool">False</Single>
+              <Single Name="IndexInDevDesc" Type="long">1</Single>
+              <Single Name="MapOnlyNew" Type="bool">False</Single>
+              <Single Name="LogicalParameter" Type="bool">False</Single>
+              <Single Name="MapSize" Type="uint">0</Single>
+              <Single Name="MapOffset" Type="uint">0</Single>
+            </Single>
+          </List2>
+          <Single Name="LmGuid" Type="System.Guid">31088397-c3a6-5252-ab75-caad76056950</Single>
+          <Null Name="Sections" />
+          <Single Name="AlwaysMapping" Type="bool">False</Single>
+          <Null Name="EditorName" />
+          <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+          <Single Name="CreateBitChannels" Type="bool">False</Single>
+        </Single>
+        <Single Name="Disable" Type="bool">False</Single>
+        <Single Name="Exclude" Type="bool">False</Single>
+        <List Name="Connectors" Type="System.Collections.ArrayList" />
+        <Single Name="ConnectorList" Type="{52a6325f-063a-4748-86b6-ec8aa02d3232}" Method="IArchivable">
+          <List Name="InnerList" Type="System.Collections.ArrayList">
+            <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+              <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Namespace" Type="string">local</Single>
+                <Single Name="Identifier" Type="string">itf.localbus.name</Single>
+                <Single Name="Default" Type="string">Local Bus</Single>
+              </Single>
+              <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="IsExplicit" Type="bool">False</Single>
+              <Single Name="ModuleType" Type="ushort">32777</Single>
+              <Single Name="Interface" Type="string">Wago.LocalBus</Single>
+              <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+              <Single Name="ConnectorId" Type="int">1</Single>
+              <Single Name="Hostpath" Type="int">-1</Single>
+              <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+                <List Name="Adapters" Type="System.Collections.ArrayList">
+                  <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+                    <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                      <Single Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+                        <Single Name="Type" Type="int">32778</Single>
+                        <Single Name="Id" Type="string">Wago 750-Series Local Bus Interface</Single>
+                        <Single Name="Version" Type="string">1.4.0.2</Single>
+                        <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+                      </Single>
+                    </Array>
+                    <Array Name="Modules" Type="System.Guid">
+                      <Single Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                    </Array>
+                  </Single>
+                </List>
+              </Single>
+              <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+                <List2 Name="Params" />
+                <Single Name="LmGuid" Type="System.Guid">e2540c85-3ccb-58ce-86d2-b153befba5e0</Single>
+                <Null Name="Sections" />
+                <Single Name="AlwaysMapping" Type="bool">False</Single>
+                <Null Name="EditorName" />
+                <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+                <Single Name="CreateBitChannels" Type="bool">False</Single>
+              </Single>
+              <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+                <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+                <Null Name="RequiredTasks" />
+                <Single Name="NeedsBusCycle" Type="bool">False</Single>
+                <Single Name="BusCycleTask" Type="string"></Single>
+                <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                <Single Name="IoAppSet" Type="bool">False</Single>
+                <Array Name="PositionIds" Type="long">ERAAAAAAAAASEAAAAAAAABMQAAAAAAAA</Array>
+                <Single Name="UseSlowestTask" Type="bool">False</Single>
+                <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+                <Single Name="GenerateForceVariables" Type="bool">False</Single>
+                <Single Name="EnableDiagnosis" Type="bool">False</Single>
+                <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+                <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+                <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+                <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+                <Single Name="DeviceScanSupported" Type="bool">False</Single>
+                <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+                <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+                <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+                <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+                <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+                <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+                <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+                <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              </Single>
+              <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+              <Single Name="ModuleId" Type="int">-1</Single>
+              <Null Name="IoUpdateTask" />
+              <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+              <List Name="Constraints" Type="System.Collections.ArrayList" />
+              <Single Name="hideInStatusPage" Type="bool">False</Single>
+              <Single Name="updateAllowed" Type="bool">True</Single>
+              <Single Name="fixedInputAddress" Type="string"></Single>
+              <Single Name="fixedOutputAddress" Type="string"></Single>
+              <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+              <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+              <Single Name="InitialStatusFlag" Type="uint">1</Single>
+              <Single Name="UseBlobInitConst" Type="bool">False</Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="ConnectorGroup" Type="uint">0</Single>
+              <Array Name="AllowedPages" Type="string" />
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="Client" Type="string"></Single>
+              <Single Name="MaxInputSize" Type="uint">0</Single>
+              <Single Name="MaxOutputSize" Type="uint">0</Single>
+              <Single Name="MaxInOutputSize" Type="uint">0</Single>
+              <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="ClientConnectorInterface" Type="string"></Single>
+              <Single Name="ClientConnectorId" Type="int">-1</Single>
+              <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+            </Single>
+            <Single Type="{850f737d-2abf-45f4-89c1-63ed6b29593d}" Method="IArchivable">
+              <Single Name="VisibleInterfaceName" Type="{35cf7b1a-a4cd-490b-8ebe-385e61fcc6d9}" Method="IArchivable">
+                <Single Name="Namespace" Type="string">local</Single>
+                <Single Name="Identifier" Type="string">itf.modbus.name</Single>
+                <Single Name="Default" Type="string">MODBUS</Single>
+              </Single>
+              <Single Name="ConnectorObjectGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="IsExplicit" Type="bool">True</Single>
+              <Single Name="ModuleType" Type="ushort">4096</Single>
+              <Single Name="Interface" Type="string">Wago.MODBUS</Single>
+              <Single Name="Role" Type="{6827a808-5967-49c4-a827-10f6c446e075}">Parent</Single>
+              <Single Name="ConnectorId" Type="int">2</Single>
+              <Single Name="Hostpath" Type="int">-1</Single>
+              <Single Name="Adapters" Type="{1da2f14a-1c63-4268-9171-3b6869b8ccd6}" Method="IArchivable">
+                <List Name="Adapters" Type="System.Collections.ArrayList">
+                  <Single Type="{48ed2d53-8733-46f1-bf62-13f190518ba8}" Method="IArchivable">
+                    <Array Name="DefaultModules" Type="{05ee0b98-6639-4276-bc32-b75578b819ef}">
+                      <Single Type="{05ee0b98-6639-4276-bc32-b75578b819ef}" Method="IArchivable">
+                        <Single Name="Type" Type="int">32777</Single>
+                        <Single Name="Id" Type="string">1006 0001</Single>
+                        <Single Name="Version" Type="string">1.1.1.16</Single>
+                        <Single Name="BaseName" Type="string">$(DeviceName)</Single>
+                      </Single>
+                    </Array>
+                    <Array Name="Modules" Type="System.Guid">
+                      <Single Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                    </Array>
+                  </Single>
+                </List>
+              </Single>
+              <Single Name="HostParameterSet" Type="{abc12bfe-e34e-4b2c-a058-42c6e7e03a13}" Method="IArchivable">
+                <List2 Name="Params" />
+                <Single Name="LmGuid" Type="System.Guid">9298a2bb-3856-59e8-a0d4-881410fb26f5</Single>
+                <Null Name="Sections" />
+                <Single Name="AlwaysMapping" Type="bool">False</Single>
+                <Null Name="EditorName" />
+                <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+                <Single Name="CreateBitChannels" Type="bool">False</Single>
+              </Single>
+              <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+                <List Name="RequiredLibs" Type="System.Collections.ArrayList" />
+                <Null Name="RequiredTasks" />
+                <Single Name="NeedsBusCycle" Type="bool">True</Single>
+                <Single Name="BusCycleTask" Type="string"></Single>
+                <Single Name="IoApp" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                <Single Name="IoAppSet" Type="bool">False</Single>
+                <Array Name="PositionIds" Type="long" />
+                <Single Name="UseSlowestTask" Type="bool">False</Single>
+                <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+                <Single Name="GenerateForceVariables" Type="bool">False</Single>
+                <Single Name="EnableDiagnosis" Type="bool">False</Single>
+                <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+                <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+                <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+                <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+                <Single Name="DeviceScanSupported" Type="bool">False</Single>
+                <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+                <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+                <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+                <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+                <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">KeepCurrentValues</Single>
+                <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+                <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+                <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+                <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              </Single>
+              <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+              <Single Name="ModuleId" Type="int">-1</Single>
+              <Null Name="IoUpdateTask" />
+              <List Name="AdditionalInterfaces" Type="System.Collections.ArrayList" />
+              <List Name="Constraints" Type="System.Collections.ArrayList" />
+              <Single Name="hideInStatusPage" Type="bool">False</Single>
+              <Single Name="updateAllowed" Type="bool">True</Single>
+              <Single Name="fixedInputAddress" Type="string"></Single>
+              <Single Name="fixedOutputAddress" Type="string"></Single>
+              <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+              <List Name="AllowOnlyDevices" Type="System.Collections.ArrayList" />
+              <Single Name="InitialStatusFlag" Type="uint">1</Single>
+              <Single Name="UseBlobInitConst" Type="bool">False</Single>
+              <Single Name="AlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+              <Single Name="ConnectorGroup" Type="uint">0</Single>
+              <Array Name="AllowedPages" Type="string" />
+              <Single Name="AlwaysMapping" Type="bool">False</Single>
+              <Single Name="Client" Type="string"></Single>
+              <Single Name="MaxInputSize" Type="uint">0</Single>
+              <Single Name="MaxOutputSize" Type="uint">0</Single>
+              <Single Name="MaxInOutputSize" Type="uint">0</Single>
+              <Single Name="ClientTypeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+              <Single Name="ClientConnectorInterface" Type="string"></Single>
+              <Single Name="ClientConnectorId" Type="int">-1</Single>
+              <Single Name="AlwaysMappingDisabled" Type="bool">False</Single>
+            </Single>
+          </List>
+        </Single>
+        <Single Name="Attributes" Type="{1fdbedd8-b518-4ebd-99df-805f2f77c071}" Method="IArchivable">
+          <Dictionary Type="System.Collections.Hashtable" Name="Attributes">
+            <Entry>
+              <Key>
+                <Single Type="string">StdCommunicationLink</Single>
+              </Key>
+              <Value>
+                <Single Type="string">True</Single>
+              </Value>
+            </Entry>
+          </Dictionary>
+        </Single>
+        <Single Name="CommunicationSettings" Type="{58f2b04d-505d-4589-9fcf-0ec83491f9b2}" Method="IArchivable">
+          <Single Name="SaveLocally" Type="bool">False</Single>
+          <Single Name="CommunicationSettingFilter" Type="int">1</Single>
+          <Single Name="CommunicationSettingSorting" Type="int">0</Single>
+          <Single Name="TrackingMode" Type="int">5</Single>
+          <Single Name="GatewayGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Null Name="Address" />
+          <Single Name="PromptAtLogin" Type="bool">False</Single>
+          <Single Name="SimulationMode" Type="bool">False</Single>
+          <Single Name="SecureOnlineMode" Type="bool">False</Single>
+          <Single Name="SecureOnlineModeExplicitelySet" Type="bool">False</Single>
+          <Single Name="Name" Type="string"></Single>
+          <Single Name="MonitoringIntervalMsec" Type="int">200</Single>
+          <Null Name="ScanInformation" />
+          <Single Name="IsCommunicationEncrypted" Type="bool">False</Single>
+          <Single Name="IsDefaultNameTrackingFromScanActive" Type="bool">False</Single>
+        </Single>
+        <Single Name="IoProviderBase" Type="{848f25ec-eecf-4290-8329-7f6500fd2e0f}" Method="IArchivable">
+          <Array Name="UserBaseAddress" Type="string">
+            <Null />
+            <Null />
+            <Null />
+          </Array>
+        </Single>
+        <Single Name="GuidBusCycleTask" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="DriverInfo" Type="{4f958885-8d0a-4b58-83b6-29cfd1c9cfca}" Method="IArchivable">
+          <List Name="RequiredLibs" Type="System.Collections.ArrayList">
+            <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+              <Single Name="LibName" Type="string">IoStandard</Single>
+              <Single Name="Vendor" Type="string">System</Single>
+              <Single Name="Version" Type="string">*</Single>
+              <Single Name="Identifier" Type="string">iostandardlib</Single>
+              <List Name="FbInstances" Type="System.Collections.ArrayList" />
+              <Single Name="PlaceHolderLib" Type="string">IoStandard</Single>
+              <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+              <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+              <Single Name="AddedByAP" Type="bool">False</Single>
+              <Single Name="Client" Type="string"></Single>
+            </Single>
+            <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+              <Single Name="LibName" Type="string">WagoSysStandard</Single>
+              <Single Name="Vendor" Type="string">WAGO</Single>
+              <Single Name="Version" Type="string">*</Single>
+              <Single Name="Identifier" Type="string">wagostandardlib</Single>
+              <List Name="FbInstances" Type="System.Collections.ArrayList" />
+              <Single Name="PlaceHolderLib" Type="string">WagoSysStandard</Single>
+              <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+              <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+              <Single Name="AddedByAP" Type="bool">False</Single>
+              <Single Name="Client" Type="string"></Single>
+            </Single>
+            <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+              <Single Name="LibName" Type="string">3SLicense</Single>
+              <Single Name="Vendor" Type="string">3S - Smart Software Solutions GmbH</Single>
+              <Single Name="Version" Type="string">0.0.0.0</Single>
+              <Single Name="Identifier" Type="string">_3S_LICENSE</Single>
+              <List Name="FbInstances" Type="System.Collections.ArrayList" />
+              <Single Name="PlaceHolderLib" Type="string">3SLicense</Single>
+              <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+              <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+              <Single Name="AddedByAP" Type="bool">False</Single>
+              <Single Name="Client" Type="string">3SLicense</Single>
+            </Single>
+            <Single Type="{94d8f601-f8e4-4aaa-8f48-f3c3ec33bec1}" Method="IArchivable">
+              <Single Name="LibName" Type="string">WagoAppProcessorLoad</Single>
+              <Single Name="Vendor" Type="string">WAGO</Single>
+              <Single Name="Version" Type="string">*</Single>
+              <Single Name="Identifier" Type="string">processorloadlib</Single>
+              <List Name="FbInstances" Type="System.Collections.ArrayList">
+                <Single Type="{1a6d9caa-30e2-4c6c-aa84-7bcee3627153}" Method="IArchivable">
+                  <Single Name="FbName" Type="string">FbProcessorLoad</Single>
+                  <Single Name="BaseName" Type="string">ProcessorLoad</Single>
+                  <Single Name="Instance" Type="{47edf8ea-3f84-452c-b998-e18f878578d3}" Method="IArchivable">
+                    <Single Name="Variable" Type="string">ProcessorLoad</Single>
+                    <Single Name="Id" Type="long">-1</Single>
+                    <Single Name="CreateVariable" Type="bool">True</Single>
+                    <Single Name="DefaultVariable" Type="string"></Single>
+                    <Single Name="IoChannelFBInstance" Type="string"></Single>
+                  </Single>
+                  <Single Name="InitMethod" Type="string">AutoInitialize</Single>
+                  <List Name="CyclicCalls" Type="System.Collections.ArrayList" />
+                  <Single Name="Location" Type="{4da2c5bd-5291-436b-b8b0-6a4480112db7}">GVL</Single>
+                  <Single Name="FbNameDiag" Type="string"></Single>
+                  <Single Name="PositionId" Type="long">4100</Single>
+                </Single>
+              </List>
+              <Single Name="PlaceHolderLib" Type="string">WagoAppProcessorLoad</Single>
+              <Single Name="loadAsSystemLibrary" Type="bool">True</Single>
+              <Single Name="IsDiagnosisLib" Type="bool">False</Single>
+              <Single Name="AddedByAP" Type="bool">False</Single>
+              <Single Name="Client" Type="string"></Single>
+            </Single>
+          </List>
+          <Null Name="RequiredTasks" />
+          <Single Name="NeedsBusCycle" Type="bool">False</Single>
+          <Single Name="BusCycleTask" Type="string"></Single>
+          <Single Name="IoApp" Type="System.Guid">257804ce-c94e-4559-8cb4-31f261600c33</Single>
+          <Single Name="IoAppSet" Type="bool">True</Single>
+          <Array Name="PositionIds" Type="long">ARAAAAAAAAACEAAAAAAAAAMQAAAAAAAA</Array>
+          <Single Name="UseSlowestTask" Type="bool">False</Single>
+          <Single Name="NeedsBusCycleBeforeRead" Type="bool">False</Single>
+          <Single Name="GenerateForceVariables" Type="bool">False</Single>
+          <Single Name="EnableDiagnosis" Type="bool">False</Single>
+          <Single Name="AdditionalParameterSetting" Type="uint">0</Single>
+          <Single Name="ShowWarningsAsErrors" Type="bool">False</Single>
+          <Single Name="DiagnosisCheckboxMode" Type="{96a7290c-b036-44e1-a965-c279cddf134b}">Enabled</Single>
+          <Single Name="SkipOverlapCheck" Type="bool">False</Single>
+          <Single Name="DeviceScanSupported" Type="bool">False</Single>
+          <Single Name="DeviceNominateSupported" Type="bool">False</Single>
+          <Single Name="DeviceIdentifySupported" Type="bool">False</Single>
+          <Single Name="DeviceUploadDescriptionSupported" Type="bool">False</Single>
+          <Single Name="UpdateIOsInStop" Type="bool">False</Single>
+          <Single Name="StopResetBehaviourSetting" Type="{f333ad6d-dc68-4baa-a3a3-20be74eb2e18}">SetToDefault</Single>
+          <Single Name="StopResetBehaviourUserProgram" Type="string"></Single>
+          <Single Name="BusCycleTaskGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="PlcAlwaysMapping" Type="bool">False</Single>
+          <Single Name="PlCAlwaysMappingMode" Type="{9d1b24fb-5845-4978-8458-564ca7830fec}">OnlyIfUnused</Single>
+        </Single>
+        <List Name="CustomItems" Type="{7d23305a-7bb9-46e6-b58b-01ea5694add1}" />
+        <Single Name="IoConfigGlobalsGuid" Type="System.Guid">8c54ddf5-a281-568d-826b-dab87a129bbf</Single>
+        <Single Name="IoConfigGlobalsMappingGuid" Type="System.Guid">001e9a48-bba9-530f-8d5a-9376274f3be2</Single>
+        <Single Name="IoConfigVarConfigGuid" Type="System.Guid">95e7d42a-473b-5638-a4b0-63cbc68a327d</Single>
+        <Single Name="IoConfigErrorPouGuid" Type="System.Guid">2c7091d6-1a5a-5d4e-aeaa-b83a17b09172</Single>
+        <Single Name="ModuleId" Type="int">-1</Single>
+        <Null Name="IoUpdateTask" />
+        <Array Name="FunctionalChildren" Type="System.Guid">
+          <Single Type="System.Guid">40b404f9-e5dc-42c6-907f-c89f4a517386</Single>
+        </Array>
+        <Null Name="UserManagement" />
+        <Null Name="RightsManagement" />
+        <Single Name="showParamsInDevDescOrder" Type="bool">False</Single>
+        <Single Name="fixedInputAddress" Type="string"></Single>
+        <Single Name="fixedOutputAddress" Type="string"></Single>
+        <Single Name="HostObjectGuid" Type="System.Guid">4c8869b9-ea0d-419e-9ed6-ad003f253fa6</Single>
+        <Single Name="DownloadParamsDevDescOrder" Type="bool">False</Single>
+        <Single Name="CreateBitChannels" Type="bool">False</Single>
+        <Null Name="AdditionalStringTable" />
+        <Null Name="OnlineHelpUrl" />
+        <Single Name="InteractiveLoginMode" Type="int">-1</Single>
+        <Single Name="UseDeviceApplicationStructure" Type="bool">False</Single>
+        <Single Name="AllowSymbolicVarAccessInSyncWithIecCycle" Type="bool">False</Single>
+        <Single Name="LogicalDeviceList" Type="{ec1f8a3a-98c6-404c-883e-ce9e54b42542}" Method="IArchivable">
+          <List Name="InnerList" Type="System.Collections.ArrayList" />
+        </Single>
+        <Single Name="LogicalLanguageModelPositionId" Type="long">-1</Single>
+        <List Name="SupportedLogicalBusSystems" Type="System.Collections.ArrayList" />
+        <Single Name="MappingPossible" Type="bool">False</Single>
+        <Single Name="HidePropertiesDialog" Type="bool">False</Single>
+        <Null Name="PlaceholderResolution" />
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+      <Array Name="Path" Type="string" />
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+  </List2>
+  <Null Name="ProfileName" />
+</Single>  </StructuredView>
+</ExportFile>

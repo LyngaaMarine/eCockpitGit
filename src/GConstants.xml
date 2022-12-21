@@ -1,0 +1,707 @@
+<ExportFile>
+  <StructuredView Guid="{21af5390-2942-461a-bf89-951aaf6999f1}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">fedc25a9-6cae-4b1c-a394-d3f88dab58bb</Single>
+        <Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="Name" Type="string">GConstants</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">ffbfa93a-b94d-45fc-a329-229860183b1d</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638072135825537480</Single>
+      </Single>
+      <Single Name="Object" Type="{ffbfa93a-b94d-45fc-a329-229860183b1d}" Method="IArchivable">
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">248</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">{attribute 'qualified_only'}</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">249</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">VAR_GLOBAL CONSTANT</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">250</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	aPathLenght						:INT 			:=		200;			//The size of the standard path variable</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">251</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	exponents						:ARRAY[0..8] OF REAL :=[1.0,10.0,100.0,1000.0,10000.0,10000.0,100000.0,1000000.0,10000000.0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">419</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">420</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	maxTasks						:BYTE			:=		15;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">252</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	//UI Constants</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">253</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	maxAccessLevels					:BYTE			:=		3;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">254</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	adminPasscode					:STRING(20) 	:=		'6480915037';	//The admin passcode</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">255</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	//Data Server Constants</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">256</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	dataServerMaxModuleSettings		:BYTE			:=		3;			//Max amount of settings clients which can be open simultanious</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">418</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	clientGroupMaxAmount			:BYTE			:=		40;			//Max amount of client which can be added to a client group</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">258</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	//Module Communication Buffer Size</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">259</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	moduleCommunicationBufferSize	:WORD			:=		4096;		//Size of recieve data buffer</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">261</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">262</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	//Module System</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">264</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	maxDepth						:BYTE 			:=		16;			//The max amount of levels deep the module manager will go</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">265</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">338</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryMaskSint					:ARRAY[0..8] OF SINT	:=	[0,1,3,7,15,31,63,127,-1];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">339</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryMaskInt					:ARRAY[0..16] OF INT	:=	[0,1,3,7,15,31,63,127,255,511,1023,2047,4095,8191,16383,32767,-1];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">340</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryMaskDint					:ARRAY[0..32] OF DINT	:=	[</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">341</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">0,1,3,7,15,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">342</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">31,63,127,255,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">343</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">511,1023,2047,4095,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">344</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">8191,16383,32767,65535,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">345</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">131071,262143,524287,1048575,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">346</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">2097151,4194303,8388607,16777215,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">347</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">33554431,67108863,134217727,268435455,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">348</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">536870911,1073741823,2147483647,-1];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">349</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryMaskLint					:ARRAY[0..64] OF LINT	:=	[</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">350</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">0,1,3,7,15,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">351</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">31,63,127,255,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">352</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">511,1023,2047,4095,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">353</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">8191,16383,32767,65535,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">354</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">131071,262143,524287,1048575,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">355</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">2097151,4194303,8388607,16777215,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">356</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">33554431,67108863,134217727,268435455,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">357</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">536870911,1073741823,2147483647,4294967295,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">358</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">8589934591,17179869183,34359738367,68719476735,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">359</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">137438953471,274877906943,549755813887,1099511627775,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">360</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">2199023255551,4398046511103,8796093022207,17592186044415,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">361</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">35184372088831,70368744177663,140737488355327,281474976710655,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">362</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">562949953421311,1125899906842623,2251799813685247,4503599627370495,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">363</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">9007199254740991,18014398509481983,36028797018963967,72057594037927935,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">364</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">144115188075855871,288230376151711743,576460752303423487,1152921504606846975,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">365</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">2305843009213693951,4611686018427387903,9223372036854775807,-1];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">337</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">367</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryInvMaskSint				:ARRAY[0..8] OF SINT	:=	[-1,-2,-4,-8,-16,-32,-64,-128,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">368</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryInvMaskInt				:ARRAY[0..16] OF INT	:=	[-1,-2,-4,-8,-16,-32,-64,-128,-256,-512,-1024,-2048,-4096,-8192,-16384,-32768,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">377</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryInvMaskDint				:ARRAY[0..32] OF DINT	:=	[</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">394</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-1,-2,-4,-8,-16,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">395</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-32,-64,-128,-256,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">396</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-512,-1024,-2048,-4096,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">397</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-8192,-16384,-32768,-65536,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">398</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-131072,-262144,-524288,-1048576,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">399</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-2097152,-4194304,-8388608,-16777216,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">400</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-33554432,-67108864,-134217728,-268435456,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">401</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-536870912,-1073741824,-2147483648,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">366</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryInvMaskLint				:ARRAY[0..64] OF LINT	:=	[</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">402</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-1,-2,-4,-8,-16,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">403</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-32,-64,-128,-256,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">404</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-512,-1024,-2048,-4096,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">405</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-8192,-16384,-32768,-65536,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">406</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-131072,-262144,-524288,-1048576,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">407</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-2097152,-4194304,-8388608,-16777216,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">408</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-33554432,-67108864,-134217728,-268435456,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">409</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-536870912,-1073741824,-2147483648,-4294967296,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">410</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-8589934592,-17179869184,-34359738368,-68719476736,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">411</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-137438953472,-274877906944,-549755813888,-1099511627776,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">412</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-2199023255552,-4398046511104,-8796093022208,-17592186044416,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">413</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-35184372088832,-70368744177664,-140737488355328,-281474976710656,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">414</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-562949953421312,-1125899906842624,-2251799813685248,-4503599627370496,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">415</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-9007199254740992,-18014398509481984,-36028797018963968,-72057594037927936,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">416</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-144115188075855872,-288230376151711744,-576460752303423488,-1152921504606846976,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">417</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">-2305843009213693952,-4611686018427387904,-9223372036854775808,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">266</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">267</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryMaskByte					:ARRAY[0..8] OF BYTE	:=	[0,1,3,7,15,31,63,127,255];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">268</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryMaskWord					:ARRAY[0..16] OF WORD	:=	[0,1,3,7,15,31,63,127,255,511,1023,2047,4095,8191,16383,32767,65535];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">269</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryMaskDWord					:ARRAY[0..32] OF DWORD	:=	[</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">329</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">0,1,3,7,15,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">330</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">31,63,127,255,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">331</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">511,1023,2047,4095,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">332</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">8191,16383,32767,65535,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">333</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">131071,262143,524287,1048575,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">334</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">2097151,4194303,8388607,16777215,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">335</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">33554431,67108863,134217727,268435455,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">336</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">536870911,1073741823,2147483647,4294967295];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">274</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryMaskLWord					:ARRAY[0..64] OF LWORD	:=	[</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">305</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">0,1,3,7,15,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">306</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">31,63,127,255,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">307</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">511,1023,2047,4095,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">308</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">8191,16383,32767,65535,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">309</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">131071,262143,524287,1048575,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">310</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">2097151,4194303,8388607,16777215,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">311</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">33554431,67108863,134217727,268435455,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">312</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">536870911,1073741823,2147483647,4294967295,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">313</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">8589934591,17179869183,34359738367,68719476735,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">314</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">137438953471,274877906943,549755813887,1099511627775,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">315</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">2199023255551,4398046511103,8796093022207,17592186044415,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">316</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">35184372088831,70368744177663,140737488355327,281474976710655,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">317</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">562949953421311,1125899906842623,2251799813685247,4503599627370495,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">318</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">9007199254740991,18014398509481983,36028797018963967,72057594037927935,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">319</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">144115188075855871,288230376151711743,576460752303423487,1152921504606846975,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">320</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">2305843009213693951,4611686018427387903,9223372036854775807,18446744073709551615];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">273</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string"></Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">270</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryInvMaskByte				:ARRAY[0..8] OF BYTE	:=	[255,254,252,248,240,224,192,128,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">271</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryInvMaskWord				:ARRAY[0..16] OF WORD	:=	[65535,65534,65532,65528,65520,65504,65472,65408,65280,65024,64512,63488,61440,57344,49152,32768,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">272</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryInvMaskDWord				:ARRAY[0..32] OF DWORD	:=	[</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">321</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">4294967295,4294967294,4294967292,4294967288,4294967280,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">322</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">4294967264,4294967232,4294967168,4294967040,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">323</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">4294966784,4294966272,4294965248,4294963200,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">324</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">4294959104,4294950912,4294934528,4294901760,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">325</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">4294836224,4294705152,4294443008,4293918720,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">326</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">4292870144,4290772992,4286578688,4278190080,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">327</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">4261412864,4227858432,4160749568,4026531840,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">328</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">3758096384,3221225472,2147483648,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">283</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	binaryInvMaskLWord				:ARRAY[0..64] OF LWORD	:=	[</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">284</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744073709551615,18446744073709551614,18446744073709551612,18446744073709551608,18446744073709551600,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">290</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744073709551584,18446744073709551552,18446744073709551488,18446744073709551360,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">291</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744073709551104,18446744073709550592,18446744073709549568,18446744073709547520,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">292</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744073709543424,18446744073709535232,18446744073709518848,18446744073709486080,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">293</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744073709420544,18446744073709289472,18446744073709027328,18446744073708503040,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">294</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744073707454464,18446744073705357312,18446744073701163008,18446744073692774400,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">295</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744073675997184,18446744073642442752,18446744073575333888,18446744073441116160,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">296</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744073172680704,18446744072635809792,18446744071562067968,18446744069414584320,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">297</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446744065119617024,18446744056529682432,18446744039349813248,18446744004990074880,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">298</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446743936270598144,18446743798831644672,18446743523953737728,18446742974197923840,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">299</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446741874686296064,18446739675663040512,18446735277616529408,18446726481523507200,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">300</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446708889337462784,18446673704965373952,18446603336221196288,18446462598732840960,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">301</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18446181123756130304,18445618173802708992,18444492273895866368,18442240474082181120,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">302</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18437736874454810624,18428729675200069632,18410715276690587648,18374686479671623680,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">303</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">18302628885633695744,18158513697557839872,17870283321406128128,17293822569102704640,</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">304</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">16140901064495857664,13835058055282163712,9223372036854775808,0];</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">201</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_VAR</Single>
+              </Single>
+            </Array>
+          </Single>
+        </Single>
+        <Null Name="NetVarProperties" />
+        <Single Name="ParameterList" Type="bool">False</Single>
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+      <Array Name="Path" Type="string" />
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+  </List2>
+  <Null Name="ProfileName" />
+</Single>  </StructuredView>
+</ExportFile>

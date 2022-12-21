@@ -1,0 +1,530 @@
+<ExportFile>
+  <StructuredView Guid="{21af5390-2942-461a-bf89-951aaf6999f1}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">23282bbb-c964-403d-8f16-7bcaeedad0bb</Single>
+        <Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="Name" Type="string">FU_sDeleteRightBIBO</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">829a18f2-c514-4f6e-9634-1df173429203</Single>
+            </Key>
+            <Value>
+              <Single Type="{829a18f2-c514-4f6e-9634-1df173429203}" Method="IArchivable">
+                <Dictionary Type="{fa2ee218-a39b-4b6d-b249-49dbddbd168a}" Name="ParentObjects">
+                  <Entry>
+                    <Key>
+                      <Single Type="System.Guid">21af5390-2942-461a-bf89-951aaf6999f1</Single>
+                    </Key>
+                    <Value>
+                      <Single Type="System.Guid">622a5b46-d587-4e28-af9f-a216b340b9df</Single>
+                    </Value>
+                  </Entry>
+                </Dictionary>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">6f9dac99-8de1-4efc-8465-68ac443b7d08</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid">
+          <Single Type="System.Guid">a9ed5b7e-75c5-4651-af16-d2c27e98cb94</Single>
+          <Single Type="System.Guid">3b83b776-fb25-43b8-99f2-3c507c9143fc</Single>
+        </Array>
+        <Single Name="Timestamp" Type="long">638072130240820365</Single>
+      </Single>
+      <Single Name="Object" Type="{6f9dac99-8de1-4efc-8465-68ac443b7d08}" Method="IArchivable">
+        <Single Name="SpecialFunc" Type="{0db3d7bb-cde0-4416-9a7b-ce49a0124323}">None</Single>
+        <Single Name="Implementation" Type="{3b83b776-fb25-43b8-99f2-3c507c9143fc}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">543</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">InAdd				:=		ADR(sStr);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">545</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">InAdd2				:=		ADR(sStr);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">544</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">StrAdd				:=		ADR(sOut);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">540</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">IF wPos &gt; 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">541</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	wPos			:=		wPos - 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">542</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">394</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">IF wLen &gt; 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">497</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	WHILE InAdd2^ &lt;&gt; 0 DO</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">498</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		InAdd2		:=		InAdd2 + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">499</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		InSize		:=		InSize + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">500</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	END_WHILE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">524</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	IF wPos = 0 AND wLen &gt;= InSize THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">539</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		StrAdd^		:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">525</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		RETURN;		</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">527</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">528</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF InSize - wOutSize &gt; wLen + wPos THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">529</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			wLen		:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">530</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			wPos		:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">531</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">532</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			IF InSize &lt; wLen + wPos THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">533</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				wLen	:=		wLen - ((wLen + wPos) - InSize);</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">534</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				wPos	:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">535</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">536</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">				wPos	:=		InSize - wPos - wLen;		</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">537</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">526</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">538</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">457</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	WHILE wPos &gt; 0 DO</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">396</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		wPos		:=		wPos - 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">397</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF InAdd^ = 0 OR wOutSize = 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">398</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			StrAdd^	:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">399</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			RETURN;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">400</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">401</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		StrAdd^		:=		InAdd^;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">402</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		InAdd		:=		InAdd + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">403</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		StrAdd		:=		StrAdd + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">404</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		wOutSize	:=		wOutSize - 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">405</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	END_WHILE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">406</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	WHILE wLen &gt; 0 DO</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">407</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		wLen		:=		wLen - 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">408</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF InAdd^ = 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">409</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			StrAdd^	:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">410</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			RETURN;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">411</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">412</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		InAdd		:=		InAdd + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">413</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	END_WHILE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">414</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	WHILE InAdd^ &lt;&gt; 0 DO</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">415</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF wOutSize = 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">416</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			StrAdd^	:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">417</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			RETURN;			</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">418</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">419</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		StrAdd^		:=		InAdd^;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">420</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		InAdd		:=		InAdd + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">421</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		StrAdd		:=		StrAdd + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">422</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		wOutSize	:=		wOutSize - 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">423</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	END_WHILE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">424</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	StrAdd^			:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">425</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">ELSE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">426</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	WHILE InAdd^ &lt;&gt; 0 DO</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">427</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		IF wOutSize = 0 THEN</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">428</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			StrAdd^	:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">429</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">			RETURN;			</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">430</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		END_IF</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">431</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		StrAdd^		:=		InAdd^;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">432</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		InAdd		:=		InAdd + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">433</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		StrAdd		:=		StrAdd + 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">434</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">		wOutSize	:=		wOutSize - 1;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">435</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	END_WHILE</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">436</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	StrAdd^			:=		0;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">386</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_IF</Single>
+              </Single>
+            </Array>
+          </Single>
+        </Single>
+        <Single Name="Interface" Type="{a9ed5b7e-75c5-4651-af16-d2c27e98cb94}" Method="IArchivable">
+          <Single Name="TextDocument" Type="{f3878285-8e4f-490b-bb1b-9acbb7eb04db}" Method="IArchivable">
+            <Array Name="TextLines" Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}">
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">546</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">//This functions deletes a part of a string values are counted from the right instead of the left</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">547</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">// +-----------+----------+----------+-----------------------------------------------------------------------------------------------------------------------+</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">548</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">// |**Version**|**Author**| **Date** |**Changes**                                                                                                            |</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">549</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">// +-----------+----------+----------+-----------------------------------------------------------------------------------------------------------------------+</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">550</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">// | 1         | NSN      | 22-02-19 | Creation                                                                                                              |</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">551</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">// +-----------+----------+----------+-----------------------------------------------------------------------------------------------------------------------+</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">552</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">FUNCTION FU_sDeleteRightBIBO : BOOL</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">553</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">VAR_IN_OUT</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">554</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	sOut		:STRING(1);			//Output String</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">555</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	sStr		:STRING(1);		//Input String	</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">556</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">557</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">VAR_INPUT</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">558</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	wLen		:WORD;				//Amount to trim from end</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">559</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	wPos		:WORD;				//Position to delete from</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">560</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	wOutSize	:WORD;				//Output String Size</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">561</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">562</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">VAR</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">563</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	InAdd		:POINTER TO BYTE;	//Address of input string</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">564</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	InAdd2		:POINTER TO BYTE;	//Address of input string</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">565</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	StrAdd		:POINTER TO BYTE;	//Address of output string</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">566</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">	InSize		:WORD;</Single>
+              </Single>
+              <Single Type="{a5de0b0b-1cb5-4913-ac21-9d70293ec00d}" Method="IArchivable">
+                <Single Name="Id" Type="long">301</Single>
+                <Null Name="Tag" />
+                <Single Name="Text" Type="string">END_VAR</Single>
+              </Single>
+            </Array>
+          </Single>
+        </Single>
+        <Single Name="UniqueIdGenerator" Type="string">566</Single>
+        <Single Name="POULevel" Type="{8e575c5b-1d37-49c6-941b-5c0ec7874787}">Standard</Single>
+        <List Name="ChildObjectGuids" Type="System.Collections.ArrayList" />
+        <Single Name="AddAttributeSubsequent" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">622a5b46-d587-4e28-af9f-a216b340b9df</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">String</Single>
+        <Single Type="string">Big InOutput</Single>
+        <Single Type="string">Edit</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+  </List2>
+  <Null Name="ProfileName" />
+</Single>  </StructuredView>
+</ExportFile>

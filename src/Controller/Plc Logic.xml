@@ -12,7 +12,7 @@
         <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
         <Single Name="TypeGuid" Type="System.Guid">40b404f9-e5dc-42c6-907f-c89f4a517386</Single>
         <Array Name="EmbeddedTypeGuids" Type="System.Guid" />
-        <Single Name="Timestamp" Type="long">638071504810770656</Single>
+        <Single Name="Timestamp" Type="long">638072099263451369</Single>
       </Single>
       <Single Name="Object" Type="{40b404f9-e5dc-42c6-907f-c89f4a517386}" Method="IArchivable" />
       <Single Name="ParentSVNodeGuid" Type="System.Guid">4c8869b9-ea0d-419e-9ed6-ad003f253fa6</Single>

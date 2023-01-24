@@ -1,0 +1,21 @@
+{
+    "TextList": [
+        {
+            "TextID": 322, 
+            "TextDefault": "WHATUP", 
+            "LanguageTexts": [
+                "asdga"
+            ]
+        }, 
+        {
+            "TextID": 289, 
+            "TextDefault": "YOYYO", 
+            "LanguageTexts": [
+                "bxcvb"
+            ]
+        }
+    ], 
+    "LanguageList": [
+        "DKK"
+    ]
+}

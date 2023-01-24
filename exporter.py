@@ -61,6 +61,13 @@ def textExportDecl(object, path):
     f.close()
 
 
+def textExportImpl(object, path):
+    f = open(path + '.st', 'w')
+    if object.has_textual_implementation:
+        f.write(object.textual_implementation.text)
+    f.close()
+
+
 def loopObjects(object, path):
     children = object.get_children(False)
     if len(children) > 0:
@@ -85,6 +92,8 @@ def handleTextType(object, path, designator):
         textExportDeclImpl(object, path)
     elif designator == '%GETSET%':
         textExportDeclImpl(object, path)
+    elif designator == '%TRAN%':
+        textExportImpl(object, path)
     else:
         textExportDecl(object, path)
     loopObjects(object, path)
@@ -134,24 +143,45 @@ def handleLibrary(object, path):
     path = os.path.join(path, "%LIB%" + object.get_name())
     print('handleLibrary->path', path)
     object.export_native(path + '.xml', False)
-    # tree = ET.parse(path + '.xml')
-    # root = tree.getroot()
-    # list = {"TextList": [], "LanguageList": []}
-    # textList = root.find('./StructuredView/Single/List2/Single/Single/List[@Name="TextList"]')
-    # for child in textList:
-    #     textID = child.find("./Single/[@Name='TextID']")
-    #     if textID.text:
-    #         list["TextList"].append({
-    #             "TextID": int(textID.text),
-    #             "TextDefault": child.find("./Single/[@Name='TextDefault']").text,
-    #             "LanguageTexts": xMLListToPythList(child.find("./List/[@Name='LanguageTexts']"))
-    #         })
-    # languageList = root.find('./StructuredView/Single/List2/Single/Single/List[@Name="Languages"]')
-    # list["LanguageList"] = xMLListToPythList(languageList)
-    # ser = json.dumps(list, indent=4)
-    # print('handleTextList->ser', ser)
-    # writeDataToFile(ser, path + '.json')
+    tree = ET.parse(path + '.xml')
     # os.remove(path + '.xml')
+    root = tree.getroot()
+    list = {"libraries": [], "placeholders": []}
+    libList = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/List')
+    for item in libList:
+        params = item.find('./Array[@Name="Params"]')
+        paramsList = []
+        if len(params) > 0:
+            for param in params:
+                paramsList.append({
+                    "name": param.find('./Single[@Name="Name"]').text,
+                    "positionToSave": param.find('./Single[@Name="Exp"]/Single[@Name="PositionToSave"]').text,
+                    "longValue": param.find('./Single[@Name="Exp"]/Single[@Name="LongValue"]').text,
+                    "typeClass": param.find('./Single[@Name="Exp"]/Single[@Name="TypeClass"]').text,
+                    "negative": param.find('./Single[@Name="Exp"]/Single[@Name="Negative"]').text,
+                    "originalTypeClass": param.find('./Single[@Name="Exp"]/Single[@Name="OriginalTypeClass"]').text,
+                })
+        list['libraries'].append({
+            "defaultResolution": item.find('./Single[@Name="DefaultResolution"]').text,
+            "optional": item.find('./Single[@Name="Optional"]').text,
+            "placeholderName": item.find('./Single[@Name="PlaceholderName"]').text,
+            "resolverGuid": item.find('./Single[@Name="ResolverGuid"]').text,
+            "id": item.find('./Single[@Name="Id"]').text,
+            "namespace": item.find('./Single[@Name="Namespace"]').text,
+            "systemLibrary": item.find('./Single[@Name="SystemLibrary"]').text,
+            "hideWhenReferencedAsDependency": item.find('./Single[@Name="HideWhenReferencedAsDependency"]').text,
+            "publishSymbolsInContainer": item.find('./Single[@Name="PublishSymbolsInContainer"]').text,
+            "qualifiedOnly": item.find('./Single[@Name="QualifiedOnly"]').text,
+            "linkAllContent": item.find('./Single[@Name="LinkAllContent"]').text,
+            "params": paramsList,
+        })
+    placeList = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Dictionary[@Name="PlaceholderRedirectionTable"]')
+    for item in placeList:
+        list['placeholders'].append({
+            "key": item.find('./Key/Single').text,
+            "value": item.find('./Value/Single').text,
+        })
+    writeDataToFile(json.dumps(list, indent=4), path + '.json')
 
 
 def handlePLCKBUS(object, path):
@@ -161,17 +191,23 @@ def handlePLCKBUS(object, path):
     tree = ET.parse(tempPath + '.xml')
     #os.remove(tempPath + '.xml')
     root = tree.getroot()
-    list = {"TextList": [], "LanguageList": []}
-    deviceInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Single[@Name="DefaultDeviceInfo"]')
-    list['name'] = deviceInfo.find('./Single[@Name="Name"]').text
-    list['vendor'] = deviceInfo.find('./Single[@Name="Vendor"]').text
-    list['ordernumber'] = deviceInfo.find('./Single[@Name="OrderNumber"]').text
+    list = {}
     if root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Single[@Name="Name"]').text == 'Kbus':
+        deviceInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Single[@Name="DefaultDeviceInfo"]')
+        list['name'] = deviceInfo.find('./Single[@Name="Name"]').text
+        list['vendor'] = deviceInfo.find('./Single[@Name="Vendor"]').text
         path = os.path.join(path, "%KBUS%" + object.get_name())
+        writeDataToFile(json.dumps(list, indent=4), path + '.json')
     else:
+        deviceInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Single[@Name="DefaultDeviceInfo"]')
+        list['name'] = deviceInfo.find('./Single[@Name="Name"]').text
+        list['vendor'] = deviceInfo.find('./Single[@Name="Vendor"]').text
+        list['ordernumber'] = deviceInfo.find('./Single[@Name="OrderNumber"]').text
+        networkInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Dictionary/Entry/Value/Single/List2[@Name="ProtocolAddresses"]/Single/Single[@Name="Address"]')
+        list['ipaddress'] = networkInfo.text
         path = os.path.join(path, "%PLC%" + object.get_name())
-    writeDataToFile(json.dumps(list, indent=4), path + '.json')
-    loopObjects(object, path)
+        writeDataToFile(json.dumps(list, indent=4), path + '.json')
+        loopObjects(object, path)
 
 
 def handleApplication(object, path):
@@ -182,7 +218,7 @@ def handleApplication(object, path):
 
 def handleProjectSettings(object, path):
     print('handleProjectSettings->path', path)
-    handleNativeExport(object, os.path.join(path, "%PS%" + object.get_name()))
+    handleNativeExport(object, os.path.join(path, "%PS%" + object.get_name()) + '.xml')
 
 
 def handleVisuStyle(object, path):
@@ -192,9 +228,35 @@ def handleVisuStyle(object, path):
 
 
 def handleVisualization(object, path):
-    path = os.path.join(path, "%VISU%" + object.get_name())
     print('handleVisualization->path', path)
+    handleNativeExport(object, os.path.join(path, "%VISU%" + object.get_name()) + '.xml')
+
+
+def handleImagePool(object, path):
+    path = os.path.join(path, "%IMP%" + object.get_name())
+    print('handleImagePool->path', path)
     object.export_native(path + '.xml', False)
+    tree = ET.parse(path + '.xml')
+    os.remove(path + '.xml')
+    root = tree.getroot()
+    list = {"imagepool": [], "imagedata": []}
+    imageList = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/List[@Name="BitmapPool"]')
+    for item in imageList:
+        id = item.find('./Single[@Name="BitmapID"]').text
+        print(id)
+        if id:
+            list['imagepool'].append({"id": id, "fileID": item.find('./Single[@Name="FileID"]').text, "itemID": item.find('./Single[@Name="ItemID"]').text})
+    imageData = root.findall('./StructuredView/Single/List2/Single[@Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}"]')
+    for item in imageData:
+        updateMode = item.find('./Single[@Name="Object"]/Single[@Name="AutoUpdateMode"]')
+        if updateMode is not None:
+            list['imagedata'].append({
+                "name": item.find('./Single[@Name="MetaObject"]/Single[@Name="Name"]').text,
+                "guid": item.find('./Single[@Name="MetaObject"]/Single[@Name="Guid"]').text,
+                "autoUpdateMode": updateMode.text,
+                "data": item.find('./Single[@Name="Object"]/Array[@Name="Data"]').text,
+                "frozen": item.find('./Single[@Name="Object"]/Single[@Name="Frozen"]').text})
+    writeDataToFile(json.dumps(list, indent=4), path + '.json')
 
 
 timeStampFinder = re.compile(r"(<Single Name=\"Timestamp\" Type=\"long\">)(\d+)(<\/Single>)")
@@ -244,7 +306,7 @@ def handleObject(object, path):
     elif type == '8e687a04-7ca7-42d3-be06-fcbda676c5ef':  # VisualizationStyle
         return ''
     elif type == 'f18bec89-9fef-401d-9953-2f11739a6808':  # Visualization
-        return ''
+        handleVisualization(object, path)
     elif type == '63784cbb-9ba0-45e6-9d69-babf3f040511':  # GlobalTextList
         handleTextList(object, path, True)
     elif type == '2bef0454-1bd3-412a-ac2c-af0f31dbc40f':  # TextList
@@ -252,7 +314,7 @@ def handleObject(object, path):
     elif type == '9031c721-d39f-4557-8a8f-ab12b4a71ebc':  # UnitConversion
         print('handleObject->UnsupportedType(UnitConversion)', type)
     elif type == 'bb0b9044-714e-4614-ad3e-33cbdf34d16b':  # ImagePool
-        handleNativeExport(object, os.path.join(path, "%IMP%" + object.get_name() + '.xml'))
+        handleImagePool(object, path)
     elif type == 'a56744ff-693f-4597-95f9-0e1c529fffc2':  # External File
         handleExternalFile(object, path)
     elif type == 'ae1de277-a207-4a28-9efb-456c06bd52f3':  # Task Configuration

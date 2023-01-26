@@ -1,4 +1,19 @@
 {
+    "version": "1.5.14.13", 
+    "modules": [
+        {
+            "ordernumber": "0750-1405", 
+            "vendor": "WAGO", 
+            "name": "0750-1405", 
+            "version": "1.5.1.15"
+        }, 
+        {
+            "ordernumber": "0750-0658", 
+            "vendor": "WAGO", 
+            "name": "0750-0658", 
+            "version": "1.5.1.16"
+        }
+    ], 
     "name": "750-8100 PFC100 2ETH ECO", 
     "ipaddress": "192.168.1.111", 
     "vendor": "WAGO", 

@@ -27,6 +27,14 @@ def getTypeSafe(object):
         return 'root'
 
 
+def trueFind(object, name):
+    children = object.get_children(False)
+    if children:
+        for child in children:
+            if child.get_name() == name:
+                return child
+
+
 def checkIsTypeWhoCanHaveFolderAndMember(object):
     type = getTypeSafe(object)
     if type == 'ffbfa93a-b94d-45fc-a329-229860183b1d':  # GVL
@@ -188,24 +196,25 @@ def handleImagePool(object, data, name):
 
 
 def handleLibraryManager(object, data, name):
-    jsonData = json.loads(data)
-    extData = """<ExportFile><StructuredView Guid="{21af5390-2942-461a-bf89-951aaf6999f1}"><Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable"><Null Name="Profile" /><List2 Name="EntryList"><Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable"><Single Name="IsRoot" Type="bool">True</Single><Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable"><Single Name="Guid" Type="System.Guid">d32049ad-4955-4da6-8986-a388d221fa9d</Single><Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Single Name="Name" Type="string">Library Manager</Single><Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" /><Single Name="TypeGuid" Type="System.Guid">adb5cb65-8e1d-4a00-b70a-375ea27582f3</Single><Null Name="EmbeddedTypeGuids" /><Single Name="Timestamp" Type="long">0</Single></Single><Single Name="Object" Type="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" Method="IArchivable"><List Name="Items" Type="System.Collections.ArrayList">"""
-    for library in jsonData["libraries"]:
-        if len(library['params']) > 0:
-            params = """<Array Name="Params" Type="{e38db981-1fbe-4d68-b5b0-d55ca6086daa}">"""
-            for param in library['params']:
-                params = params + """<Single Type="{e38db981-1fbe-4d68-b5b0-d55ca6086daa}" Method="IArchivable"><Single Name="Name" Type="string">""" + param["name"] + """</Single><Single Name="Exp" Type="{88513019-926a-4125-ab4f-260cf5e4c63e}" Method="IArchivable"><Null Name="Type" /><Single Name="PositionToSave" Type="long">""" + param["positionToSave"] + """</Single><Array Name="MessagesToSave" Type="{bc2be951-49f6-4f0f-b731-e31e36606f1e}" /><Single Name="LongValue" Type="long">""" + param["longValue"] + """</Single><Single Name="TypeClass" Type="{16f7aa24-038f-444e-9d81-b001bc091d35}">""" + param["typeClass"] + """</Single><Single Name="Negative" Type="bool">""" + param["negative"] + """</Single><Single Name="OriginalTypeClass" Type="{16f7aa24-038f-444e-9d81-b001bc091d35}">""" + param["originalTypeClass"] + """</Single></Single></Single>"""
-            params = params + """</Array>"""
-        else:
-            params = """<Array Name="Params" Type="{e38db981-1fbe-4d68-b5b0-d55ca6086daa}" />"""
-        extData = extData + """<Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable"><Single Name="DefaultResolution" Type="string">""" + library["defaultResolution"] + """</Single><Single Name="Optional" Type="bool">""" + library["optional"] + """</Single>""" + params + """<Single Name="PlaceholderName" Type="string">""" + library["placeholderName"] + """</Single><Single Name="ResolverGuid" Type="System.Guid">""" + library["resolverGuid"] + """</Single><Single Name="Id" Type="long">""" + library["id"] + """</Single><Single Name="Namespace" Type="string">""" + \
-            library["namespace"] + """</Single><Single Name="SystemLibrary" Type="bool">""" + library["systemLibrary"] + """</Single><Single Name="HideWhenReferencedAsDependency" Type="bool">""" + library["hideWhenReferencedAsDependency"] + """</Single><Single Name="PublishSymbolsInContainer" Type="bool">""" + library["publishSymbolsInContainer"] + """</Single><Single Name="QualifiedOnly" Type="bool">""" + library["qualifiedOnly"] + """</Single><Single Name="LinkAllContent" Type="bool">""" + library["linkAllContent"] + """</Single></Single>"""
-    extData = extData + """</List><Dictionary Type="System.Collections.Hashtable" Name="PlaceholderRedirectionTable">"""
-    for placeholder in jsonData["placeholders"]:
-        extData = extData + """<Entry><Key><Single Type="string">""" + placeholder["key"] + """</Single></Key><Value><Single Type="string">""" + placeholder["value"] + """</Single></Value></Entry>"""
-    extData = extData + """</Dictionary></Single><Single Name="ParentSVNodeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Array Name="Path" Type="string" /><Single Name="Index" Type="int">-1</Single></Single></List2><Null Name="ProfileName" /></Single>  </StructuredView></ExportFile>"""
-    writeTempFile(extData)
-    object.import_native(tempFilePath)
+    print()
+    # jsonData = json.loads(data)
+    # extData = """<ExportFile><StructuredView Guid="{21af5390-2942-461a-bf89-951aaf6999f1}"><Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable"><Null Name="Profile" /><List2 Name="EntryList"><Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable"><Single Name="IsRoot" Type="bool">True</Single><Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable"><Single Name="Guid" Type="System.Guid">d32049ad-4955-4da6-8986-a388d221fa9d</Single><Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Single Name="Name" Type="string">Library Manager</Single><Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" /><Single Name="TypeGuid" Type="System.Guid">adb5cb65-8e1d-4a00-b70a-375ea27582f3</Single><Null Name="EmbeddedTypeGuids" /><Single Name="Timestamp" Type="long">0</Single></Single><Single Name="Object" Type="{adb5cb65-8e1d-4a00-b70a-375ea27582f3}" Method="IArchivable"><List Name="Items" Type="System.Collections.ArrayList">"""
+    # for library in jsonData["libraries"]:
+    #     if len(library['params']) > 0:
+    #         params = """<Array Name="Params" Type="{e38db981-1fbe-4d68-b5b0-d55ca6086daa}">"""
+    #         for param in library['params']:
+    #             params = params + """<Single Type="{e38db981-1fbe-4d68-b5b0-d55ca6086daa}" Method="IArchivable"><Single Name="Name" Type="string">""" + param["name"] + """</Single><Single Name="Exp" Type="{88513019-926a-4125-ab4f-260cf5e4c63e}" Method="IArchivable"><Null Name="Type" /><Single Name="PositionToSave" Type="long">""" + param["positionToSave"] + """</Single><Array Name="MessagesToSave" Type="{bc2be951-49f6-4f0f-b731-e31e36606f1e}" /><Single Name="LongValue" Type="long">""" + param["longValue"] + """</Single><Single Name="TypeClass" Type="{16f7aa24-038f-444e-9d81-b001bc091d35}">""" + param["typeClass"] + """</Single><Single Name="Negative" Type="bool">""" + param["negative"] + """</Single><Single Name="OriginalTypeClass" Type="{16f7aa24-038f-444e-9d81-b001bc091d35}">""" + param["originalTypeClass"] + """</Single></Single></Single>"""
+    #         params = params + """</Array>"""
+    #     else:
+    #         params = """<Array Name="Params" Type="{e38db981-1fbe-4d68-b5b0-d55ca6086daa}" />"""
+    #     extData = extData + """<Single Type="{4723ebe7-5bfc-43c6-be6b-5097002ef6b4}" Method="IArchivable"><Single Name="DefaultResolution" Type="string">""" + library["defaultResolution"] + """</Single><Single Name="Optional" Type="bool">""" + library["optional"] + """</Single>""" + params + """<Single Name="PlaceholderName" Type="string">""" + library["placeholderName"] + """</Single><Single Name="ResolverGuid" Type="System.Guid">""" + library["resolverGuid"] + """</Single><Single Name="Id" Type="long">""" + library["id"] + """</Single><Single Name="Namespace" Type="string">""" + \
+    #         library["namespace"] + """</Single><Single Name="SystemLibrary" Type="bool">""" + library["systemLibrary"] + """</Single><Single Name="HideWhenReferencedAsDependency" Type="bool">""" + library["hideWhenReferencedAsDependency"] + """</Single><Single Name="PublishSymbolsInContainer" Type="bool">""" + library["publishSymbolsInContainer"] + """</Single><Single Name="QualifiedOnly" Type="bool">""" + library["qualifiedOnly"] + """</Single><Single Name="LinkAllContent" Type="bool">""" + library["linkAllContent"] + """</Single></Single>"""
+    # extData = extData + """</List><Dictionary Type="System.Collections.Hashtable" Name="PlaceholderRedirectionTable">"""
+    # for placeholder in jsonData["placeholders"]:
+    #     extData = extData + """<Entry><Key><Single Type="string">""" + placeholder["key"] + """</Single></Key><Value><Single Type="string">""" + placeholder["value"] + """</Single></Value></Entry>"""
+    # extData = extData + """</Dictionary></Single><Single Name="ParentSVNodeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Array Name="Path" Type="string" /><Single Name="Index" Type="int">-1</Single></Single></List2><Null Name="ProfileName" /></Single>  </StructuredView></ExportFile>"""
+    # writeTempFile(extData)
+    # object.import_native(tempFilePath)
 
 
 def handleVisu(object, path):
@@ -216,21 +225,53 @@ def handleProjectSettings(object, path):
     object.import_native(path)
 
 
+def handlePLC(object, data, name):
+    print('handlePLC->', name)
+    jsonData = json.loads(data)
+    deviceTypes = e_device_catalog.find_device_type(jsonData["ordernumber"], jsonData["version"])
+    plc = project.add_device(deviceTypes[0], 1)[0]
+    plc.rename(name)
+    plc.ip_address = jsonData["ipaddress"]
+    for index, module in enumerate(jsonData["modules"]):
+        type = e_device_catalog.find_device_type(module["ordernumber"], module["version"])
+        plc.add_module(type[0], index, 1)
+
+
+def handleKbusCSV(object, path):
+    object.import_io_mappings_from_csv(path)
+
+
+def handlePLCLogic(object, path, name):
+    print('handlePLCLogic->', name)
+    object.import_native(path)
+
+
+def handleApplication(object, path, name):
+    print('handleApplication->', name)
+
+    # project.import_app_native([],path)
+    # object.import_native(path)
+    # find = trueFind(object, 'Application')
+    # find.rename(name)
+    # children = object.get_children(False)
+    # if children:
+    #     for child in children:
+    #         child.remove()
+
+
 def handleDir(object, path, dir, noneFolderObject):
     tryPrintObjectName('handleDir->object', object)
     newPath = os.path.join(path, dir)
     search = re.search("%.+%", dir)
     type = search.group()
     name = dir[search.span()[1]:]
-    print('handleDir->name/type/path', name, type, path)
+    print('handleDir->name/type/newPath', name, type, newPath)
     if type == '%F%':
         print('handleDir->folderiscreated')
         object.create_folder(name)
-        find = object.find(name)
+        find = trueFind(object, name)
         print('handleDir->find', find)
-        print('handleDir->findlen', len(find))
-        print('handleDir->findfirst', find[0])
-        if len(find) > 0 and find[0]:
+        if find:
             print('handleDir->nonefolderischecked')
             if not noneFolderObject:
                 if checkIsTypeWhoCanHaveFolderAndMember(object):
@@ -238,24 +279,15 @@ def handleDir(object, path, dir, noneFolderObject):
                 else:
                     noneFolderObject = False
 
-            tryPrintObjectName('handleDir->folder->find[0]', find[0])
+            tryPrintObjectName('handleDir->folder->find', find)
             tryPrintObjectName('handleDir->folder->noneFolderObject', noneFolderObject)
-            loopDir(find[0], newPath, noneFolderObject)
+            loopDir(find, newPath, noneFolderObject)
     else:
-        find = object.find(name)
-        if len(find) > 0 and find[0]:
-            tryPrintObjectName('handleDir->other->find[0]', find[0])
-            loopDir(find[0], newPath, False)
-
-
-def loopDir(object, path, noneFolderObject):
-    print('loopDir->path', path)
-    for root, dirs, files in os.walk(path):
-        for file in files:
-            handleFile(object, path, file, noneFolderObject)
-        for dir in dirs:
-            handleDir(object, path, dir, noneFolderObject)
-        break
+        find = trueFind(object, name)
+        print('handleDir->object,name,find', object, name, find)
+        if find:
+            tryPrintObjectName('handleDir->other->find', find)
+            loopDir(find, newPath, False)
 
 
 def handleFile(object, path, file, noneFolderObject):
@@ -266,7 +298,7 @@ def handleFile(object, path, file, noneFolderObject):
     ext = split[1]
     newPath = os.path.join(path, file)
     data = fileContent(newPath)
-    print('handleFile->name/type/path', name, type, path)
+    print('handleFile->name/type/newPath', name, type, newPath)
     tryPrintObjectName('handleFile->object', object)
     if noneFolderObject != False:
         tryPrintObjectName('handleFile->noneFolderObject', noneFolderObject)
@@ -288,9 +320,6 @@ def handleFile(object, path, file, noneFolderObject):
         handleMethod(object, data, name, noneFolderObject)
     elif type == '%TRAN%' and ext == '.st':
         handleTransition(object, data, name, noneFolderObject)
-    # PLC
-    elif type == '%PLC%' and ext == '.json':
-        handlePLC(object, data, name)
     # Specials
     elif type == '%EF%' and ext == '.txt':  # External File
         handleExternalFile(object, data, name)
@@ -307,17 +336,26 @@ def handleFile(object, path, file, noneFolderObject):
     # Visu
     elif type == '%VISU%' and ext == '.xml':
         handleVisu(object, newPath)
+    # PLC
+    elif type == '%PLC%' and ext == '.json':
+        handlePLC(object, data, name)
+    elif type == '%KBUS%' and ext == '.csv':
+        handleKbusCSV(object, newPath)
+    elif type == '%PLOG%' and ext == '.xml':
+        handlePLCLogic(object, newPath, name)
+    elif type == '%APP%' and ext == '.xml':
+        handleApplication(object, newPath, name)
 
     else:
         print('Unknown ' + file + ' ' + path)
 
 
-def handlePLC(object, data, name):
-    jsonData = json.loads(data)
-    deviceTypes = e_device_catalog.find_device_type(jsonData["ordernumber"], "LATEST")
-    plc = project.add_device(deviceTypes[0], 1)[0]
-    plc.rename(name)
-    plc.ip_address = jsonData["ipaddress"]
+def loopDir(object, path, noneFolderObject):
+    print('loopDir->path', path)
+    for root, dirs, files in os.walk(path):
+        for file in files:
+            handleFile(object, path, file, noneFolderObject)
+        break
 
 
 ########################################################################################################

@@ -1,0 +1,35 @@
+{
+    "TextList": [
+        {
+            "TextID": 0, 
+            "TextDefault": "asdf", 
+            "LanguageTexts": [
+                "cvb"
+            ]
+        }, 
+        {
+            "TextID": 1, 
+            "TextDefault": "jjj", 
+            "LanguageTexts": [
+                "ert"
+            ]
+        }, 
+        {
+            "TextID": 2, 
+            "TextDefault": "wer", 
+            "LanguageTexts": [
+                "jjj"
+            ]
+        }, 
+        {
+            "TextID": 3, 
+            "TextDefault": "cxv", 
+            "LanguageTexts": [
+                "qqq"
+            ]
+        }
+    ], 
+    "LanguageList": [
+        "DKK"
+    ]
+}

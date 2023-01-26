@@ -144,7 +144,7 @@ def handleLibrary(object, path):
     print('handleLibrary->path', path)
     object.export_native(path + '.xml', False)
     tree = ET.parse(path + '.xml')
-    # os.remove(path + '.xml')
+    os.remove(path + '.xml')
     root = tree.getroot()
     list = {"libraries": [], "placeholders": []}
     libList = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/List')
@@ -184,54 +184,6 @@ def handleLibrary(object, path):
     writeDataToFile(json.dumps(list, indent=4), path + '.json')
 
 
-def handlePLCKBUS(object, path):
-    tempPath = os.path.join(path, "%PLCKBUS%" + object.get_name())
-    print('handlePLCKBUS->path', tempPath)
-    object.export_native(tempPath + '.xml', False)
-    tree = ET.parse(tempPath + '.xml')
-    #os.remove(tempPath + '.xml')
-    root = tree.getroot()
-    list = {}
-    if root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Single[@Name="Name"]').text == 'Kbus':
-        deviceInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Single[@Name="DefaultDeviceInfo"]')
-        list['name'] = deviceInfo.find('./Single[@Name="Name"]').text
-        list['vendor'] = deviceInfo.find('./Single[@Name="Vendor"]').text
-        path = os.path.join(path, "%KBUS%" + object.get_name())
-        writeDataToFile(json.dumps(list, indent=4), path + '.json')
-    else:
-        deviceInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Single[@Name="DefaultDeviceInfo"]')
-        list['name'] = deviceInfo.find('./Single[@Name="Name"]').text
-        list['vendor'] = deviceInfo.find('./Single[@Name="Vendor"]').text
-        list['ordernumber'] = deviceInfo.find('./Single[@Name="OrderNumber"]').text
-        networkInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Dictionary/Entry/Value/Single/List2[@Name="ProtocolAddresses"]/Single/Single[@Name="Address"]')
-        list['ipaddress'] = networkInfo.text
-        path = os.path.join(path, "%PLC%" + object.get_name())
-        writeDataToFile(json.dumps(list, indent=4), path + '.json')
-        loopObjects(object, path)
-
-
-def handleApplication(object, path):
-    path = os.path.join(path, "%APP%" + object.get_name())
-    print('handleApplication->path', path)
-    object.export_native(path + '.xml', False)
-
-
-def handleProjectSettings(object, path):
-    print('handleProjectSettings->path', path)
-    handleNativeExport(object, os.path.join(path, "%PS%" + object.get_name()) + '.xml')
-
-
-def handleVisuStyle(object, path):
-    path = os.path.join(path, "%VS%" + object.get_name())
-    print('handleVisuStyle->path', path)
-    object.export_native(path + '.xml', False)
-
-
-def handleVisualization(object, path):
-    print('handleVisualization->path', path)
-    handleNativeExport(object, os.path.join(path, "%VISU%" + object.get_name()) + '.xml')
-
-
 def handleImagePool(object, path):
     path = os.path.join(path, "%IMP%" + object.get_name())
     print('handleImagePool->path', path)
@@ -243,7 +195,6 @@ def handleImagePool(object, path):
     imageList = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/List[@Name="BitmapPool"]')
     for item in imageList:
         id = item.find('./Single[@Name="BitmapID"]').text
-        print(id)
         if id:
             list['imagepool'].append({"id": id, "fileID": item.find('./Single[@Name="FileID"]').text, "itemID": item.find('./Single[@Name="ItemID"]').text})
     imageData = root.findall('./StructuredView/Single/List2/Single[@Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}"]')
@@ -257,6 +208,81 @@ def handleImagePool(object, path):
                 "data": item.find('./Single[@Name="Object"]/Array[@Name="Data"]').text,
                 "frozen": item.find('./Single[@Name="Object"]/Single[@Name="Frozen"]').text})
     writeDataToFile(json.dumps(list, indent=4), path + '.json')
+
+
+def handlePLCKBUS(object, path):
+    tempPath = os.path.join(path, "%PLCKBUS%" + object.get_name())
+    print('handlePLCKBUS->path', tempPath)
+    object.export_native(tempPath + '.xml', False)
+    tree = ET.parse(tempPath + '.xml')
+    os.remove(tempPath + '.xml')
+    root = tree.getroot()
+    list = {}
+    if root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Single[@Name="Name"]').text == 'Kbus':
+        object.export_io_mappings_as_csv(os.path.join(path, "%KBUS%" + object.get_name() + ".csv"))
+    else:
+        deviceInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Single[@Name="DefaultDeviceInfo"]')
+        list['name'] = deviceInfo.find('./Single[@Name="Name"]').text
+        list['vendor'] = deviceInfo.find('./Single[@Name="Vendor"]').text
+        list['ordernumber'] = deviceInfo.find('./Single[@Name="OrderNumber"]').text
+        networkInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Dictionary/Entry/Value/Single/List2[@Name="ProtocolAddresses"]/Single/Single[@Name="Address"]')
+        list['ipaddress'] = networkInfo.text
+        versionInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Dictionary/Entry/Value/Single/Single[@Name="DeviceTypeVersion"]')
+        list['version'] = versionInfo.text
+        path = os.path.join(path, "%PLC%" + object.get_name())
+        list['modules'] = []
+        children = object.find('Kbus')[0].get_children(False)
+        if len(children) > 0:
+            for index, child in enumerate(children):
+                child.export_native(tempPath + '%' + str(index) + '.xml', False)
+                tree = ET.parse(tempPath + '%' + str(index) + '.xml')
+                os.remove(tempPath + '%' + str(index) + '.xml')
+                root = tree.getroot()
+                deviceInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Single[@Name="DefaultDeviceInfo"]')
+                versionInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Dictionary/Entry/Value/Single/Single[@Name="DeviceTypeVersion"]')
+                list['modules'].append({
+                    'name': deviceInfo.find('./Single[@Name="Name"]').text,
+                    'vendor': deviceInfo.find('./Single[@Name="Vendor"]').text,
+                    'ordernumber': deviceInfo.find('./Single[@Name="OrderNumber"]').text,
+                    'version': versionInfo.text,
+                })
+        writeDataToFile(json.dumps(list, indent=4), path + '.json')
+        loopObjects(object, path)
+
+
+def handleProjectSettings(object, path):
+    print('handleProjectSettings->path', path)
+    handleNativeExport(object, os.path.join(path, "%PS%" + object.get_name()) + '.xml')
+
+
+def handleVisualization(object, path):
+    print('handleVisualization->path', path)
+    handleNativeExport(object, os.path.join(path, "%VISU%" + object.get_name()) + '.xml')
+
+
+def handleVisuStyle(object, path):
+    print('handleVisuStyle->path', path)
+    handleNativeExport(object, os.path.join(path, "%VS%" + object.get_name()) + '.xml')
+
+
+def handleApplication(object, path):
+    path = os.path.join(path, "%APP%" + object.get_name())
+    print('handleApplication->path', path)
+    handleNativeExport(object, path + '.xml')
+    loopObjects(object, path)
+
+
+def handlePLCLogic(object, path):
+    path = os.path.join(path, "%PLOG%" + object.get_name())
+    print('handlePLCLogic->path', path)
+    handleNativeExport(object, path + '.xml')
+    loopObjects(object, path)
+
+
+def handleConnection(object, path):
+    print('handleConnection->path', path)
+    handleNativeExport(object, os.path.join(path, "%CONN%" + object.get_name()) + '.xml')
+    loopObjects(object, path)
 
 
 timeStampFinder = re.compile(r"(<Single Name=\"Timestamp\" Type=\"long\">)(\d+)(<\/Single>)")
@@ -318,11 +344,13 @@ def handleObject(object, path):
     elif type == 'a56744ff-693f-4597-95f9-0e1c529fffc2':  # External File
         handleExternalFile(object, path)
     elif type == 'ae1de277-a207-4a28-9efb-456c06bd52f3':  # Task Configuration
-        handleTaskConfiguration(object)
+        handleTaskConfiguration(object, path)
     elif type == '':  # Task
         return ''
     elif type == '225bfe47-7336-4dbc-9419-4105a7c831fa':  # Kbus/PLC
         handlePLCKBUS(object, path)
+    elif type == '40b404f9-e5dc-42c6-907f-c89f4a517386':  # PLC Logic
+        handlePLCLogic(object, path)
     elif type == '639b491f-5557-464c-af91-1471bac9f549':  # Application
         handleApplication(object, path)
     else:

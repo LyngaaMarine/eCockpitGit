@@ -1,0 +1,4 @@
+PROGRAM PLC_PRG
+VAR
+END_VAR
+(*%!%__DELIMITER__%!%*)

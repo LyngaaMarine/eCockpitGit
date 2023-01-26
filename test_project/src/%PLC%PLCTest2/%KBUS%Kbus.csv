@@ -1,0 +1,72 @@
+//CoDeSys Mapping Export V1.2
+//Mapped variable;//Parameter name @ counter in device;//Unit;//Description;//IEC address;//Device name;
+//Important: change only first, third or fourth column in Excel or add variable name before first ;
+;K-BUS diagnostics;;K-BUS diagnostics;%IB0;Kbus
+;K-BUS error;;K-BUS general error flag;%IX0.0;Kbus
+;_OUT;;Output Channels;%QW0;_16DO_24_VDC_0_5A
+;_OUT@1;;Digital output;%QX0.0;_16DO_24_VDC_0_5A
+;_OUT@2;;Digital output;%QX0.1;_16DO_24_VDC_0_5A
+;_OUT@3;;Digital output;%QX0.2;_16DO_24_VDC_0_5A
+;_OUT@4;;Digital output;%QX0.3;_16DO_24_VDC_0_5A
+;_OUT@5;;Digital output;%QX0.4;_16DO_24_VDC_0_5A
+;_OUT@6;;Digital output;%QX0.5;_16DO_24_VDC_0_5A
+;_OUT@7;;Digital output;%QX0.6;_16DO_24_VDC_0_5A
+;_OUT@8;;Digital output;%QX0.7;_16DO_24_VDC_0_5A
+;_OUT@9;;Digital output;%QX1.0;_16DO_24_VDC_0_5A
+;_OUT@10;;Digital output;%QX1.1;_16DO_24_VDC_0_5A
+;_OUT@11;;Digital output;%QX1.2;_16DO_24_VDC_0_5A
+;_OUT@12;;Digital output;%QX1.3;_16DO_24_VDC_0_5A
+;_OUT@13;;Digital output;%QX1.4;_16DO_24_VDC_0_5A
+;_OUT@14;;Digital output;%QX1.5;_16DO_24_VDC_0_5A
+;_OUT@15;;Digital output;%QX1.6;_16DO_24_VDC_0_5A
+;_OUT@16;;Digital output;%QX1.7;_16DO_24_VDC_0_5A
+;_INPUTCHANNEL;;Input channel 24 byte;%IB1;CAN_Gateway
+;_INPUTCHANNEL[0];;Input channel 24 byte;%IB1;CAN_Gateway
+;_INPUTCHANNEL[1];;Input channel 24 byte;%IB2;CAN_Gateway
+;_INPUTCHANNEL[2];;Input channel 24 byte;%IB3;CAN_Gateway
+;_INPUTCHANNEL[3];;Input channel 24 byte;%IB4;CAN_Gateway
+;_INPUTCHANNEL[4];;Input channel 24 byte;%IB5;CAN_Gateway
+;_INPUTCHANNEL[5];;Input channel 24 byte;%IB6;CAN_Gateway
+;_INPUTCHANNEL[6];;Input channel 24 byte;%IB7;CAN_Gateway
+;_INPUTCHANNEL[7];;Input channel 24 byte;%IB8;CAN_Gateway
+;_INPUTCHANNEL[8];;Input channel 24 byte;%IB9;CAN_Gateway
+;_INPUTCHANNEL[9];;Input channel 24 byte;%IB10;CAN_Gateway
+;_INPUTCHANNEL[10];;Input channel 24 byte;%IB11;CAN_Gateway
+;_INPUTCHANNEL[11];;Input channel 24 byte;%IB12;CAN_Gateway
+;_INPUTCHANNEL[12];;Input channel 24 byte;%IB13;CAN_Gateway
+;_INPUTCHANNEL[13];;Input channel 24 byte;%IB14;CAN_Gateway
+;_INPUTCHANNEL[14];;Input channel 24 byte;%IB15;CAN_Gateway
+;_INPUTCHANNEL[15];;Input channel 24 byte;%IB16;CAN_Gateway
+;_INPUTCHANNEL[16];;Input channel 24 byte;%IB17;CAN_Gateway
+;_INPUTCHANNEL[17];;Input channel 24 byte;%IB18;CAN_Gateway
+;_INPUTCHANNEL[18];;Input channel 24 byte;%IB19;CAN_Gateway
+;_INPUTCHANNEL[19];;Input channel 24 byte;%IB20;CAN_Gateway
+;_INPUTCHANNEL[20];;Input channel 24 byte;%IB21;CAN_Gateway
+;_INPUTCHANNEL[21];;Input channel 24 byte;%IB22;CAN_Gateway
+;_INPUTCHANNEL[22];;Input channel 24 byte;%IB23;CAN_Gateway
+;_INPUTCHANNEL[23];;Input channel 24 byte;%IB24;CAN_Gateway
+;_OUTPUTCHANNEL;;Output channel 24 byte;%QB2;CAN_Gateway
+;_OUTPUTCHANNEL[0];;Output channel 24 byte;%QB2;CAN_Gateway
+;_OUTPUTCHANNEL[1];;Output channel 24 byte;%QB3;CAN_Gateway
+;_OUTPUTCHANNEL[2];;Output channel 24 byte;%QB4;CAN_Gateway
+;_OUTPUTCHANNEL[3];;Output channel 24 byte;%QB5;CAN_Gateway
+;_OUTPUTCHANNEL[4];;Output channel 24 byte;%QB6;CAN_Gateway
+;_OUTPUTCHANNEL[5];;Output channel 24 byte;%QB7;CAN_Gateway
+;_OUTPUTCHANNEL[6];;Output channel 24 byte;%QB8;CAN_Gateway
+;_OUTPUTCHANNEL[7];;Output channel 24 byte;%QB9;CAN_Gateway
+;_OUTPUTCHANNEL[8];;Output channel 24 byte;%QB10;CAN_Gateway
+;_OUTPUTCHANNEL[9];;Output channel 24 byte;%QB11;CAN_Gateway
+;_OUTPUTCHANNEL[10];;Output channel 24 byte;%QB12;CAN_Gateway
+;_OUTPUTCHANNEL[11];;Output channel 24 byte;%QB13;CAN_Gateway
+;_OUTPUTCHANNEL[12];;Output channel 24 byte;%QB14;CAN_Gateway
+;_OUTPUTCHANNEL[13];;Output channel 24 byte;%QB15;CAN_Gateway
+;_OUTPUTCHANNEL[14];;Output channel 24 byte;%QB16;CAN_Gateway
+;_OUTPUTCHANNEL[15];;Output channel 24 byte;%QB17;CAN_Gateway
+;_OUTPUTCHANNEL[16];;Output channel 24 byte;%QB18;CAN_Gateway
+;_OUTPUTCHANNEL[17];;Output channel 24 byte;%QB19;CAN_Gateway
+;_OUTPUTCHANNEL[18];;Output channel 24 byte;%QB20;CAN_Gateway
+;_OUTPUTCHANNEL[19];;Output channel 24 byte;%QB21;CAN_Gateway
+;_OUTPUTCHANNEL[20];;Output channel 24 byte;%QB22;CAN_Gateway
+;_OUTPUTCHANNEL[21];;Output channel 24 byte;%QB23;CAN_Gateway
+;_OUTPUTCHANNEL[22];;Output channel 24 byte;%QB24;CAN_Gateway
+;_OUTPUTCHANNEL[23];;Output channel 24 byte;%QB25;CAN_Gateway

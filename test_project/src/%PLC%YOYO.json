@@ -1,4 +1,25 @@
 {
+    "version": "1.5.14.13", 
+    "modules": [
+        {
+            "ordernumber": "0750-1504", 
+            "vendor": "WAGO", 
+            "name": "0750-1504", 
+            "version": "1.5.1.15"
+        }, 
+        {
+            "ordernumber": "0750-1405", 
+            "vendor": "WAGO", 
+            "name": "0750-1405", 
+            "version": "1.5.1.15"
+        }, 
+        {
+            "ordernumber": "0750-0652", 
+            "vendor": "WAGO", 
+            "name": "0750-0652", 
+            "version": "1.5.1.16"
+        }
+    ], 
     "name": "750-8102 PFC100 2ETH RS", 
     "ipaddress": "192.168.1.123", 
     "vendor": "WAGO", 

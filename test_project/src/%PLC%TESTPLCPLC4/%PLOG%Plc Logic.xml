@@ -1,0 +1,27 @@
+<ExportFile>
+  <StructuredView Guid="{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">9789ee0d-6ec2-4dca-8d48-99e4531fba42</Single>
+        <Single Name="ParentGuid" Type="System.Guid">d766491f-80ca-4c85-8a4c-6cfa9f76d9ff</Single>
+        <Single Name="Name" Type="string">Plc Logic</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">40b404f9-e5dc-42c6-907f-c89f4a517386</Single>
+        <Array Name="EmbeddedTypeGuids" Type="System.Guid" />
+        <Single Name="Timestamp" Type="long"> 0 </Single>
+      </Single>
+      <Single Name="Object" Type="{40b404f9-e5dc-42c6-907f-c89f4a517386}" Method="IArchivable" />
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">d766491f-80ca-4c85-8a4c-6cfa9f76d9ff</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">TESTPLCPLC4</Single>
+      </Array>
+      <Single Name="Index" Type="int">0</Single>
+    </Single>
+  </List2>
+  <Null Name="ProfileName" />
+</Single>  </StructuredView>
+</ExportFile>

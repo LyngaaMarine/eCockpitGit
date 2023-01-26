@@ -1,0 +1,316 @@
+{
+    "libraries": [
+        {
+            "namespace": "IoStandard", 
+            "id": "3148010101", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [], 
+            "placeholderName": "IoStandard", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "True", 
+            "defaultResolution": "IoStandard, 3.5.16.0 (System)"
+        }, 
+        {
+            "namespace": "WagoSysStandard", 
+            "id": "4119354733", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [], 
+            "placeholderName": "WagoSysStandard", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "False", 
+            "defaultResolution": "WagoSysStandard, * (WAGO)"
+        }, 
+        {
+            "namespace": "_3S_LICENSE", 
+            "id": "1038603613", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [], 
+            "placeholderName": "3SLicense", 
+            "resolverGuid": "97c3b452-d9fa-4ac2-9d0c-3d420aa6d95b", 
+            "linkAllContent": "False", 
+            "defaultResolution": "3SLicense, 0.0.0.0 (3S - Smart Software Solutions GmbH)"
+        }, 
+        {
+            "namespace": "WagoAppProcessorLoad", 
+            "id": "227641243", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [], 
+            "placeholderName": "WagoAppProcessorLoad", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "False", 
+            "defaultResolution": "WagoAppProcessorLoad, * (WAGO)"
+        }, 
+        {
+            "namespace": "WagoSysKbusTerminalControl", 
+            "id": "2946087910", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [], 
+            "placeholderName": "WagoSysKbusTerminalControl", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "False", 
+            "defaultResolution": "WagoSysKbusTerminalControl, 1.7.5.0 (WAGO)"
+        }, 
+        {
+            "namespace": "WagoSysCom_Internal", 
+            "id": "2105493667", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [
+                {
+                    "longValue": "32767", 
+                    "typeClass": "AnyInt", 
+                    "name": "CUDIMAXCOMNUMBER", 
+                    "negative": "False", 
+                    "positionToSave": "8162774324609026", 
+                    "originalTypeClass": "AnyInt"
+                }
+            ], 
+            "placeholderName": "WagoSysComInternal", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "False", 
+            "defaultResolution": "WagoSysCom_Internal_PFC, 1.0.2.4 (WAGO)"
+        }, 
+        {
+            "namespace": "BPLog", 
+            "id": "2617439003", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [], 
+            "placeholderName": "BreakpointLogging", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "False", 
+            "defaultResolution": "Breakpoint Logging Functions, 3.5.5.0 (3S - Smart Software Solutions GmbH)"
+        }, 
+        {
+            "namespace": "Standard", 
+            "id": "3283306946", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "False", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [], 
+            "placeholderName": "Standard", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "False", 
+            "defaultResolution": null
+        }, 
+        {
+            "namespace": "WagoSysModule_75x_658", 
+            "id": "1626263340", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [
+                {
+                    "longValue": "10", 
+                    "typeClass": "AnyInt", 
+                    "name": "CAN_DIAG_BUFFER", 
+                    "negative": "False", 
+                    "positionToSave": "8162774324609039", 
+                    "originalTypeClass": "AnyInt"
+                }, 
+                {
+                    "longValue": "8000", 
+                    "typeClass": "Time", 
+                    "name": "CAN_CONFIG_TIMEOUT", 
+                    "negative": "False", 
+                    "positionToSave": "8725724278030352", 
+                    "originalTypeClass": "Time"
+                }, 
+                {
+                    "longValue": "500", 
+                    "typeClass": "Time", 
+                    "name": "SDO_WATCHDOG_DEFAULT", 
+                    "negative": "False", 
+                    "positionToSave": "9007199254740994", 
+                    "originalTypeClass": "Time"
+                }
+            ], 
+            "placeholderName": "WagoSysModule_75x_658", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "False", 
+            "defaultResolution": "WagoSysModule_75x_658, * (WAGO)"
+        }, 
+        {
+            "namespace": "WagoSysKbusServices", 
+            "id": "1292541011", 
+            "hideWhenReferencedAsDependency": "False", 
+            "systemLibrary": "True", 
+            "publishSymbolsInContainer": "False", 
+            "qualifiedOnly": "False", 
+            "optional": "False", 
+            "params": [], 
+            "placeholderName": "WagoSysKbusServices", 
+            "resolverGuid": "b303f5ce-75ff-4668-a777-7da8debb449c", 
+            "linkAllContent": "False", 
+            "defaultResolution": "WagoSysKbusServices, * (WAGO)"
+        }
+    ], 
+    "placeholders": [
+        {
+            "key": "WagoSysUtils", 
+            "value": "WagoSysUtils, 1.5.3.0 (WAGO)"
+        }, 
+        {
+            "key": "WagoAppTime", 
+            "value": "WagoAppTime, 1.7.3.3 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElemTrace", 
+            "value": "VisuElemTrace, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "WagoSysStandard", 
+            "value": "WagoSysStandard, 1.6.1.0 (WAGO)"
+        }, 
+        {
+            "key": "WagoSysModuleBase", 
+            "value": "WagoSysModuleBase, 1.9.11.3 (WAGO)"
+        }, 
+        {
+            "key": "WagoAppString", 
+            "value": "WagoAppString, 1.6.3.1 (WAGO)"
+        }, 
+        {
+            "key": "WagoTypesCommon", 
+            "value": "WagoTypesCommon, 1.5.3.0 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElems", 
+            "value": "VisuElems, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "System_VisuElemsWinControls", 
+            "value": "VisuElemsWinControls, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "System_VisuElemsDateTime", 
+            "value": "VisuElemsDateTime, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "WagoTypesErrorBase", 
+            "value": "WagoTypesErrorBase, 1.6.2.0 (WAGO)"
+        }, 
+        {
+            "key": "WagoSysBehaviourModels", 
+            "value": "WagoSysBehaviourModels, 1.6.3.0 (WAGO)"
+        }, 
+        {
+            "key": "WagoSysTypedefs_Pointer", 
+            "value": "WagoSysTypedefs_Pointer, 1.0.2.0 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElemCamDisplayer", 
+            "value": "VisuElemCamDisplayer, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "WagoTypesModule_75x_658", 
+            "value": "WagoTypesModule_75x_658, 1.6.1.0 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElemsSpecialControls", 
+            "value": "VisuElemsSpecialControls, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "WagoSysModule_75x_658", 
+            "value": "WagoSysModule_75x_658, 1.8.2.2 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElem3DPath", 
+            "value": "VisuElem3DPath, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "WagoSysPlainMem", 
+            "value": "WagoSysPlainMem, 1.5.2.0 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElemTextEditor", 
+            "value": "VisuElemTextEditor, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "WagoTypesBusServices", 
+            "value": "WagoTypesBusServices, 1.8.4.1 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElemsAlarm", 
+            "value": "VisuElemsAlarm, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "LMTypes", 
+            "value": "LMTypes, 2.0.0.0 (LyngaaMarine)"
+        }, 
+        {
+            "key": "WagoTypesProcessorLoad", 
+            "value": "WagoTypesProcessorLoad, 1.0.1.0 (WAGO)"
+        }, 
+        {
+            "key": "WagoSysErrorBase", 
+            "value": "WagoSysErrorBase, 1.6.2.6 (WAGO)"
+        }, 
+        {
+            "key": "WagoTypesModuleBase", 
+            "value": "WagoTypesModuleBase, 1.9.10.1 (WAGO)"
+        }, 
+        {
+            "key": "WagoAppProcessorLoad", 
+            "value": "WagoAppProcessorLoad, 2.0.1.1 (WAGO)"
+        }, 
+        {
+            "key": "WagoTypesAppLED", 
+            "value": "WagoTypesAppLED, 1.5.2.0 (WAGO)"
+        }, 
+        {
+            "key": "WagoSysKbusServices", 
+            "value": "WagoSysKbusServices, 1.8.7.4 (WAGO)"
+        }, 
+        {
+            "key": "WagoSysString", 
+            "value": "WagoSysString, 1.6.1.0 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElemMeter", 
+            "value": "VisuElemMeter, 3.5.16.30 (System)"
+        }, 
+        {
+            "key": "System_VisuNativeControl", 
+            "value": "VisuNativeControl, 3.5.16.0 (System)"
+        }, 
+        {
+            "key": "WagoTypesCom", 
+            "value": "WagoTypesCom, 1.6.1.2 (WAGO)"
+        }, 
+        {
+            "key": "System_VisuElemXYChart", 
+            "value": "VisuElemXYChart, 3.5.16.30 (System)"
+        }
+    ]
+}

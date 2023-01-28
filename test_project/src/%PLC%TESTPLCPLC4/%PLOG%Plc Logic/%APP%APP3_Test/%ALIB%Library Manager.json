@@ -1,0 +1,139 @@
+{
+    "libraries": [
+        {
+            "repository": "System", 
+            "name": "Base Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "SysTypes2 Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "CmpErrors2 Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "SysTypes Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "WAGO", 
+            "name": "WagoSysVersion", 
+            "version": "1.0.0.0"
+        }, 
+        {
+            "repository": "System", 
+            "name": "CmpEventMgr Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "IoDriver DPV1C1 Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "IoDriver DPV1C2 Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "IoDriver Parameter Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "IoDriver Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "CmpErrors Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "SysSem Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "SysSocket Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "Visu Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "3S - Smart Software Solutions GmbH", 
+            "name": "Datasources Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "SysShm Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "SysProcess Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "Intern", 
+            "name": "Unit Conversion Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "Collections Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "Data Server Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "Monitoring Data Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "VisuUserMgmt2 Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "System", 
+            "name": "IecVarAccess3 Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "Intern", 
+            "name": "Trace Mgr2 Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "Intern", 
+            "name": "VisuElemsDateTime Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "Intern", 
+            "name": "Alarm Manager Internal Interfaces", 
+            "version": "*"
+        }, 
+        {
+            "repository": "Intern", 
+            "name": "Alarm Manager Interfaces", 
+            "version": "*"
+        }
+    ]
+}

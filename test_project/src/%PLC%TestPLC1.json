@@ -12,6 +12,12 @@
             "vendor": "WAGO", 
             "name": "0750-0658", 
             "version": "1.5.1.16"
+        }, 
+        {
+            "ordernumber": "0750-0471", 
+            "vendor": "WAGO", 
+            "name": "0750-0471", 
+            "version": "1.5.1.18"
         }
     ], 
     "name": "750-8100 PFC100 2ETH ECO", 

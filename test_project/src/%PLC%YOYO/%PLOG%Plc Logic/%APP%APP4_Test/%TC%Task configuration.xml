@@ -1,0 +1,58 @@
+<ExportFile>
+  <StructuredView Guid="{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">116be54f-6365-403a-8434-6cc8986c2b4c</Single>
+        <Single Name="ParentGuid" Type="System.Guid">0312a127-9fe8-4a12-802d-dace41ace5f9</Single>
+        <Single Name="Name" Type="string">Task configuration</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">ae1de277-a207-4a28-9efb-456c06bd52f3</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long"> 0 </Single>
+      </Single>
+      <Single Name="Object" Type="{ae1de277-a207-4a28-9efb-456c06bd52f3}" Method="IArchivable">
+        <List Name="TaskConfigurationList" Type="{75fc8bb3-c744-4e99-b6eb-bb2796e19500}" />
+        <List Name="SystemEventList" Type="{7be1d5a4-d68c-4bc6-a7e5-e42a0ab42a09}" />
+        <Null Name="ExternalEventList" />
+        <Single Name="enum_guid" Type="System.Guid">94cbd5f7-eeca-5da2-bfe6-af97b0f89537</Single>
+        <Single Name="jitter_distribution_guid" Type="System.Guid">788edf17-c762-5f69-b8c3-a9343747accb</Single>
+        <Single Name="task_struct_guid" Type="System.Guid">ebd742e9-85df-5138-9347-1478a5d91742</Single>
+        <Single Name="task_config_info_guid" Type="System.Guid">e92c2f31-3023-5c0d-af91-e193c70920d2</Single>
+        <Single Name="task_global_vars_guid" Type="System.Guid">d4f92ce4-042d-52e6-b5f1-2e2098a17b91</Single>
+        <Single Name="setup_call_pou_guid" Type="System.Guid">9d920a73-66d4-5c4c-a788-351cc6ebfe60</Single>
+        <Single Name="sys_setup_pou_guid" Type="System.Guid">a1dc8111-54d6-5d0f-9c3c-1ac14ee14781</Single>
+        <Single Name="profiler_global_vars_guid" Type="System.Guid">d8e7f928-5000-5e1e-9c40-fb6dfd0bc004</Single>
+        <Single Name="profiler_init_code_guid" Type="System.Guid">81429b53-f8a6-5fe3-b7c3-405eb25003a4</Single>
+        <Single Name="profiler_cycle_code_guid" Type="System.Guid">36a30c1e-380e-5dba-9517-9f459e4a046c</Single>
+        <Single Name="profiler_fb_guid" Type="System.Guid">12c8c98f-e4f1-5257-98d2-9f3cd5925118</Single>
+        <Single Name="profiler_method_reset_guid" Type="System.Guid">47a5f945-16c9-5e31-b1fe-4b8f09755931</Single>
+        <Single Name="profiler_method_starttiming_guid" Type="System.Guid">3d7891b7-451c-5dd5-867a-c78d82846e24</Single>
+        <Single Name="profiler_method_stoptiming_guid" Type="System.Guid">43e62276-f29a-5c20-80f6-83c1c899802d</Single>
+        <Single Name="profiler_iectaskgetprofiling_guid" Type="System.Guid">53231be1-4335-54ac-bb92-2884a5b4c359</Single>
+        <Null Name="alSysEventList" />
+        <Null Name="alTaskGroups" />
+        <Single Name="sysevents_global_vars_guid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="sysevents_functionsblock_guid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="sysevents_fbinit_method_guid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="sysevents_fbexit_method_guid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="sysevents_eventcallback_method_guid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="sysevents_resetget_property_guid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Array Name="parent_tasks" Type="System.Guid" />
+        <Single Name="device_app" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">0312a127-9fe8-4a12-802d-dace41ace5f9</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">YOYO</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">APP4_Test</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+  </List2>
+  <Null Name="ProfileName" />
+</Single>  </StructuredView>
+</ExportFile>

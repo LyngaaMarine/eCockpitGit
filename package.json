@@ -1,0 +1,12 @@
+{
+    "name": "@lyngaamarine/ecockpitgit",
+    "version": "0.0.1",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LyngaaMarine/eCockpitGit.git"
+    },
+    "bugs": {
+        "url": "https://github.com/LyngaaMarine/eCockpitGit/issues"
+    },
+    "homepage": "https://github.com/LyngaaMarine/eCockpitGit#readme"
+}

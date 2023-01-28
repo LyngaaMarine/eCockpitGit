@@ -1,2 +1,19 @@
 # e!Cockpit Github Converter
 
+## How it works
+### Exporter
+The exporter script opens the src.ecp file located in the ecp folder, the runs through every object in the project, and exports the content of the files to seperate files located in the src folder, it also copies the ecp project to the ecp_backup folder, then deletes the src.ecp file.
+### Importer
+The importer script opens a fresh e!Cockpit project then for every file and folder in the src folder it recursivly tries to import the content of the file, it then saves the src.ecp file to the ecp folder.
+## Setup
+A project should be structured like the folder test_project. 
+The batch files in the git folder need to point to the importer and exporter .py files.
+One way is to have the files stored in a central location which the batch files can access, another is to store the files in the git folder itself.
+Also copy the .gitignore file and uncomment to prevent large github storage use.
+## How to use it
+### Before working
+To work with the project files, you execute the srcToEcp.bat file to convert the individual source files to an src.ecp project, which you can then open an perform you tasks.
+### After working
+To end working and commit changes, run the ecpTosrc.bat file, which will convert the src.ecp project to src files which can be committed.
+## Troubleshooting/Reporting
+The project is not completely bullet proof, and there may be error codes, this is why both the working file ecp/src.ecp, the file when exported ecp_at_export/src.ecp and the file when imported ecp_at_import/src.ecp are stored. Any errors discovered should be registered as issues in https://github.com/LyngaaMarine/eCockpitGit/issues

@@ -7,7 +7,7 @@ import shutil
 import xml.etree.ElementTree as ET
 import json
 
-shutil.copyfile(os.path.join(sys.argv[1], 'ecp', "src.ecp"), os.path.join(sys.argv[1], 'ecp_backup', "src.ecp"))
+shutil.copyfile(os.path.join(sys.argv[1], 'ecp', "src.ecp"), os.path.join(sys.argv[1], 'ecp_at_export', "src.ecp"))
 project = e_projects.open_project(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
 
 ###########################################################################################################################################

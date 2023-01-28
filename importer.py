@@ -5,6 +5,7 @@ import os
 import re
 import json
 import time
+import shutil
 
 # Creates project and gets reference to project object
 project = e_projects.create_new_project()
@@ -450,6 +451,7 @@ def loopDir(creationObject, placementObject, path):
 loopDir(projectObject, None, os.path.join(sys.argv[1], "src"))
 plcRename()
 project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
+shutil.copyfile(os.path.join(sys.argv[1], 'ecp', "src.ecp"), os.path.join(sys.argv[1], 'ecp_at_import', "src.ecp"))
 e_system.close_e_cockpit()
 
 if os.path.exists(tempFilePath):

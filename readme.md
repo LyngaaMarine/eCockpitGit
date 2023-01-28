@@ -1,5 +1,8 @@
 # e!Cockpit Github Converter
-
+## Limitations
+* In e!Cockpit all object names must be valid filepath names that excludes some characters including [/\\*]
+* Some library dependencies must be explicitly added as they will not import correctly
+* Unit Conversion, External File, RecipeManager, Trace, Trend Recording Manager are unsupported
 ## How it works
 ### Exporter
 The exporter script opens the src.ecp file located in the ecp folder, the runs through every object in the project, and exports the content of the files to seperate files located in the src folder, it also copies the ecp project to the ecp_backup folder, then deletes the src.ecp file.

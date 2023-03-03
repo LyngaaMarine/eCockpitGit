@@ -184,12 +184,9 @@ def handleProjectSettings(object, path):
 
 def handleLibrary(object, path):
     path = os.path.join(path, "%ALIB%" + object.get_name())
-    print('handleLibrary->path', path)
     references = object.references
-    print('handleLibrary->references', references)
     list = {"libraries": [], "placeholders": []}
     for ref in references:
-        print('handleLibrary->ref', ref)
         if ref.is_placeholder:
             list['placeholders'].append({
                 "is_managed": ref.is_managed,
@@ -212,8 +209,6 @@ def handleLibrary(object, path):
                 "qualified_only": ref.qualified_only,
                 "optional": ref.optional,
             })
-
-    print(list)
     writeDataToFile(json.dumps(list, indent=4), path + '.json')
 
 
@@ -414,4 +409,4 @@ if os.path.exists(root):
     shutil.rmtree(root)
 loopObjects(project, root)
 
-# e_system.close_e_cockpit()
+e_system.close_e_cockpit()

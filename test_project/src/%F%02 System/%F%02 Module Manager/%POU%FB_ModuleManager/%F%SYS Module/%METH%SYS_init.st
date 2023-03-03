@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": true, "enable_system_call": false}
 //Method called during initialization process, for all modules loaded
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 21-11-20 | Creation
@@ -8,7 +9,7 @@ END_VAR
 VAR
 	i			:WORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 S_systemModbusMultiPlexer.messageHandler	:=		THIS^;
 S_systemModbusMultiPlexer.initialize(
 	controllers				:=		ADR(S_systemModbusControllers),

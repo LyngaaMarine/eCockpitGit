@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD modbusUnit0Boolean
 VAR_IN_OUT
 	fc					:EMBFC;
@@ -11,7 +12,7 @@ VAR
 	address				:WORD;
 	module				:AModule;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 CASE decoder^.payload.head.functionCode OF
 	EMBFC.FC1ReadCoils,EMBFC.FC2ReadDiscreteInputs:
 		address								:=		SysSocket_Implementation.SysSockNtohs(usNet:=decoder^.request.address);

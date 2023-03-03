@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method initializes the module manager
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-07-19 | Creation
@@ -22,7 +23,7 @@ VAR
 	generatedModule			:POINTER TO FB_Module;
 	resultBuffer			:SLMResult;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 CASE S_moduleInitialization OF
 	0:	//Auto load of sub modules
 		FOR S_moduleInitProgress := S_moduleInitProgress TO S_modulesAmount DO

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method is called when the the command controller is in cyclic mode to sync
 //It is run in the data servers task, so don't do anything to intensive
 METHOD dtsSyncCycle : SLMResult
@@ -19,7 +20,7 @@ VAR
 	resBuff			:SLMResult;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF reservedData <> 0 THEN
 	keepCycle																	:=		TRUE;
 	//This sends the data initializations data

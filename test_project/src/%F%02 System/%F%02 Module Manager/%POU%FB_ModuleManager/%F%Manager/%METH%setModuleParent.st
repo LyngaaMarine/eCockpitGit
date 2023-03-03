@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for chaninge the parent of a module
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 11-02-22 | Creation
@@ -7,7 +8,7 @@ VAR_INPUT
 	newParent		:POINTER TO FB_Module;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF module^._parent <> 0 THEN
 	registerChildWithModule(parentModule:=module,childModule:=module,deOrRegister:=TRUE);
 END_IF

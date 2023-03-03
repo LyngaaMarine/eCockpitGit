@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": true, "enable_system_call": false}
 METHOD updateClients
 VAR_INPUT
 	module			:POINTER TO FB_Module;
@@ -5,7 +6,7 @@ VAR_INPUT
 	mid				:AMessageID;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF module = 0 THEN
 	RETURN;
 END_IF

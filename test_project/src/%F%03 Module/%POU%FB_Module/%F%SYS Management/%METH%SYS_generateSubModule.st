@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Generates a sub module for the given module
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 17-02-22 | Creation
@@ -8,4 +9,4 @@ END_VAR
 VAR_OUTPUT
 	module			:POINTER TO FB_Module;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

@@ -1,3 +1,4 @@
+{"exclude_from_build": false, "link_always": false}
 //This is the textlist file for the system units, texts are added here and refered to in the code, this is read only
 //The variable name is the same as the text, prefixed with a big U and without spaces
 {attribute 'qualified_only'}

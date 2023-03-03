@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method runs an action for the module with parameters
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 26-08-21 | Creation
@@ -9,7 +10,7 @@ VAR_INPUT
 	actionParams	:POINTER TO AActionParams;	//Parameter data structure is defined in actionParamStruct
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 CASE actionID OF
 	0:	runAction.success		:=		TRUE;	
 END_CASE

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Reads a value type from a struct
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 16-03-22 | Creation
@@ -8,7 +9,7 @@ END_VAR
 VAR
 	buffer			:STRING(10);
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 reader.readString(str:=ADR(buffer),lenMax:=SIZEOF(buffer)-1);
 CASE buffer[0] OF
 	EASCII.Smalln,EASCII.BigN:		FU_readValueType		:=		EValueType.none;

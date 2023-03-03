@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for writing module name to writer
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 15-05-21 | Creation
@@ -9,7 +10,7 @@ END_VAR
 VAR
 	valid		:EValueValidity;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 valid			:=		module^.SYS_isValid;
 IF valid = EValueValidity.valid THEN
 	CASE module^.SYS_valueType OF

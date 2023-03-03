@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This allows another module to register with a event on this module
 //Event type numbers are specified by each module individually
 //Event type 0-499 are reserved for shared event types
@@ -9,4 +10,4 @@ VAR_INPUT
 	registrant		:POINTER TO FB_Module;	//The module to call when the event happens
 	eventType		:WORD;					
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

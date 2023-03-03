@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //The module class all modules should inherit from the FB_Module class
 //Designator must be individual for each module, and must be set in both designator and instanceOf methods
 //|**Version**|**Author**| **Date** |**Changes**
@@ -14,4 +15,4 @@ VAR_OUTPUT
 	_children			:POINTER TO ARRAY[0..199] OF POINTER TO FB_Module;	//List of all modules children
 	_amountChildren		:WORD;					//Amount of children in the module	
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Reads a UValue from a struct with unspecified type
 //Returns true if unsuccesful
 //|**Version**|**Author**| **Date** |**Changes**
@@ -10,7 +11,7 @@ END_VAR
 VAR_INPUT
 	reader			:ITF_StructReaderBase;	//Reader
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF reader.valueType = EStructType.tArray THEN
 	reader.enterObjectArray();
 	IF reader.nextArray() = EStructType.tString THEN

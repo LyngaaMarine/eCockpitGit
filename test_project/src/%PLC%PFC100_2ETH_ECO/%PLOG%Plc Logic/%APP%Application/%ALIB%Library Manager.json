@@ -97,5 +97,12 @@
             "placeholder_name": "CDS_MemMan", 
             "effective_resolution": "CoDeSys Memory Manager, 3.5.12.0 (3S - Smart Software Solutions GmbH)"
         }
-    ]
+    ], 
+    "BuildProperties": {
+        "external": false, 
+        "compiler_defines": "", 
+        "link_always": false, 
+        "exclude_from_build": false, 
+        "enable_system_call": false
+    }
 }

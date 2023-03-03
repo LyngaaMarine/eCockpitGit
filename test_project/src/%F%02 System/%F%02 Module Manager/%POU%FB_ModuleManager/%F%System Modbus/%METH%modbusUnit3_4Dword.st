@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD modbusUnit3_4Dword
 VAR_IN_OUT
 	fc					:EMBFC;
@@ -16,7 +17,7 @@ VAR
 	dataPoint			:POINTER TO WORD;
 	buffer				:UMBIORaw;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 CASE decoder^.payload.head.functionCode OF
 	EMBFC.FC3ReadMultipleHoldReg,EMBFC.FC4ReadInputRegisters:
 		address								:=		SysSocket_Implementation.SysSockNtohs(usNet:=decoder^.request.address);

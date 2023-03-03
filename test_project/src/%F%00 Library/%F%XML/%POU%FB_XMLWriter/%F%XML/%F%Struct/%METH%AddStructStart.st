@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This starts a new struct
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-01-18 | Creation
@@ -9,7 +10,7 @@ END_VAR
 VAR
 	MethodID		:BYTE := 6;			//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND EOBReached = FALSE  AND TreeLevel <= 254 THEN
 	//Struct tag starts
 	AddChar(bChar			:=		EASCII.LessThan);

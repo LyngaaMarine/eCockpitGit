@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This adds a new line and the appropriate amount of tabs
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-01-18 | Creation
@@ -6,7 +7,7 @@ VAR
 	FOR1			:BYTE;
 	MethodID		:BYTE := 4;			//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND EOBReached = FALSE  THEN
 	//New Line
 	AddChar(bChar := EASCII.CR);

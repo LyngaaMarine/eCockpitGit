@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method is called to generate config object for module
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 18-02-22 | Creation
@@ -6,7 +7,7 @@ VAR_INPUT
 	module		:POINTER TO FB_Module;
 	writer		:ITF_StructWriterBase;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF module^._name <> 0 THEN
 	writer.addKey(name:=GTSmall.Sname);
 	structWriteModuleName(module:=module,writer:=writer,mode:=1);

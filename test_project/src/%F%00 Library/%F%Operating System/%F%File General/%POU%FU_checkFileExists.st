@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function checks if a dir exists
 //Returns true if dir exists
 // |**Version**|**Author**| **Date** |**Changes**
@@ -7,5 +8,5 @@ FUNCTION FU_checkFileExists : BOOL
 VAR_INPUT
 	path		:APath;	//Path of directory to copy from
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 FU_checkFileExists		:=		executeShellCommand(command:=FU_sConcat3(s1:='if test -f "',s2:=path,s3:='"; then printf "a"; fi')) = 'a';

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": true, "enable_system_call": false}
 //This method packs the module into a struct
 //Super should always be called on this method
 //|**Version**|**Author**| **Date** |**Changes**
@@ -11,7 +12,7 @@ END_VAR
 VAR
 	valType		:EValueType;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 writer.addKey(name:=GTSmall.Snum);
 writer.writeDint(value:=GMod.modMan.S_moduleUpdate);
 writer.addKey(name:=GTSmall.Suid);

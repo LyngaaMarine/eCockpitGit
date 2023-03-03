@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for bit accessing the value of the module
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 15-03-22 | Creation
@@ -7,7 +8,7 @@ VAR_INPUT
 	amount		:BYTE;
 	offset		:BYTE;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 CASE SYS_valueType OF
 	EValueType.digital:
 		SYS_valueDigital					:=		value.0;

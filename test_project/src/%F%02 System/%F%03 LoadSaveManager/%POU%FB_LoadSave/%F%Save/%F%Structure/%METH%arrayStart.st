@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This starts a new array
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 22-06-20 | Creation
@@ -5,7 +6,7 @@ METHOD arrayStart : BOOL
 VAR_INPUT
 	singleLine		:BOOL;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 arrayStart		:=		writer.arrayStart(singleLine:=singleLine);
 IF doLogInt THEN
 	IF selectedType = EStructType.tArray THEN

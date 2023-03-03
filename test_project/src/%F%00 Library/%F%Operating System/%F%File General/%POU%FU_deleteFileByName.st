@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function gets deletes a file by the path
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 02-04-19 | Creation
@@ -11,7 +12,7 @@ FUNCTION FU_deleteFileByName : SLMResult
 VAR_INPUT
 	sFilePath		:APath;	//Path of file to delete
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //Path cannot be empty
 IF sFilePath <> '' THEN
 	//System function is called and return is converted

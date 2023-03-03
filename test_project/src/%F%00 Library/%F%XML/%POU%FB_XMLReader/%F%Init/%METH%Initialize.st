@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method initializes the manager with the correct values
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 31-05-18 | Creation
@@ -6,7 +7,7 @@ VAR_INPUT
 	pBuffer			:POINTER TO BYTE;	//The address of the file buffer
 	dwBufferSize	:DWORD;				//The size of the file buffer
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF NOT(Initialized) THEN
 	IF pBuffer <> 0 AND dwBufferSize <> 0 THEN
 		FileBufferADROG		:=		pBuffer;				//Original adress is saved

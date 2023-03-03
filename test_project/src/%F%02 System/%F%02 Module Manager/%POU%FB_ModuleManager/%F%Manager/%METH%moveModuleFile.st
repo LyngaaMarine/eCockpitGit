@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method moves the modules files and file struct from one place to another
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 11-02-22 | Creation
@@ -14,7 +15,7 @@ VAR
 	i				:WORD;
 	subID			:AModuleSID;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF moduleToMove = 0 OR newParentModule = 0 OR newSID = 0 OR newSID > GConstants.maxSubModules THEN
 	moveModuleFile.success				:=		FALSE;
 	moveModuleFile.code					:=		ERCodes.ModuleManager_moveModuleFile;

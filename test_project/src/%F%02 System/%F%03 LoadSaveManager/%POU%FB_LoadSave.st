@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function block takes care of reading and writing from/to files
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 03-09-20 | Creation
@@ -20,4 +21,4 @@ VAR
 	reader					:FB_JSONReader;
 	writer					:FB_JSONWriter;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

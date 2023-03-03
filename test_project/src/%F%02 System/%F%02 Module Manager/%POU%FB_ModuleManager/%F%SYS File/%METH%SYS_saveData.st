@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for saving all variables for the module
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 20-09-20 | Creation
@@ -8,7 +9,7 @@ END_VAR
 VAR
 	i			:BYTE;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 saver.addKey(name:=GTSmall.Sversion);
 saver.writeString(value:=ADR(GParameters.softwareVersion));
 saver.addKey(name:=GTSmall.Supdate);

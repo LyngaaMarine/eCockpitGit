@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method unregisters the module from the module array by its uid
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 07-02-22 | Creation
@@ -8,7 +9,7 @@ END_VAR
 VAR
 	i				:AModuleUID;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 S_modules[module^._UID]			:=		0;
 IF module^._UID = S_highestUID THEN
 	FOR i := S_highestUID - 1 TO 1 BY - 1 DO

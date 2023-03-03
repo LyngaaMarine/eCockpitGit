@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method allows for writing variables of unknown type, or struct enums
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 21-09-20 | Creation
@@ -10,7 +11,7 @@ END_VAR
 VAR
 	pValue		:POINTER TO USysTypes := value.pValue;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF overwrite <> ESysType.tANY THEN
 	value.TypeClass		:=		ESysType.tANY;
 END_IF

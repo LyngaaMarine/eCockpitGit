@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for getting the name of a module with placeholders filled
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 14-12-20 | Creation
@@ -44,7 +45,7 @@ END_VAR
 // $it  =    0111 0100   0110 1001
 // $id  =    0110 0100   0110 1001
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF module^._name <> 0 THEN
 	nameBuff								:=		module^._name^;
 END_IF

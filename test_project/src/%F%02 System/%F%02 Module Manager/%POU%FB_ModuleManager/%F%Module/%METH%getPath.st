@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method gets the path of an module
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 11-09-19 | Creation
@@ -10,7 +11,7 @@ VAR
 	i				:BYTE;
 	nameBuffer		:AModuleName;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //The module is gotten
 FOR i := 1 TO GConstants.maxDepth DO
 	//Path for module is created

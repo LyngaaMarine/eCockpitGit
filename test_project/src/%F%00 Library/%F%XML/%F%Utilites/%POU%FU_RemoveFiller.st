@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function removes the filler from a string, it does it by replacing the first found character corresponding to a null
 // +-----------+----------+----------+-----------------------------------------------------------------------------------------------------------------------+
 // |**Version**|**Author**| **Date** |**Changes**                                                                                                            |
@@ -10,7 +11,7 @@ VAR_INPUT
 	Size		:WORD;				//Size of string
 	FillerChar	:BYTE;				//Character code used for filler
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 WHILE Size > 0 DO		//Runs through string
 	IF StrAdr^ = FillerChar THEN		//When fillerchar is found
 		StrAdr^	:=		0;				//First fillerchar is replace by null

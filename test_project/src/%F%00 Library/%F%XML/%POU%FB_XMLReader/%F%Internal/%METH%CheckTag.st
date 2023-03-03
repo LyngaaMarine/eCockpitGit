@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for checking if tag or struct, looks for tag end </ 
 //Returns True if Tag end is found
 //Always returns cursor to previous position
@@ -7,7 +8,7 @@ METHOD PROTECTED CheckTag: BOOL
 VAR
 	pCursorBuffer	:POINTER TO BYTE;	//Buffer for cursor position	
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized THEN										//Requires initialised
 	pCursorBuffer			:=		ADRCursor;			//Cursor location is copied
 	WHILE pCursorBuffer < FileBufferMaxADR - 1 DO		//Runs until something is found

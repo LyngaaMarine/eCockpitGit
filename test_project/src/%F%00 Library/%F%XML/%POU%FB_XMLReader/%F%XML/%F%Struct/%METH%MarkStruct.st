@@ -1,9 +1,10 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method marks the current cursor address at a struct which can be returned to 
 //Can be used to mark a found attrubute as being within a struct
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 11-06-18 | Creation
 METHOD MarkStruct 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized THEN
 	StructPositions[StructPosOffset2]	:=		ADRCursor;
 	IF StructPosOffset >= 254 THEN												//Calculates next free space in buffer

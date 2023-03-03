@@ -1,6 +1,7 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method compares a string to the selected string
 METHOD compareString : BOOL
 VAR_INPUT
 	str				:POINTER TO EASCII;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

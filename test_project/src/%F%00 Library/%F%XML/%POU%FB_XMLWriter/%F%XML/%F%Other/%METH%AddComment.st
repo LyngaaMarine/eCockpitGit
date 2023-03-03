@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This adds a comment to the xml buffer
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-01-18 | Creation
@@ -8,7 +9,7 @@ END_VAR
 VAR
 	MethodID		:BYTE := 5;			//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND EOBReached = FALSE  THEN
 	//Comment starts
 	AddChar(bChar		:=		EASCII.LessThan);

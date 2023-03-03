@@ -1,3 +1,4 @@
+{"external": false, "exclude_from_build": false}
 TYPE SModuleUpdateBuffer :
 STRUCT
 	moduleUID			:AModuleUID;			//Which module event is about

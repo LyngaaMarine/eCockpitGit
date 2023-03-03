@@ -6,7 +6,6 @@ import re
 import shutil
 import xml.etree.ElementTree as ET
 import json
-import string
 
 shutil.copyfile(os.path.join(sys.argv[1], 'ecp', "src.ecp"), os.path.join(sys.argv[1], 'ecp_at_export', "src.ecp"))
 project = e_projects.open_project(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
@@ -25,12 +24,14 @@ def tryPrintObjectName(text, obj):
         print(text, 'root')
 
 
-def encodeMatch(match: re.Match[str]):
-    return '{' + match[0] + '}'
+def encodeMatch(match):
+    return '{' + str(ord(match.group(0))) + '}'
 
 
 def encodeObjectName(object):
-    return re.sub(r"[^A-z _-]", encodeMatch, object.get_name())
+    name = re.sub(r"[^A-Za-z0-9 _-]", encodeMatch, object.get_name())
+    print('encodeObjectName', name)
+    return name
 
 
 def getTypeSafe(object):
@@ -62,9 +63,10 @@ def xMLListToPythList(element):
 
 def textExportDeclImpl(object, path):
     f = open(path + '.st', 'w')
+    f.write(json.dumps(getObjectBuildProperties(object)) + '\n')
     if object.has_textual_declaration:
         f.write(object.textual_declaration.text.encode('utf-8'))
-    f.write('\n(*%!%__DELIMITER__%!%*)\n')
+    f.write('\n!__IMPLEMENTATION__!\n')
     if object.has_textual_implementation:
         f.write(object.textual_implementation.text.encode('utf-8'))
     f.close()
@@ -72,6 +74,7 @@ def textExportDeclImpl(object, path):
 
 def textExportDecl(object, path):
     f = open(path + '.st', 'w')
+    f.write(json.dumps(getObjectBuildProperties(object)) + '\n')
     if object.has_textual_declaration:
         f.write(object.textual_declaration.text.encode('utf-8'))
     f.close()
@@ -79,6 +82,7 @@ def textExportDecl(object, path):
 
 def textExportImpl(object, path):
     f = open(path + '.st', 'w')
+    f.write(json.dumps(getObjectBuildProperties(object)) + '\n')
     if object.has_textual_implementation:
         f.write(object.textual_implementation.text.encode('utf-8'))
     f.close()
@@ -94,6 +98,23 @@ def handleNativeExport(object, path, recursive):
     writeDataToFile(editedFile, path)
 
 
+def getObjectBuildProperties(object):
+    list = {}
+    props = object.build_properties
+    if props:
+        if props.external_is_valid:
+            list['external'] = props.external
+        if props.enable_system_call_is_valid:
+            list['enable_system_call'] = props.enable_system_call
+        if props.compiler_defines_is_valid:
+            list['compiler_defines'] = props.compiler_defines
+        if props.link_always_is_valid:
+            list['link_always'] = props.link_always
+        if props.exclude_from_build_is_valid:
+            list['exclude_from_build'] = props.exclude_from_build
+    return list
+
+
 ###########################################################################################################################################
 ###########################################################################################################################################
 ###########################################################################################################################################
@@ -102,7 +123,7 @@ def handleNativeExport(object, path, recursive):
 
 def handleFolder(object, path):
     path = os.path.join(path, "%F%" + encodeObjectName(object))
-    writeDataToFile('', path + '.txt')
+    writeDataToFile(json.dumps(getObjectBuildProperties(object)), path + '.txt')
     loopObjects(object, path)
 
 
@@ -115,13 +136,40 @@ def handleTextType(object, path, designator):
         textExportDeclImpl(object, path)
     elif designator == '%METH%':
         textExportDeclImpl(object, path)
-    elif designator == '%GETSET%':
-        textExportDeclImpl(object, path)
     elif designator == '%TRAN%':
         textExportImpl(object, path)
     else:
         textExportDecl(object, path)
     loopObjects(object, path)
+
+
+def handleProperty(object, path):
+    path = os.path.join(path, '%PRO%' + encodeObjectName(object))
+    f = open(path + '.st', 'w')
+    f.write(json.dumps(getObjectBuildProperties(object)) + '\n')
+    if object.has_textual_declaration:
+        f.write(object.textual_declaration.text.encode('utf-8'))
+    f.write('\n!__GETTER__!\n')
+    get = object.find('Get')
+    if len(get) > 0:
+        getter = get[0]
+        if getter:
+            if getter.has_textual_declaration:
+                f.write(getter.textual_declaration.text.encode('utf-8'))
+            f.write('\n!__IMPLEMENTATION__!\n')
+            if getter.has_textual_implementation:
+                f.write(getter.textual_implementation.text.encode('utf-8'))
+    f.write('\n!__SETTER__!\n')
+    set = object.find('Set')
+    if len(set) > 0:
+        setter = set[0]
+        if setter:
+            if setter.has_textual_declaration:
+                f.write(setter.textual_declaration.text.encode('utf-8'))
+            f.write('\n!__IMPLEMENTATION__!\n')
+            if setter.has_textual_implementation:
+                f.write(setter.textual_implementation.text.encode('utf-8'))
+    f.close()
 
 
 def handlePersistentVariables(object, path):
@@ -143,7 +191,7 @@ def handleTextList(object, path, isGlobal):
     object.export_native(path + '.xml', False)
     tree = ET.parse(path + '.xml')
     root = tree.getroot()
-    list = {"TextList": [], "LanguageList": []}
+    list = {"BuildProperties": getObjectBuildProperties(object), "TextList": [], "LanguageList": []}
     textList = root.find('./StructuredView/Single/List2/Single/Single/List[@Name="TextList"]')
     for child in textList:
         textID = child.find("./Single/[@Name='TextID']")
@@ -166,7 +214,7 @@ def handleImagePool(object, path):
     tree = ET.parse(path + '.xml')
     os.remove(path + '.xml')
     root = tree.getroot()
-    list = {"imagepool": [], "imagedata": []}
+    list = {"BuildProperties": getObjectBuildProperties(object), "imagepool": [], "imagedata": []}
     imageList = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/List[@Name="BitmapPool"]')
     for item in imageList:
         id = item.find('./Single[@Name="BitmapID"]').text
@@ -193,7 +241,7 @@ def handleProjectSettings(object, path):
 def handleLibrary(object, path):
     path = os.path.join(path, "%ALIB%" + encodeObjectName(object))
     references = object.references
-    list = {"libraries": [], "placeholders": []}
+    list = {"BuildProperties": getObjectBuildProperties(object), "libraries": [], "placeholders": []}
     for ref in references:
         if ref.is_placeholder:
             list['placeholders'].append({
@@ -252,7 +300,7 @@ def handlePLCKBUS(object, path):
     tree = ET.parse(tempPath + '.xml')
     os.remove(tempPath + '.xml')
     root = tree.getroot()
-    list = {}
+    list = {"BuildProperties": getObjectBuildProperties(object)}
     if root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Single[@Name="Name"]').text == 'Kbus':
         object.export_io_mappings_as_csv(os.path.join(path, "%KBUS%" + encodeObjectName(object) + ".csv"))
     else:
@@ -346,17 +394,13 @@ def handleObject(object, path):
     elif type == 'f8a58466-d7f6-439f-bbb8-d4600e41d099':  # POU Method
         handleTextType(object, path, '%METH%')
     elif type == '5a3b8626-d3e9-4f37-98b5-66420063d91e':  # POU Property
-        handleTextType(object, path, '%PRO%')
-    elif type == '792f2eb6-721e-4e64-ba20-bc98351056db':  # POU Property Getter/Setter
-        handleTextType(object, path, '%GETSET%')
+        handleProperty(object, path)
     elif type == 'a10c6218-cb94-436f-91c6-e1652575253d':  # POU Transition
         handleTextType(object, path, '%TRAN%')
     elif type == 'f89f7675-27f1-46b3-8abb-b7da8e774ffd':  # ITF Method
         handleTextType(object, path, '%METH%')
     elif type == '5a3b8626-d3e9-4f37-98b5-66420063d91e':  # ITF Property
-        handleTextType(object, path, '%PRO%')
-    elif type == '28747452-a93d-4b34-8d05-d2c6018edd7d':  # ITF Property Getter/Setter
-        handleTextType(object, path, '%GETSET%')
+        handleProperty(object, path)
     # Specials
     elif type == '2bef0454-1bd3-412a-ac2c-af0f31dbc40f':  # TextList
         handleTextList(object, path, False)

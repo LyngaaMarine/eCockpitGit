@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This extracts the subid from the file name
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-02-22 | Creation
@@ -9,7 +10,7 @@ VAR
 	i				:BYTE;
 	numberBuffer	:STRING(5);
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF path[0] = EASCII.BigS THEN
 	FOR i := 1 TO 5 DO
 		IF path[i] >= EASCII.Zero AND path[i] <= EASCII.Nine THEN

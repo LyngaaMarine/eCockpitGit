@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method makes logging module changes simpler
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-07-19 | Creation
@@ -11,7 +12,7 @@ VAR
 	///writeBuffer		:STRING(Logs.modLogBufferSize);
 	writer			:FB_JSONWriter;	//For loading and saving modules
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF module <> 0 THEN
 	///writer.initialize(buffer:=ADR(writeBuffer),bufferSize:=Logs.modLogBufferSize,singleLine:=TRUE,bottomType:=EStructType.object);
 	

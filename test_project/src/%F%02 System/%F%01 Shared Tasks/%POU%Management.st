@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Run this shared task at 100 ms
 PROGRAM Management
 VAR_INPUT
@@ -8,7 +9,7 @@ VAR_OUTPUT
 	taskRun			:ARRAY[0..GConstants.maxTasks - 1] OF BOOL;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF PRG_BootManager.bootFinished THEN
 	GMod.modMan.SYS_cycle(pouSpeed:=pouSpeed);
 	///GLicense.licenseSystem.SYS_cycle(pouSpeed:=pouSpeed);

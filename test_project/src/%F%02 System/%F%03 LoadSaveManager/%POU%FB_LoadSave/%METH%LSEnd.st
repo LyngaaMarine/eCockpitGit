@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method ends the manager, by deinitialisint XML blocks and writing to file if needed
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 26-06-18 | Creation
@@ -8,7 +9,7 @@ VAR
 	fileHandle				:SysTypes.RTS_IEC_HANDLE;
 	sizeBuffer				:DWORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF started THEN
 	IF readWrite THEN
 		writer.deinitialize();

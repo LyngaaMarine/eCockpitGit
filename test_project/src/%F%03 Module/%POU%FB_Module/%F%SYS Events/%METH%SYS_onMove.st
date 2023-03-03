@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method called when module is moved, if it fails the module is not moved
 //The parent is already changed to the new parent
 // |**Version**|**Author**| **Date** |**Changes**
@@ -7,5 +8,5 @@ VAR_INPUT
 	oldParent		:POINTER TO FB_Module;		//Old parent of module
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 ;

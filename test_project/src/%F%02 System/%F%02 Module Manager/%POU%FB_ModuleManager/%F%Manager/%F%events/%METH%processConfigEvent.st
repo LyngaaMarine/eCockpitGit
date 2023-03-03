@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD processConfigEvent
 VAR_INPUT
 	client			:POINTER TO FB_DataServerClient;
@@ -10,7 +11,7 @@ VAR
 	reader			:FB_JSONReader;
 	result			:SLMResult;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 result						:=		reader.initialize(buffer:=data,bufferSize:=dataLen);
 IF result.success THEN
 	IF reader.selectedType = EStructType.object THEN

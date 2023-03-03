@@ -1,8 +1,9 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method is used to count up the address of the cursor
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 04-06-18 | Creation
 METHOD PROTECTED CountUp :BOOL;
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF ADRCursor < FileBufferMaxADR - 1 THEN
 	ADRCursor				:=		ADRCursor + 1;			//Cursor increased by one
 	CountUp					:=		TRUE;

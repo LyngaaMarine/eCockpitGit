@@ -1,3 +1,4 @@
+{"exclude_from_build": false, "link_always": false}
 {attribute 'qualified_only'}
 //This global variable list contains info about the data types
 //It must be used in conjuntion with eSysTypes

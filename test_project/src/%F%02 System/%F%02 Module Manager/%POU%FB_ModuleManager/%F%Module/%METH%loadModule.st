@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This load the module from file
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 15-01-21 | Creation
@@ -5,7 +6,7 @@ METHOD loadModule : SLMResult
 VAR_INPUT
 	module			:POINTER TO FB_Module;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //Check if the module is allowed to load data
 GMod.modMan.incrementUpdateNumber();
 loadModule		:=		S_loadSaver.LSStart(sFilePath:=getPath(module:=module,dirPath:=FALSE),xReadWrite:=FALSE,dontLog:=TRUE);

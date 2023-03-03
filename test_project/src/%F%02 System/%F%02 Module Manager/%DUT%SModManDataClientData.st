@@ -1,3 +1,4 @@
+{"external": false, "exclude_from_build": false}
 TYPE SModManDataClientData :
 STRUCT
 	dataInitProgress		:WORD;		

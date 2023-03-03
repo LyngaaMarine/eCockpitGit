@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This packs an SResult into a struct
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 05-11-20 | Creation
@@ -7,7 +8,7 @@ VAR_INPUT
 	code		:WORD := 1;
 	reason		:POINTER TO STRING(1000);
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 FU_SLMResultFromParts.success		:=		success;
 FU_SLMResultFromParts.code			:=		code;
 FU_SLMResultFromParts.reason		:=		reason;

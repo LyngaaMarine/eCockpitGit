@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method moves an module from one parent to another
 //Returns invalid id if id is invalid
 //Returns varswrong if new parent id does not exist or is zero
@@ -9,7 +10,7 @@ VAR_INPUT
 	dontLog			:BOOL;			//If logging should be skipped
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF module = 0 THEN
 	RETURN;
 END_IF

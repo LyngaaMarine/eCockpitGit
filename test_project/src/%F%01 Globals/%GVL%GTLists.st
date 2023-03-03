@@ -1,3 +1,4 @@
+{"exclude_from_build": false, "link_always": false}
 //This is the textlist file for the system, texts are added here and refered to in the code, this is read only
 //The variable name is the same as the text, with a big S for starting with lower case and big B for starting with upper case
 {attribute 'qualified_only'}

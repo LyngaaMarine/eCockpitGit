@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method deinitializes the reader, resetting all internal values
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 05-06-18 | Creation
@@ -6,7 +7,7 @@ METHOD Deinitialize
 VAR
 	FOR1					:BYTE;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized THEN
 	//Values are reset
 	ADRCursor					:=		0;

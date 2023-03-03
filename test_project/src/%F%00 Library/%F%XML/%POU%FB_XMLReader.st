@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Does NOT currently support empty elements 
 //The Initialize method must be run first, 
 //To search for a struct, run the MoveToStruct method, the cursor is then moved to the found struct if one is found
@@ -42,7 +43,7 @@ VAR CONSTANT
 	XMLEndTag				:STRING(1)		:=		'>';
 	XMLSpace				:STRING(1)		:=		' ';
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 (*
 How to use
 

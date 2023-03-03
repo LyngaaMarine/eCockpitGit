@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD processCreationEvent
 VAR_INPUT
 	client			:POINTER TO FB_DataServerClient;
@@ -14,7 +15,7 @@ VAR
 	result					:SLMResult;
 	amountModuleBuffer		:AModuleUID;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //If initial config data is provided, it is applied
 result								:=		reader.initialize(buffer:=data,bufferSize:=dataLen);
 IF processCreationEventError(client:=client,result:=result,mid:=mid) THEN

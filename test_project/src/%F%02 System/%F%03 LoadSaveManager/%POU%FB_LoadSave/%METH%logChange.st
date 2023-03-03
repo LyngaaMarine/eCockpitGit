@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This adds the path for the log
 // |**Version**|**Author**| **Date** |**Changes** 
 // | 1         | NSN      | 19-09-20 | Creation
@@ -14,7 +15,7 @@ VAR
 	writer			:FB_JSONWriter;
 	lenght			:WORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF doLogInt THEN
 	IF selectedType = EStructType.tArray THEN
 		keyFound	:=		reader.nextArray() <> EStructType.none;

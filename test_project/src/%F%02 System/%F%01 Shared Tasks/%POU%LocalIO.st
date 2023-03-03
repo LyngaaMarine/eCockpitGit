@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 PROGRAM LocalIO
 VAR_INPUT
 	pouSpeed		:WORD := 25;
@@ -7,7 +8,7 @@ VAR
 	cycleModules			:POINTER TO ARRAY[0..19] OF POINTER TO FB_Module;
 	cycleModulesHandler		:FB_DynamicArray(pArray:=cycleModules,wIncrement:=4,wElementSize:=SIZEOF(POINTER TO BYTE),wMaxSize:=0,xStringArray:=FALSE,xMap:=FALSE);
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Management.taskRun[ETask.LocalIO] THEN
 	Management.taskRunning[ETask.LocalIO]		:=		TRUE;
 	//GWago.localCards.SYS_cycle(pouSpeed:=pouSpeed);

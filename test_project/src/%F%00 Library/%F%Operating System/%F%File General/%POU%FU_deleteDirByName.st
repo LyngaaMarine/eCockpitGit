@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function gets deletes a file by the path
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 02-04-19 | Creation
@@ -6,7 +7,7 @@ VAR_INPUT
 	sDirPath		:APath;	//Path of directory to delete
 	xOnlyContent	:BOOL;	//When true only the content of the dir is deleted
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //Path cannot be empty
 IF sDirPath <> '' THEN
 	//System function is called and return is converted

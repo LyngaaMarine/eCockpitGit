@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This simplifies the cleanup process of a module
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 27-01-21 | Creation
@@ -13,7 +14,7 @@ VAR_IN_OUT
 	save		:BOOL;					//Reference to save var
 	doUpdate	:BOOL;					//Reference to update var
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF modUID = modClean^._UID THEN
 	found				:=		TRUE;
 	IF mode = ECleanUpMode.cleanPointers THEN

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This adds a filled tag to the buffer, filled means that the size of the filler of the tag is defined, and if the provided data does not fill the size, the rest will be filled with #
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 25-04-18 | Creation
@@ -11,7 +12,7 @@ END_VAR
 VAR
 	MethodID		:BYTE := 16;			//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND EOBReached = FALSE  THEN
 	//Open Tag starts
 	AddChar(bChar			:=		EASCII.LessThan);

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method compares the last found tag value to a given string
 //Only works if a MoveToTag, was succesfull
 //Returns false if the strings are the same
@@ -13,7 +14,7 @@ VAR
 	copyAmount		:DWORD;					//Amount to copy
 	searchString	:STRING(2) := '</';		//For finding end of tag
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND TagDataBuffer <> 0 THEN			//Makes sure it only runs after an tag has been found
 	cursorBuffer		:=		ADRCursor;			//Cursor is saved
 	ADRCursor			:=		TagDataBuffer;		//Cursor is moved to where tag data begins

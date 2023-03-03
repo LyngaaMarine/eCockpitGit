@@ -28,12 +28,12 @@ def tryPrintObjectName(text, obj):
         print(text, 'none/root')
 
 
-def decodeMatch(match: re.Match[str]):
-    return match[0][1]
+def decodeMatch(match):
+    return chr(int(match.group(1)))
 
 
-def decodeObjectName(string: str):
-    return re.sub(r"{.}", decodeMatch, string)
+def decodeObjectName(string):
+    return re.sub(r"{(\d+)}", decodeMatch, string)
 
 
 def getTypeSafe(object):
@@ -55,48 +55,6 @@ def trueFindDevice(name):
     for device in project.devices:
         if device.get_name() == name:
             return device
-
-
-libs = librarymanager.get_all_libraries(False)
-
-
-def trueFindLib(name, vers, rep):
-    if vers == '*':
-        founds = []
-        for lib in libs:
-            if lib.title == name:
-                founds.append(lib)
-        theLib = None
-        ver1 = 0
-        ver2 = 0
-        ver3 = 0
-        ver4 = 0
-        for lib in founds:
-            search = re.search(r"(\d+)\.(\d+)\.(\d+)\.(\d+)", str(lib.version))
-            v1 = int(search.group(1))
-            if v1 > ver1:
-                theLib = lib
-                ver1 = v1
-            elif v1 == ver1:
-                v2 = int(search.group(2))
-                if v2 > ver2:
-                    theLib = lib
-                    ver2 = v2
-                elif v2 == ver2:
-                    v3 = int(search.group(3))
-                    if v3 > ver3:
-                        theLib = lib
-                        ver3 = v3
-                    elif v3 == ver3:
-                        v4 = int(search.group(4))
-                        if v4 > ver4:
-                            theLib = lib
-                            ver4 = v4
-        return theLib
-    else:
-        for lib in libs:
-            if lib.title == name and lib.version == vers:
-                return lib
 
 
 def checkIsTypeWhoCanHaveFolderAndMember(object):
@@ -130,12 +88,28 @@ def writeTempFile(data):
 
 
 def writeDeclerationAndImplementationToObject(object, data):
-    search = re.search("(\*%!%__DELIMITER__%!%\*)", data)
-    declaration = data[:search.span()[0]-2]
-    implementation = data[search.span()[1] + 2:]
-    object.textual_declaration.replace(declaration)
+    parts = data.split('\n', 1)
+    applyObjectBuildProperties(object, json.loads(parts[0]))
+    parts = parts[1].split('!__IMPLEMENTATION__!', 1)
+    object.textual_declaration.replace(parts[0][:-1])
     if object.has_textual_implementation:
-        object.textual_implementation.append(implementation)
+        object.textual_implementation.append(parts[1][1:])
+
+
+def applyObjectBuildProperties(object, propsSet):
+    props = object.build_properties
+    if props:
+        if props.external_is_valid and 'external' in propsSet:
+            props.external = propsSet['external']
+        if props.enable_system_call_is_valid and 'enable_system_call' in propsSet:
+            props.enable_system_call = propsSet['enable_system_call']
+        if props.compiler_defines_is_valid and 'compiler_defines' in propsSet and len(propsSet['compiler_defines']) > 0:
+            props.compiler_defines = propsSet['compiler_defines']
+        if props.link_always_is_valid and 'link_always' in propsSet:
+            props.link_always = propsSet['link_always']
+        if props.exclude_from_build_is_valid and 'exclude_from_build' in propsSet:
+            props.exclude_from_build = propsSet['exclude_from_build']
+    return list
 
 ###########################################################################################################################################
 ###########################################################################################################################################
@@ -143,14 +117,15 @@ def writeDeclerationAndImplementationToObject(object, data):
 # Handlers
 
 
-def handleFolder(creationObject, placementObject, name, path):
-    #print('handleFolder->name/path', name, path)
+def handleFolder(creationObject, placementObject, name, path, ext):
     creationObject.create_folder(name)
     if placementObject:
         self = trueFind(placementObject, name)
     else:
         self = trueFind(creationObject, name)
     if self:
+        buildProps = json.loads(fileContent(path + ext))
+        applyObjectBuildProperties(self, buildProps)
         if creationObject == placementObject:
             loopDir(creationObject, self, path)
         else:
@@ -160,35 +135,36 @@ def handleFolder(creationObject, placementObject, name, path):
 ###########################################################################################################################################
 # Normals
 def handlePOU(creationObject, name, path, ext):
-    #print('handlePOU->name/path/ext', name, path, ext)
     pou = creationObject.create_pou(name, PouType.Program)
     writeDeclerationAndImplementationToObject(pou, fileContent(path + ext))
     loopDir(pou, pou, path)
 
 
 def handleDUT(creationObject, name, path, ext):
-    #print('handleDUT->name/path/ext', name, path, ext)
     pou = creationObject.create_dut(name, DutType.Structure)
-    pou.textual_declaration.replace(fileContent(path + ext))
+    parts = fileContent(path + ext).split('\n', 1)
+    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    pou.textual_declaration.replace(parts[1])
     loopDir(pou, pou, path)
 
 
 def handleGVL(creationObject, name, path, ext):
-    #print('handleGVL->name/path/ext', name, path, ext)
     pou = creationObject.create_gvl(name)
-    pou.textual_declaration.replace(fileContent(path + ext))
+    parts = fileContent(path + ext).split('\n', 1)
+    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    pou.textual_declaration.replace(parts[1])
     loopDir(pou, pou, path)
 
 
 def handleInterface(creationObject, name, path, ext):
-    #print('handleInterface->name/path/ext', name, path, ext)
     pou = creationObject.create_interface(name)
-    pou.textual_declaration.replace(fileContent(path + ext))
+    parts = fileContent(path + ext).split('\n', 1)
+    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    pou.textual_declaration.replace(parts[1])
     loopDir(pou, pou, path)
 
 
 def handlePersistentVariables(creationObject, name, path, ext):
-    #print('handlePersistentVariables->name,path,ext', name, path, ext)
     creationObject.import_native(path + ext)
     pou = trueFind(creationObject, name)
     if pou:
@@ -198,39 +174,42 @@ def handlePersistentVariables(creationObject, name, path, ext):
 ###########################################################################################################################################
 # Members
 def handleProperty(creationObject, placementObject, name, path, ext):
-    #print('handleProperty->name,path,ext', name, path, ext)
     pou = creationObject.create_property(name, 'INT')
     if placementObject:
         pou.move(placementObject, -1)
-    pou.textual_declaration.replace(fileContent(path + ext))
+    parts = fileContent(path + ext).split('\n', 1)
+    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    parts = parts[1].split('!__GETTER__!', 1)
+    pou.textual_declaration.replace(parts[0][:-1])
+    parts = parts[1].split('!__SETTER__!', 1)
     getter = pou.find('Get')[0]
-    getterPath = os.path.join(path, '%GETSET%Get.st')
-    if os.path.exists(getterPath):
-        getData = fileContent(getterPath)
-        writeDeclerationAndImplementationToObject(getter, getData)
-        # print('handleProperty->hasGetter')
+    if len(parts[0]) > 2:
+        getparts = parts[0].split('!__IMPLEMENTATION__!', 1)
+        getter.textual_declaration.replace(getparts[0][1:-1])
+        if getter.has_textual_implementation:
+            getter.textual_implementation.append(getparts[1][1:-1])
     else:
         getter.remove()
     setter = pou.find('Set')[0]
-    setterPath = os.path.join(path, '%GETSET%Set.st')
-    if os.path.exists(setterPath):
-        # print('handleProperty->hasSetter')
-        setData = fileContent(setterPath)
-        writeDeclerationAndImplementationToObject(setter, setData)
+    if len(parts[1]) > 1:
+        setparts = parts[1].split('!__IMPLEMENTATION__!', 1)
+        setter.textual_declaration.replace(setparts[0][1:-1])
+        if setter.has_textual_implementation:
+            setter.textual_implementation.append(setparts[1][1:])
     else:
         setter.remove()
 
 
 def handleAction(creationObject, placementObject, name, path, ext):
-    #print('handleAction->name,path,ext', name, path, ext)
     pou = creationObject.create_action(name)
+    parts = fileContent(path + ext).split('\n', 1)
+    applyObjectBuildProperties(pou, json.loads(parts[0]))
     if placementObject:
         pou.move(placementObject)
-    pou.textual_implementation.replace(fileContent(path + ext))
+    pou.textual_implementation.replace(parts[1])
 
 
 def handleMethod(creationObject, placementObject, name, path, ext):
-    #print('handleMethod->name,path,ext', name, path, ext)
     pou = creationObject.create_method(name)
     if placementObject:
         pou.move(placementObject)
@@ -238,17 +217,17 @@ def handleMethod(creationObject, placementObject, name, path, ext):
 
 
 def handleTransition(creationObject, placementObject, name, path, ext):
-    #print('handleTransition->name,path,ext', name, path, ext)
     pou = creationObject.create_transition(name)
+    parts = fileContent(path + ext).split('\n', 1)
+    applyObjectBuildProperties(pou, json.loads(parts[0]))
     if placementObject:
         pou.move(placementObject)
-    pou.textual_implementation.replace(fileContent(path + ext))
+    pou.textual_implementation.replace(parts[1])
 
 
 ###########################################################################################################################################
 # Specials
 def handleExternalFile(creationObject, placementObject, name, path, ext):
-    #print('handleExternalFile->name,path,ext', name, path, ext)
     extData = """<ExportFile><StructuredView Guid="{21af5390-2942-461a-bf89-951aaf6999f1}"><Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable"><Null Name="Profile" /><List2 Name="EntryList"><Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable"><Single Name="IsRoot" Type="bool">True</Single><Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable"><Single Name="Guid" Type="System.Guid">fa9ab52e-878c-4f0a-a8df-974f770d9d0f</Single><Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Single Name="Name" Type="string">""" + name + \
         """</Single><Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" /><Single Name="TypeGuid" Type="System.Guid">a56744ff-693f-4597-95f9-0e1c529fffc2</Single><Null Name="EmbeddedTypeGuids" /><Single Name="Timestamp" Type="long">0</Single></Single><Single Name="Object" Type="{a56744ff-693f-4597-95f9-0e1c529fffc2}" Method="IArchivable"><Single Name="FileId" Type="string">00000000-0000-0000-0000-000000000000|""" + fileContent(path + ext) + """</Single></Single><Single Name="ParentSVNodeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Array Name="Path" Type="string" /><Single Name="Index" Type="int">-1</Single></Single></List2><Null Name="ProfileName" /></Single></StructuredView></ExportFile>"""
     writeTempFile(extData)
@@ -256,7 +235,6 @@ def handleExternalFile(creationObject, placementObject, name, path, ext):
 
 
 def handleTextList(creationObject, placementObject, name, path, ext, isGlobal):
-    #print('handleTextList->name,path,ext', name, path, ext)
     textListJson = json.loads(fileContent(path + ext))
     if isGlobal:
         typeGUID = "63784cbb-9ba0-45e6-9d69-babf3f040511"
@@ -315,19 +293,17 @@ def handleLibraryManager(creationObject, placementObject, name, path, ext):
             else:
                 lib = librarymanager.find_library(placeholder["effective_resolution"])
             if lib:
-                manager.add_placeholder(placeholder["name"], lib[0])
+                manager.add_placeholder(placeholder["namespace"], lib[0])
+    applyObjectBuildProperties(manager, jsonData["BuildProperties"])
+
 
 ###########################################################################################################################################
 # Visu
-
-
 def handleVisu(creationObject, placementObject, name, path, ext):
-    #print('handleVisu->name,path,ext', name, path, ext)
     creationObject.import_native(path + ext)
 
 
 def handleVisuManager(creationObject, placementObject, name, path, ext):
-    #print('handleVisuManager->name,path,ext', name, path, ext)
     creationObject.import_native(path + ext)
 
 
@@ -337,7 +313,6 @@ plclist = []
 
 
 def handlePLC(creationObject, placementObject, name, path, ext):
-    #print('handlePLC->name,path,ext', name, path, ext)
     jsonData = json.loads(fileContent(path + ext))
     deviceTypes = e_device_catalog.find_device_type(jsonData["ordernumber"], jsonData["version"])
     plc = project.add_device(deviceTypes[0], 1)[0]
@@ -357,7 +332,6 @@ def plcRename():
 
 
 def handlePLCLogic(creationObject, placementObject, name, path, ext):
-    #print('handlePLCLogic->name,path,ext', name, path, ext)
     creationObject.import_native(path + ext)
     self = trueFind(creationObject, name)
     if self:
@@ -397,7 +371,7 @@ def handleFile(creationObject, placementObject, path, file):
     ext = split[1]
     path = os.path.join(path, type + split[0])
     if type == '%F%' and ext == '.txt':
-        handleFolder(creationObject, placementObject, objectname, path)
+        handleFolder(creationObject, placementObject, objectname, path, ext)
     # Normals
     elif type == '%POU%' and ext == '.st':
         handlePOU(creationObject, objectname, path, ext)

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method sets the module in the array by its uid
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 07-02-22 | Creation
@@ -6,7 +7,7 @@ VAR_INPUT
 	module			:POINTER TO FB_Module;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF module^._UID > 0 AND module^._UID <= GParameters.maxModules THEN
 	IF S_modules[module^._UID] = 0 THEN
 		S_modules[module^._UID]			:=		module;

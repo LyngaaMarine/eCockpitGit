@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method is called for module commands, any response created is send back
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 28-11-20 | Creation
@@ -12,7 +13,7 @@ VAR
  	rawPos		:POINTER TO BYTE;
  	rawLen		:DWORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 WHILE reader.nextKey() <> EStructType.none DO
 	IF reader.compareKeyName(name:=GTSmall.Sping) <> EStructType.none THEN
 		SYS_serverCommand.code				:=		ERCodes.CommandResponseSendData;

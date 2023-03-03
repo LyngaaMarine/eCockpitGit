@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method copies an amount of bytes from the cursor to the adresse
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 31-05-18 | Creation
@@ -10,7 +11,7 @@ END_VAR
 VAR
 	CursorBuffer	:POINTER TO BYTE;	//Buffer for cursor position
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND pCopyTo <> 0 THEN		//It only runs when a buffer has been initialized
 	CursorBuffer				:=		ADRCursor;
 	ADRCursor					:=		ADRCursor + dwAmount - 1;

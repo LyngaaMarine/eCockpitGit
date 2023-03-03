@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function blocks acts as a group for the browser, it has no other function
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 07-07-20 | Creation
@@ -57,4 +58,4 @@ VAR CONSTANT
 	S_updateBufferSize			:BYTE := 100;
 	S_saveBufferSize			:BYTE := 100;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

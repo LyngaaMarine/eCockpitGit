@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Called when controller recieves another message
 //Returns true if there is not enough data in buffer
 // |**Version**|**Author**| **Date** |**Changes**
@@ -19,7 +20,7 @@ VAR
 	encoder				:UMBNetMessages;
 	exception			:BYTE;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 lenght												:=		SysSocket_Implementation.SysSockNtohs(usNet:=decoder^.payload.head.length) + 6;
 IF amountRecieved < lenght THEN
 	onMessage										:=		TRUE;

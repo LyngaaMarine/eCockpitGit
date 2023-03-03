@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": true, "enable_system_call": false}
 METHOD queryModuleUpdate : SLMResult
 VAR_INPUT
 	moduleUID		:AModuleUID;
@@ -7,7 +8,7 @@ END_VAR
 VAR
 	index			:DWORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF S_updateModuleFIFO.pushStart(index=>index) THEN
 	S_updateModuleBuffer[index].moduleUID		:=		moduleUID;
 	S_updateModuleBuffer[index].clientUID		:=		client;

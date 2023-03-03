@@ -1,3 +1,4 @@
+{"external": false, "exclude_from_build": false}
 TYPE SManagementBufferBase :
 STRUCT
 	mid					:AMessageID;			//Number used for identifying command back to client

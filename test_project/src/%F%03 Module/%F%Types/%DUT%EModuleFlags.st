@@ -1,3 +1,4 @@
+{"external": false, "exclude_from_build": false}
 {attribute 'qualified_only'}
 TYPE EModuleFlags :(
 	editBlock		:=	0		//Bit 0: Flag for disableing editing of the module

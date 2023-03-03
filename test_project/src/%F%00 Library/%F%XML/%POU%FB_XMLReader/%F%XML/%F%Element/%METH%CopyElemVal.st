@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method copies  the last found tags value to an address, if found
 //Only works if a MoveToTag, was succesfull
 //Returns true if all is good
@@ -18,7 +19,7 @@ VAR
 	CopyAmount		:DWORD;					//Amount to copy
 	SearchString	:STRING(2) := '</';		//For finding end of tag
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND TagDataBuffer <> 0 THEN			//Makes sure it only runs after an tag has been found
 	IF TagDataBuffer^ = EASCII.LessThan THEN
 		pCopyTo^			:=		0;

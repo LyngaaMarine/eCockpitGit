@@ -1,3 +1,4 @@
+{"external": false, "exclude_from_build": false}
 //Action parameters
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 26-08-21 | Creation

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method outputs the start address and size of the currently selected value
 //True when ok
 // |**Version**|**Author**| **Date** |**Changes**
@@ -7,5 +8,5 @@ VAR_OUTPUT
 	position		:POINTER TO EASCII;
 	size			:DWORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 exportValue		:=		reader.exportValue(position=>position,size=>size);

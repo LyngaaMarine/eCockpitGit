@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method adds the module the the ordered list of modules
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 07-02-22 | Creation
@@ -9,7 +10,7 @@ VAR
 	i				:AModuleUID;
 	found			:BOOL;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 S_modulesAmount										:=		S_modulesAmount - 1;
 IF S_modulesAmount > 0 THEN
 	FOR i := 1 TO S_modulesAmount DO

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method writes a string of a fixed size to the buffer as raw data without qoutes and escape characters
 //Should only be used for copying data
 // |**Version**|**Author**| **Date** |**Changes** 
@@ -7,4 +8,4 @@ VAR_INPUT
 	value			:POINTER TO EASCII;	//Address of string for the buffer
 	len				:DWORD;				//Amount of bytes to write
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": true, "enable_system_call": false}
 //This method is called by the management task to change configuration of the module
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 16-02-22 | Creation
@@ -8,7 +9,7 @@ VAR_INPUT
 	reader			:ITF_StructReaderBase;
 	duringCreation	:BOOL;		//Is set true during creation of module
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF reader.findKey(name:=GTSmall.Sname) <> EStructType.none THEN
 	changeModuleConfig			:=		setModuleNameStruct(module:=module,reader:=reader);
 END_IF

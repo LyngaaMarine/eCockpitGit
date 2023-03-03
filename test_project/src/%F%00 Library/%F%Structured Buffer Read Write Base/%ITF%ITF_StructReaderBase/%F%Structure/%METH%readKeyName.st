@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method returns the name of the currently selected key
 //Returns true on output if value is valid
 METHOD readKeyName : BOOL
@@ -8,4 +9,4 @@ END_VAR
 VAR_OUTPUT
 	len				:WORD;					//Actual lenght of string value
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

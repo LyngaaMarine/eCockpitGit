@@ -1,3 +1,4 @@
+{"external": false, "exclude_from_build": false}
 TYPE USysTypes :
 UNION
 	bBOOL		:BOOL;

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method copies the found attribute value to an address
 //Returns true when succesfull
 //Only works when MoveToAtt has successfully found an attribute
@@ -19,7 +20,7 @@ END_VAR
 
 //Version 1 by NSN 01-06-18  Changes: Creation
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND AttDataBuffer <> 0 THEN			//Makes sure it only runs after an attribute has been found
 	CursorBuffer		:=		ADRCursor;			//Cursor adress is saved
 	ADRCursor			:=		AttDataBuffer;		//Cursor is set to attribute position

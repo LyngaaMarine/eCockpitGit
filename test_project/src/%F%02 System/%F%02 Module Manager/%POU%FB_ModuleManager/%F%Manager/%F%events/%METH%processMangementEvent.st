@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD processMangementEvent
 VAR_INPUT
 	event			:EManagementEvent;
@@ -15,7 +16,7 @@ VAR
 	clientBuffer	:POINTER TO FB_DataServerClient;
 	result			:SLMResult;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF client <> 0 THEN
 	clientBuffer					:=		getModuleByUID(modUID:=client);
 	IF NOT(clientBuffer^.SYS_instanceOf(des:=GMod.DesDataServerClient)) THEN

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Runs this shared task at 100 ms or change the pouSpeed input
 PROGRAM NetworkIO
 VAR_INPUT
@@ -8,7 +9,7 @@ VAR
 	networkModules			:POINTER TO ARRAY[0..19] OF POINTER TO FB_Module;
 	networkModulesHandler	:FB_DynamicArray(pArray:=networkModules,wIncrement:=4,wElementSize:=SIZEOF(POINTER TO BYTE),wMaxSize:=0,xStringArray:=FALSE,xMap:=FALSE);
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Management.taskRun[ETask.NetworkIO] THEN
 	Management.taskRunning[ETask.NetworkIO]		:=		TRUE;
 	//GMod.modMan.modbusCycle(pouSpeed:=pouSpeed);

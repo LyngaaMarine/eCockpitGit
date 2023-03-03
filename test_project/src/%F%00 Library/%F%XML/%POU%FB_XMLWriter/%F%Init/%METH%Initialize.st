@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This initializes the manager with the correct values
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-01-18 | Creation
@@ -9,7 +10,7 @@ END_VAR
 VAR
 	MethodID		:BYTE := 1;			//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //Buffer ADR is recorded
 IF NOT(Initialized) THEN
 	IF pBuffer <> 0 AND dwBufferSize <> 0 THEN

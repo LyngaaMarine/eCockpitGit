@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function creates a user in the operating system
 //Returns true if successfull
 // |**Version**|**Author**| **Date** |**Changes**
@@ -6,5 +7,5 @@ FUNCTION removeUser : BOOL
 VAR_INPUT
 	user		:STRING(40);	//Name of user
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 FU_checkDirExists		:=		executeShellCommand(command:=FU_sConcat3(s1:='deluser ',s2:=user,s3:='')) = 'a';

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method lists all available actions for the module using the structure example below
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 26-08-21 | Creation
@@ -5,7 +6,7 @@ METHOD actionParamStruct
 VAR_INPUT
 	writer		:ITF_StructWriterBase;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //First a key with the id number of the action is added
 writer.addKey(name:=GTSmall.Szero);
 writer.objectStart(singleLine:=TRUE);

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 PROGRAM DataServerSettingsClients
 VAR_INPUT
 	pouSpeed		:WORD := 100;
@@ -5,7 +6,7 @@ END_VAR
 VAR
 	i				:WORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Management.taskRun[ETask.DataServerClients] THEN
 	Management.taskRunning[ETask.DataServerClients]		:=		TRUE;
 	//GDataServer.dataServer.SYS_cycle(pouSpeed:=pouSpeed);	

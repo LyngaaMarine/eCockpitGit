@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD queryModuleSave : SLMResult
 VAR_INPUT
 	moduleUID		:AModuleUID;
@@ -6,7 +7,7 @@ END_VAR
 VAR
 	index			:DWORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF S_saveModuleFIFO.pushStart(index=>index) THEN
 	S_saveModuleBuffer[index].moduleUID	:=		moduleUID;
 	S_saveModuleBuffer[index].dontLog	:=		dontLog;

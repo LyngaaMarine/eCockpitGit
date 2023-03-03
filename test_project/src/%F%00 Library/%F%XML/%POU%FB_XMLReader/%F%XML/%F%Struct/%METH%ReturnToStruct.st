@@ -1,9 +1,10 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method returns the cursor to the previusly found struct if one has been found
 //Returns true when succesful
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 07-06-18 | Creation
 METHOD ReturnToStruct :BOOL
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND StructPositions[StructPosOffset] <> 0 THEN
 	IF ADRCursor <> StructPositions[StructPosOffset] THEN
 		ADRCursor			:=		StructPositions[StructPosOffset];

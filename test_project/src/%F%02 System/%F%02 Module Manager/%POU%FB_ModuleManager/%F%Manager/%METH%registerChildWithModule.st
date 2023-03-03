@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for registering a child with the module
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 10-02-22 | Creation
@@ -11,7 +12,7 @@ VAR
 	i				:WORD;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF deOrRegister THEN
 	FU_DynPointArrayOrderRemove(workingArray:=parentModule^._children,arrayAmount:=parentModule^._amountChildren,removePoint:=childModule);
 	IF childModule^._SID <= parentModule^._amountChildren THEN

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This adds an attribute to a tag
 //Only works for struct start for now
 // |**Version**|**Author**| **Date** |**Changes**
@@ -16,7 +17,7 @@ VAR
 	PosBuffer		:POINTER TO BYTE;	
 	MethodID		:BYTE := 12;		//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND EOBReached = FALSE  THEN
 	IF LastMethod = 6 OR LastMethod = 12 OR LastMethod = 9 OR LastMethod = 16 THEN
 		//Size of attribute is calculated

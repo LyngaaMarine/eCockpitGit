@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method is called when the data client has a new command
 //It is run in the data servers task, so don't do anything to intensive
 METHOD dtsNewCommand : SLMResult
@@ -21,7 +22,7 @@ VAR
 	modIDString			:STRING(5);
 	typeCodeBuffer		:BYTE;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 commander.writeAddTypeCode(char:=EASCII.BigS);
 CASE commander.readTypeCode() OF
 	EASCII.BigN:

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Writes a value type to a struct
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 16-03-22 | Creation
@@ -6,7 +7,7 @@ VAR_INPUT
 	valueType		:EValueType;	//Type to write
 	writer			:ITF_StructWriterBase;	//Writer
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 CASE valueType OF
 	EValueType.none:
 		writer.writeString(value:=ADR('Null'));

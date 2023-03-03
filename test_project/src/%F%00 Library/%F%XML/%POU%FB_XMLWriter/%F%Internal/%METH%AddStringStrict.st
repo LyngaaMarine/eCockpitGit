@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This adds a string of text to the xml buffer, but has a stricter allowance for charaters
 //Illigal characters, <, >,  , ", =, ', &, !,
 // |**Version**|**Author**| **Date** |**Changes**
@@ -17,7 +18,7 @@ VAR
 	WatchDog		:BYTE;				//Watchdog for keeping addresse reading in check
 	MethodID		:BYTE := 13;		//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND EOBReached = FALSE THEN		//It only runs when a buffer has been initialized
 	IF pString <> 0 THEN						//Checks if stringaddress is not empty
 		IF xFilled THEN							//If filled mode is selected

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD processCreationEventError : BOOL
 VAR_INPUT
 	client			:POINTER TO FB_DataServerClient;
@@ -5,7 +6,7 @@ VAR_INPUT
 	mid				:AMessageID;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF NOT(result.success) THEN
 	processCreationEventError		:=		TRUE;
 	IF client <> 0 THEN

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This calls the event which this module was registered for
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 26-11-20 | Creation
@@ -7,4 +8,4 @@ VAR_INPUT
 	eventType		:WORD;					//Event type id
 	eventData		:POINTER TO USysTypes;	//Generic reference to event data, specified by each module
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

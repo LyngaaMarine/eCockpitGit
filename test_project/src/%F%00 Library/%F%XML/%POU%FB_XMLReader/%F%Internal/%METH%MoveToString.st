@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method moves the cursor to the next string equal to the input
 //Returns true if string is found
 //It skips the byte the cursor is at
@@ -23,7 +24,7 @@ VAR
 	TreeBuffer2		:INT;					//buffer for tree layer
 	ImediateBuff	:BOOL;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND pText <> 0 AND dwAmount <> 0 THEN			//It only runs when a buffer has been initialized
 	CursorBuffer						:=		ADRCursor;
 	TreeBuffer							:=		TreeLevel;

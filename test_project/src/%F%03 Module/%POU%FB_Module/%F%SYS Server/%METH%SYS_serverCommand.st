@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method is called for module commands, any response created is send back
 //Must returns a result code of 100 to send data
 //|**Version**|**Author**| **Date** |**Changes**
@@ -8,4 +9,4 @@ VAR_INPUT
 	reader		:ITF_StructReaderBase;
 	writer		:ITF_StructWriterBase;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

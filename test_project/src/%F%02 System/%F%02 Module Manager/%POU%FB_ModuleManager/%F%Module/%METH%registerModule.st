@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method does all the shared stuff when either adding external modules or creating them dynamically
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 29-06-19 | Creation
@@ -13,7 +14,7 @@ VAR
 	result					:SLMResult;
 	uidSet					:BOOL;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //Parent must be provided
 IF parentModule = 0 THEN
 	registerModule.success							:=		FALSE;

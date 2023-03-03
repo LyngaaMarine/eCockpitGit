@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD initializeManager : SLMResult
 VAR
 	result					:SysTypes.RTS_IEC_RESULT;
@@ -10,7 +11,7 @@ VAR
 	setUpReboot				:BOOL;
 	resultBuffer			:SLMResult;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 S_currentTimeDWORD					:=		SysTimeRtc.SysTimeRtcGet(pResult:=result);	//System time in seconds is calculated
 S_currentTimeDT						:=		TO_DT(S_currentTimeDWORD);			//The system time is read from the RTC
 S_currentTimeInt					:=		TO_STRING(S_currentTimeDT);			//The system time is read from the RTC

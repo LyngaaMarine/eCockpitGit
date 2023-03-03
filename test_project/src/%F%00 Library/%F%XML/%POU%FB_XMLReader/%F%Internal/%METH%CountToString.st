@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method counts how long til the requested string is next present from the cursor
 //Returns the amount of bytes between cursor and char
 //It skips the byte the cursor is at
@@ -16,7 +17,7 @@ VAR
 	AmountBuffer	:DWORD;					//Buffer for text amount
 	CountBuffer		:Dword;					//Buffer for count value
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND pText <> 0 AND dwAmount <> 0 THEN			//It only runs when a buffer has been initialized
 	CursorBuffer						:=		ADRCursor + 1;
 	CountToString						:=		CountToString + 1;

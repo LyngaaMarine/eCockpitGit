@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method decodes a json struct into an action paramter buffer
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 26-08-21 | Creation
@@ -14,7 +15,7 @@ END_VAR
 VAR_OUTPUT
 	lenght			:BYTE;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 WHILE reader.nextArray() <> EStructType.none DO
 	CASE actionID OF
 		0: 

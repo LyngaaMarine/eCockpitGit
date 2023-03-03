@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for setting the name of the module, to a fixed size
 //Returns outofmemory, when out of memory
 //|**Version**|**Author**| **Date** |**Changes**
@@ -11,7 +12,7 @@ VAR
 	name		:AModuleName;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF reader.valueType = EStructType.tString THEN
 	reader.readString(str:=ADR(name),lenMax:=SIZEOF(AModuleName)-1);
 	setModuleNameStruct				:=		setModuleName(module:=module,name:=name);

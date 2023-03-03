@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD queryManagementEvent : SLMResult
 VAR_INPUT
 	event			:EManagementEvent;
@@ -14,7 +15,7 @@ VAR
 	trans			:DWORD;
 	moverPoint		:POINTER TO EASCII;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF dataLen = 0 THEN
 	IF S_noDataFIFO.pushStart(index=>index) THEN
 		S_noDataBuffer[index].event			:=		event;

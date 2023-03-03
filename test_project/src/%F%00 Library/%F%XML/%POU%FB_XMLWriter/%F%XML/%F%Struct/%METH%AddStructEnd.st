@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This ends the previously started struct
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-01-18 | Creation
@@ -7,7 +8,7 @@ VAR
 	NameADR			:POINTER TO BYTE;	//Address of string for the name text
 	MethodID		:BYTE := 7;			//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND TreeLevel > 0 AND EOBReached = FALSE  AND TreeNames[TreeLevel-1] <> 0 THEN
 	//Last TAB is deleted
 	FileBufferADR			:=		FileBufferADR - 1;

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method moves the cursor to the next tag by the given name from the cursor
 //Returns true if found
 //Returns cursor if no tag is found
@@ -16,7 +17,7 @@ VAR
 	TreeBuffer		:INT;					//buffer for tree layer
 	EndFound		:BOOL;					//If end is found
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized AND pName <> 0 THEN											//It only runs when a buffer has been initialized
 	CursorBuffer							:=		ADRCursor;				//Cursor is saved in buffer
 	TreeBuffer								:=		TreeLevel;				//Treelevel is saved in buffer

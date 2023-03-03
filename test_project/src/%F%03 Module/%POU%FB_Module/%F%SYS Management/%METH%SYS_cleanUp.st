@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for cleaning up system
 //Return true if found
 //Return save if the removed module should cause this one to save
@@ -14,4 +15,4 @@ VAR_IN_OUT
 	doSave		:BOOL;		//Set true if the module should be saved
 	doUpdate	:BOOL;		//Set true if the module should be updated
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 FUNCTION_BLOCK FB_XMLWriter
 VAR_INPUT
 END_VAR
@@ -20,7 +21,7 @@ VAR CONSTANT
 	XMLDeclaration	:STRING(36) := '?xml version="1.0" encoding="UTF-8"?';
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 (*	Methods IDs
 1	InitialiseManager
 2	AddDeclaration

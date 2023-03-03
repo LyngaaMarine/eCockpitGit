@@ -1,3 +1,4 @@
+{"external": false, "exclude_from_build": false}
 TYPE SVar :
 //This struct contains value in raw format
 //It contains a pointer to the value, the systype of the value, and the offset, in case the value is a bool which is part of another type

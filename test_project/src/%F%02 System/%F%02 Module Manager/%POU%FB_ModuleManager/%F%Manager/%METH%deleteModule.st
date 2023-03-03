@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method deletes an module from the registry, and frees the dynamic memory, if it has ANY
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 29-06-19 | Creation
@@ -16,7 +17,7 @@ VAR
 	doUpdate			:BOOL;
 	found				:BOOL;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF moduleBuffer = 0 THEN
 	RETURN;
 END_IF

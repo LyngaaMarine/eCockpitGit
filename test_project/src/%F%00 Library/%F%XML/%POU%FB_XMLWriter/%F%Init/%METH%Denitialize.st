@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 23-01-18 | Creation
 // | 2         | NSN      | 21-06-18 | Added missing values, needed to be reset
@@ -5,7 +6,7 @@ METHOD Denitialize
 VAR
 	MethodID		:BYTE := 11;			//ID for keeping track of run methods
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized THEN
 	//Closes up remaining structs
 	WHILE TreeLevel > 0 DO

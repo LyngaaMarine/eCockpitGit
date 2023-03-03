@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method writes the values for a dedicated module instrument to a struct
 //Values are written as a struct with keys
 //Max size of struct must not exceed 400 bytes
@@ -8,4 +9,4 @@ VAR_INPUT
 	client		:POINTER TO FB_DataServerClient;
 	writer		:ITF_StructWriterBase;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This method returns the values of the xml declaration
 //It returns true if the declaration is ok
 //Sets cursor to end of declaration
@@ -14,7 +15,7 @@ END_VAR
 VAR	
 	StandAloneBuffer:STRING(3);		//Buffer for determining if standalone is yes or no
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF Initialized THEN
 	ReturnToStart();					//Cursor is set to the start
 	IF MoveToString(pText:= ADR(XMLDecFirstCheck), dwAmount:= 4, xInTag := TRUE, xImediate := TRUE) THEN	//The declaration is checked against a string

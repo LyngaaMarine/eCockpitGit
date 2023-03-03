@@ -1,6 +1,7 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD deregisterCycleModule
 VAR_INPUT
 	module			:POINTER TO FB_Module;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 cycleModulesHandler.removeElement(element:=ADR(module),elementSize:=SIZEOF(module),amount:=0);

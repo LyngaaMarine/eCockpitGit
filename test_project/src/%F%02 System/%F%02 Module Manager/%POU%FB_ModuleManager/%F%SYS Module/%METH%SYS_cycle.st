@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": true, "enable_system_call": false}
 //This method is the managment cycle of the module manager
 //I handles saving, deleting, moving modules
 //|**Version**|**Author**| **Date** |**Changes**
@@ -12,7 +13,7 @@ VAR
 	timeResult			:SysTypes.RTS_IEC_RESULT;
 	index				:DWORD;
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF S_threadSafeActive THEN
 	IF Management.checkExclusiveManagementTask() THEN
 		IF S_dataFIFO.isNotEmpty THEN

@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 METHOD moduleNameDecodeDollarUID : POINTER TO FB_Module
 VAR_INPUT
 	first		:POINTER TO EASCII;
@@ -9,7 +10,7 @@ VAR
 	i			:BYTE;
 	buff		:STRING(5);
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 FOR i := 0 TO 4 DO
 	IF first^ >= EASCII.Zero AND first^ <= EASCII.Nine THEN
 		buff[i]					:=		first^;

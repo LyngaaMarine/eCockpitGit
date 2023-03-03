@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function safely sets a module by its id, works for digital value
 //|**Version**|**Author**| **Date** |**Changes**
 //| 1         | NSN      | 21-01-22 | Creation
@@ -10,7 +11,7 @@ VAR
 	modBuf		:POINTER TO FB_Module;			//Module buffer
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 //Module is retrived
 modBuf									:=		GMod.modMan.getModuleByUID(ModUID:=modID);
 //Null pointer protection

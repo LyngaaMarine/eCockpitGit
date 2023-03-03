@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //Method for setting the unit of the module
 //Returns outofmemory, when out of memory
 //|**Version**|**Author**| **Date** |**Changes**
@@ -8,7 +9,7 @@ VAR_INPUT
 	unit		:AModuleUnit;
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF module^.SYS_unitWrite THEN
 	setModuleUnit				:=		FU_SetDynamicString(pStr:=module^._unit,str:=ADR(unit), maxSize := SIZEOF(AModuleName) - 1);
 ELSE

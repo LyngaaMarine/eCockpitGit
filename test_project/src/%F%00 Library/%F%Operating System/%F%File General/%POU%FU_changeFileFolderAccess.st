@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 //This function changes the access of a file
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 14-10-21 | Creation
@@ -21,7 +22,7 @@ VAR
 	access			:STRING(3);
 	pathInt			:STRING(SIZEOF(APath) + 20);
 END_VAR
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 ownerByte.0			:=		ownerExecute;
 ownerByte.1			:=		ownerWrite;
 ownerByte.2			:=		ownerRead;

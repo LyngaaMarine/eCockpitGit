@@ -1,3 +1,4 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
 PROGRAM PRG_BootManager
 VAR_INPUT
 	pouSpeed				:WORD;
@@ -12,7 +13,7 @@ VAR
 	bootCounter				:INT;				//The initial wait before the boot is started
 END_VAR
 
-(*%!%__DELIMITER__%!%*)
+!__IMPLEMENTATION__!
 IF NOT(bootFinished) AND NOT(bootFailed) THEN
 	CASE bootProg OF
 		0:	initProject();

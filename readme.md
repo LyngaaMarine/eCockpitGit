@@ -21,7 +21,7 @@ To end working and commit changes, run the ecpTosrc.bat file, which will convert
 The project is not completely bullet proof, and there may be error codes, this is why both the working file ecp/src.ecp, the file when exported ecp_at_export/src.ecp and the file when imported ecp_at_import/src.ecp are stored. Any errors discovered should be registered as issues in https://github.com/LyngaaMarine/eCockpitGit/issues
 
 # Changelog
-* ## 0.0.2 03-03-23
+* ## 0.0.3 03-03-23
   #### Reworked library import/export to remove limitations
 * ## 0.0.2 28-01-23
   #### Changed text output to be unicode encoded to prevent python error

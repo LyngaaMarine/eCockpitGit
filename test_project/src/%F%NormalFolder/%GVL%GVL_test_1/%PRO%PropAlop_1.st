@@ -1,1 +1,0 @@
-PROPERTY PropAlop_1 : INT

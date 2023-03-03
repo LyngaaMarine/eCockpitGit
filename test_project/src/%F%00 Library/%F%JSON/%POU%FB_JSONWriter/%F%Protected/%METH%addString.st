@@ -1,0 +1,27 @@
+//This adds a string of text to the JSON buffer
+//Illigal characters { , } , " they will be skipped
+// |**Version**|**Author**| **Date** |**Changes**
+// | 1         | NSN      | 22-06-20 | Creation
+METHOD PROTECTED addString
+VAR_INPUT
+	pString			:POINTER TO BYTE;	//Address of string for the comment text
+END_VAR
+(*%!%__DELIMITER__%!%*)
+IF ready THEN		//It only runs when a buffer has been initialized
+	IF pString <> 0 THEN						//Checks if stringaddress is not empty
+		WHILE pString^ <> EASCII.Null DO			//Runs until null is detected
+			IF bufferPosition < bufferMaxADR THEN	//In normal conditions
+				IF pString^ = EASCII.DoubleQoute THEN
+					bufferPosition^	:=		EASCII.BackSlash;	
+					bufferPosition	:=		bufferPosition + 1;
+				END_IF
+				bufferPosition^		:=		pString^;	
+				pString				:=		pString + 1;
+				bufferPosition		:=		bufferPosition + 1;
+			ELSE								//When the last address is encountered, the end of buffer variable is set true
+				bufferInvalid		:=		TRUE;	
+				EXIT;
+			END_IF
+		END_WHILE
+	END_IF
+END_IF

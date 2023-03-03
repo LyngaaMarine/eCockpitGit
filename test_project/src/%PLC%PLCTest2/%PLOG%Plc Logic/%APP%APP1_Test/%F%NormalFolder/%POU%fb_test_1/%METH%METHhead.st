@@ -1,6 +1,0 @@
-METHOD METHhead : BOOL
-VAR_INPUT
-	
-END_VAR
-
-(*%!%__DELIMITER__%!%*)

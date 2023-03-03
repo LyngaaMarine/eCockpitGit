@@ -1,0 +1,1 @@
+PROPERTY amount : DWORD

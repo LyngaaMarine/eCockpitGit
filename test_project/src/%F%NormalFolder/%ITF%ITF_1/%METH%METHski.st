@@ -1,6 +1,0 @@
-METHOD METHski
-VAR_INPUT
-	test:INT;
-END_VAR
-
-(*%!%__DELIMITER__%!%*)

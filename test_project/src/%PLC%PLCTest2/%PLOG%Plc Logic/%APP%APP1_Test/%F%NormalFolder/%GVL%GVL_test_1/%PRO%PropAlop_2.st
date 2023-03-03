@@ -1,1 +1,0 @@
-PROPERTY PropAlop_2 : STRING

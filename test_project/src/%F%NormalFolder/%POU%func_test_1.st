@@ -1,7 +1,0 @@
-FUNCTION func_test_1 : BOOL
-VAR_INPUT
-END_VAR
-VAR
-END_VAR
-
-(*%!%__DELIMITER__%!%*)

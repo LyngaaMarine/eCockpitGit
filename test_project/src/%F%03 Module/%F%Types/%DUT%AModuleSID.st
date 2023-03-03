@@ -1,0 +1,1 @@
+TYPE AModuleSID : WORD; END_TYPE

@@ -1,0 +1,1 @@
+TYPE AMessageID : WORD; END_TYPE

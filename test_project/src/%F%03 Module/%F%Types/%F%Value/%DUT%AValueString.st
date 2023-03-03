@@ -1,0 +1,1 @@
+TYPE AValueString : STRING(24); END_TYPE

@@ -1,0 +1,1 @@
+PROPERTY SYS_canDelete : BOOL

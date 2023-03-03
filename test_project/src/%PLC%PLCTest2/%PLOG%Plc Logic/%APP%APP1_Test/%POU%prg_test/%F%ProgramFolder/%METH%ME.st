@@ -1,5 +1,0 @@
-METHOD ME
-VAR_INPUT
-END_VAR
-
-(*%!%__DELIMITER__%!%*)

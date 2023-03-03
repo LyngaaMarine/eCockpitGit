@@ -25,6 +25,14 @@ def tryPrintObjectName(text, obj):
         print(text, 'root')
 
 
+def encodeMatch(match: re.Match[str]):
+    return '{' + match[0] + '}'
+
+
+def encodeObjectName(object):
+    return re.sub(r"[^A-z _-]", encodeMatch, object.get_name())
+
+
 def getTypeSafe(object):
     if hasattr(object, 'type'):
         return str(object.type)
@@ -93,7 +101,7 @@ def handleNativeExport(object, path, recursive):
 
 
 def handleFolder(object, path):
-    path = os.path.join(path, "%F%" + object.get_name())
+    path = os.path.join(path, "%F%" + encodeObjectName(object))
     writeDataToFile('', path + '.txt')
     loopObjects(object, path)
 
@@ -101,7 +109,7 @@ def handleFolder(object, path):
 ###########################################################################################################################################
 # Normals / Members
 def handleTextType(object, path, designator):
-    path = os.path.join(path, designator + object.get_name())
+    path = os.path.join(path, designator + encodeObjectName(object))
     #print('handleTextType->path', path)
     if designator == '%POU%':
         textExportDeclImpl(object, path)
@@ -117,7 +125,7 @@ def handleTextType(object, path, designator):
 
 
 def handlePersistentVariables(object, path):
-    path = os.path.join(path, "%PV%" + object.get_name())
+    path = os.path.join(path, "%PV%" + encodeObjectName(object))
     #print('handlePersistentVariables->path', path)
     handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
@@ -128,9 +136,9 @@ def handlePersistentVariables(object, path):
 
 def handleTextList(object, path, isGlobal):
     if isGlobal:
-        path = os.path.join(path, "%AGTL%" + object.get_name())
+        path = os.path.join(path, "%AGTL%" + encodeObjectName(object))
     else:
-        path = os.path.join(path, "%TL%" + object.get_name())
+        path = os.path.join(path, "%TL%" + encodeObjectName(object))
     #print('handleTextList->path', path)
     object.export_native(path + '.xml', False)
     tree = ET.parse(path + '.xml')
@@ -152,7 +160,7 @@ def handleTextList(object, path, isGlobal):
 
 
 def handleImagePool(object, path):
-    path = os.path.join(path, "%IMP%" + object.get_name())
+    path = os.path.join(path, "%IMP%" + encodeObjectName(object))
     #print('handleImagePool->path', path)
     object.export_native(path + '.xml', False)
     tree = ET.parse(path + '.xml')
@@ -179,11 +187,11 @@ def handleImagePool(object, path):
 
 def handleProjectSettings(object, path):
     #print('handleProjectSettings->path', path)
-    handleNativeExport(object, os.path.join(path, "%PS%" + object.get_name()) + '.xml', False)
+    handleNativeExport(object, os.path.join(path, "%PS%" + encodeObjectName(object)) + '.xml', False)
 
 
 def handleLibrary(object, path):
-    path = os.path.join(path, "%ALIB%" + object.get_name())
+    path = os.path.join(path, "%ALIB%" + encodeObjectName(object))
     references = object.references
     list = {"libraries": [], "placeholders": []}
     for ref in references:
@@ -214,7 +222,7 @@ def handleLibrary(object, path):
 
 def handleSymbols(object, path):
     #print('handleSymbols->path', path)
-    handleNativeExport(object, os.path.join(path, "%SYM%" + object.get_name()) + '.xml', False)
+    handleNativeExport(object, os.path.join(path, "%SYM%" + encodeObjectName(object)) + '.xml', False)
 
 ###########################################################################################################################################
 # Visu
@@ -222,23 +230,23 @@ def handleSymbols(object, path):
 
 def handleVisualization(object, path):
     #print('handleVisualization->path', path)
-    handleNativeExport(object, os.path.join(path, "%VISU%" + object.get_name()) + '.xml', False)
+    handleNativeExport(object, os.path.join(path, "%VISU%" + encodeObjectName(object)) + '.xml', False)
 
 
 def handleVisualizationManager(object, path):
     #print('handleVisualizationManager->path', path)
-    handleNativeExport(object, os.path.join(path, "%VIMA%" + object.get_name()) + '.xml', False)
+    handleNativeExport(object, os.path.join(path, "%VIMA%" + encodeObjectName(object)) + '.xml', False)
 
 
 def handleVisuStyle(object, path):
     #print('handleVisuStyle->path', path)
-    handleNativeExport(object, os.path.join(path, "%VS%" + object.get_name()) + '.xml', False)
+    handleNativeExport(object, os.path.join(path, "%VS%" + encodeObjectName(object)) + '.xml', False)
 
 
 ###########################################################################################################################################
 # PLC
 def handlePLCKBUS(object, path):
-    tempPath = os.path.join(path, "%PLCKBUS%" + object.get_name())
+    tempPath = os.path.join(path, "%PLCKBUS%" + encodeObjectName(object))
     #print('handlePLCKBUS->path', tempPath)
     object.export_native(tempPath + '.xml', False)
     tree = ET.parse(tempPath + '.xml')
@@ -246,7 +254,7 @@ def handlePLCKBUS(object, path):
     root = tree.getroot()
     list = {}
     if root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Single[@Name="Name"]').text == 'Kbus':
-        object.export_io_mappings_as_csv(os.path.join(path, "%KBUS%" + object.get_name() + ".csv"))
+        object.export_io_mappings_as_csv(os.path.join(path, "%KBUS%" + encodeObjectName(object) + ".csv"))
     else:
         deviceInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="Object"]/Single[@Name="DefaultDeviceInfo"]')
         list['name'] = deviceInfo.find('./Single[@Name="Name"]').text or ''
@@ -256,7 +264,7 @@ def handlePLCKBUS(object, path):
         list['ipaddress'] = networkInfo.text or ''
         versionInfo = root.find('./StructuredView/Single/List2/Single/Single[@Name="MetaObject"]/Dictionary/Entry/Value/Single/Single[@Name="DeviceTypeVersion"]')
         list['version'] = versionInfo.text or ''
-        path = os.path.join(path, "%PLC%" + object.get_name())
+        path = os.path.join(path, "%PLC%" + encodeObjectName(object))
         list['modules'] = []
         children = object.find('Kbus')[0].get_children(False)
         if len(children) > 0:
@@ -278,35 +286,35 @@ def handlePLCKBUS(object, path):
 
 
 def handlePLCLogic(object, path):
-    path = os.path.join(path, "%PLOG%" + object.get_name())
+    path = os.path.join(path, "%PLOG%" + encodeObjectName(object))
     #print('handlePLCLogic->path', path)
     handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
 
 
 def handleApplication(object, path):
-    path = os.path.join(path, "%APP%" + object.get_name())
+    path = os.path.join(path, "%APP%" + encodeObjectName(object))
     #print('handleApplication->path', path)
     handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
 
 
 def handleTaskConfiguration(object, path):
-    path = os.path.join(path, "%TC%" + object.get_name())
+    path = os.path.join(path, "%TC%" + encodeObjectName(object))
     #print('handleTaskConfiguration->path', path)
     handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
 
 
 def handleTask(object, path):
-    path = os.path.join(path, "%TSK%" + object.get_name())
+    path = os.path.join(path, "%TSK%" + encodeObjectName(object))
     #print('handleTask->path', path)
     handleNativeExport(object, path + '.xml', False)
 
 
 def handleConnection(object, path):
     #print('handleConnection->path', path)
-    handleNativeExport(object, os.path.join(path, "%CONN%" + object.get_name()) + '.xml', False)
+    handleNativeExport(object, os.path.join(path, "%CONN%" + encodeObjectName(object)) + '.xml', False)
     loopObjects(object, path)
 
 ###########################################################################################################################################
@@ -390,7 +398,7 @@ def handleObject(object, path):
     # elif type == '9031c721-d39f-4557-8a8f-ab12b4a71ebc':  # Trend Recording Manager
     #     #print('handleObject->UnsupportedType(Trend Recording Manager)', type)
     # else:
-    #     path = os.path.join(path, "%UNKNOWN%" + object.get_name())
+    #     path = os.path.join(path, "%UNKNOWN%" + encodeObjectName(object))
     #     #print('Unknown type ' + object.get_name() + ' ' + str(type))
     #     return path
 

@@ -28,6 +28,14 @@ def tryPrintObjectName(text, obj):
         print(text, 'none/root')
 
 
+def decodeMatch(match: re.Match[str]):
+    return match[0][1]
+
+
+def decodeObjectName(string: str):
+    return re.sub(r"{.}", decodeMatch, string)
+
+
 def getTypeSafe(object):
     if hasattr(object, 'type'):
         return str(object.type)
@@ -385,60 +393,60 @@ def handleFile(creationObject, placementObject, path, file):
     search = re.search("%.+%", file)
     type = search.group()
     split = os.path.splitext(file[search.span()[1]:])
-    name = split[0]
+    objectname = decodeObjectName(split[0])
     ext = split[1]
-    path = os.path.join(path, type + name)
+    path = os.path.join(path, type + split[0])
     if type == '%F%' and ext == '.txt':
-        handleFolder(creationObject, placementObject, name, path)
+        handleFolder(creationObject, placementObject, objectname, path)
     # Normals
     elif type == '%POU%' and ext == '.st':
-        handlePOU(creationObject, name, path, ext)
+        handlePOU(creationObject, objectname, path, ext)
     elif type == '%DUT%' and ext == '.st':
-        handleDUT(creationObject, name, path, ext)
+        handleDUT(creationObject, objectname, path, ext)
     elif type == '%GVL%' and ext == '.st':
-        handleGVL(creationObject, name, path, ext)
+        handleGVL(creationObject, objectname, path, ext)
     elif type == '%ITF%' and ext == '.st':
-        handleInterface(creationObject, name, path, ext)
+        handleInterface(creationObject, objectname, path, ext)
     elif type == '%PV%' and ext == '.xml':
-        handlePersistentVariables(creationObject, name, path, ext)
+        handlePersistentVariables(creationObject, objectname, path, ext)
     # Members
     elif type == '%PRO%' and ext == '.st':
-        handleProperty(creationObject, placementObject, name, path, ext)
+        handleProperty(creationObject, placementObject, objectname, path, ext)
     elif type == '%ACT%' and ext == '.st':
-        handleAction(creationObject, placementObject, name, path, ext)
+        handleAction(creationObject, placementObject, objectname, path, ext)
     elif type == '%METH%' and ext == '.st':
-        handleMethod(creationObject, placementObject, name, path, ext)
+        handleMethod(creationObject, placementObject, objectname, path, ext)
     elif type == '%TRAN%' and ext == '.st':
-        handleTransition(creationObject, placementObject, name, path, ext)
+        handleTransition(creationObject, placementObject, objectname, path, ext)
     # Specials
     elif type == '%EF%' and ext == '.txt':  # External File
-        handleExternalFile(creationObject, placementObject, name, path, ext)
+        handleExternalFile(creationObject, placementObject, objectname, path, ext)
     elif type == '%TL%' and ext == '.json':  # Text List
-        handleTextList(creationObject, placementObject, name, path, ext, False)
+        handleTextList(creationObject, placementObject, objectname, path, ext, False)
     elif type == '%AGTL%' and ext == '.json':  # Global Text List
-        handleTextList(creationObject, placementObject, name, path, ext, True)
+        handleTextList(creationObject, placementObject, objectname, path, ext, True)
     elif type == '%IMP%' and ext == '.json':  # Image Pool
-        handleImagePool(creationObject, placementObject, name, path, ext)
+        handleImagePool(creationObject, placementObject, objectname, path, ext)
     elif type == '%PS%' and ext == '.xml':  # Project Settings
-        handleProjectSettings(creationObject, placementObject, name, path, ext)
+        handleProjectSettings(creationObject, placementObject, objectname, path, ext)
     elif type == '%ALIB%' and ext == '.json':  # Library Manager
-        handleLibraryManager(creationObject, placementObject, name, path, ext)
+        handleLibraryManager(creationObject, placementObject, objectname, path, ext)
     # Visu
     elif type == '%VISU%' and ext == '.xml':
-        handleVisu(creationObject, placementObject, name, path, ext)
+        handleVisu(creationObject, placementObject, objectname, path, ext)
     elif type == '%VIMA%' and ext == '.xml':
-        handleVisuManager(creationObject, placementObject, name, path, ext)
+        handleVisuManager(creationObject, placementObject, objectname, path, ext)
     # PLC
     elif type == '%PLC%' and ext == '.json':
-        handlePLC(creationObject, placementObject, name, path, ext)
+        handlePLC(creationObject, placementObject, objectname, path, ext)
     elif type == '%PLOG%' and ext == '.xml':
-        handlePLCLogic(creationObject, placementObject, name, path, ext)
+        handlePLCLogic(creationObject, placementObject, objectname, path, ext)
     elif type == '%APP%' and ext == '.xml':
-        handleApplication(creationObject, placementObject, name, path, ext)
+        handleApplication(creationObject, placementObject, objectname, path, ext)
     elif type == '%TC%' and ext == '.xml':
-        handleTaskConfiguration(creationObject, placementObject, name, path, ext)
+        handleTaskConfiguration(creationObject, placementObject, objectname, path, ext)
     elif type == '%TSK%' and ext == '.xml':
-        handleTask(creationObject, placementObject, name, path, ext)
+        handleTask(creationObject, placementObject, objectname, path, ext)
     # Unknowns
     else:
         return

@@ -1,0 +1,11 @@
+{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+//This adds a value data to the buffer
+// |**Version**|**Author**| **Date** |**Changes** 
+// | 1         | NSN      | 16-05-21 | Creation
+METHOD writeLword
+VAR_INPUT
+	value			:LWORD;
+END_VAR
+!__IMPLEMENTATION__!
+writer.writeLword(value:=value);
+logChange(valPoint:=ADR(value),valType:=ESysType.tLWORD);

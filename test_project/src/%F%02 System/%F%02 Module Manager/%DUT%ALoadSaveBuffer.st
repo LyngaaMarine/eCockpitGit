@@ -1,1 +1,0 @@
-TYPE ALoadSaveBuffer : ARRAY[0..9999] OF BYTE; END_TYPE

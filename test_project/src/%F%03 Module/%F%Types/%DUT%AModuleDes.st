@@ -1,1 +1,0 @@
-TYPE AModuleDes : STRING(5); END_TYPE

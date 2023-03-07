@@ -1,1 +1,0 @@
-TYPE AModuleName : STRING(100); END_TYPE

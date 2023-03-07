@@ -1,1 +1,0 @@
-PROPERTY SYS_valueMin : UValue

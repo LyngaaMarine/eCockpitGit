@@ -1,1 +1,0 @@
-PROPERTY maxSize : DWORD

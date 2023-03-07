@@ -1,0 +1,39 @@
+{
+    "TextList": [
+        {
+            "TextID": "254", 
+            "TextDefault": "Attention", 
+            "LanguageTexts": [
+                "asdf", 
+                "vv"
+            ]
+        }, 
+        {
+            "TextID": "875", 
+            "TextDefault": "Please", 
+            "LanguageTexts": [
+                "fsf", 
+                "kkk"
+            ]
+        }, 
+        {
+            "TextID": "361", 
+            "TextDefault": "Testing", 
+            "LanguageTexts": [
+                "xbv", 
+                "ddd"
+            ]
+        }
+    ], 
+    "LanguageList": [
+        "qc", 
+        "qqqq"
+    ], 
+    "BuildProperties": {
+        "external": false, 
+        "compiler_defines": "", 
+        "link_always": false, 
+        "exclude_from_build": false, 
+        "enable_system_call": false
+    }
+}

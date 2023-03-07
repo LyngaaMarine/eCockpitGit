@@ -1,1 +1,0 @@
-TYPE AModuleUID : WORD; END_TYPE

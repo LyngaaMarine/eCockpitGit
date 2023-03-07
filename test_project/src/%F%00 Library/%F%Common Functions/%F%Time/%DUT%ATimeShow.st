@@ -1,1 +1,0 @@
-TYPE ATimeShow : STRING(19); END_TYPE

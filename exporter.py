@@ -123,7 +123,7 @@ def getObjectBuildProperties(object):
 
 def handleFolder(object, path):
     path = os.path.join(path, "%F%" + encodeObjectName(object))
-    writeDataToFile(json.dumps(getObjectBuildProperties(object)), path + '.txt')
+    writeDataToFile(json.dumps(getObjectBuildProperties(object)), path + '.json')
     loopObjects(object, path)
 
 
@@ -197,7 +197,7 @@ def handleTextList(object, path, isGlobal):
         textID = child.find("./Single/[@Name='TextID']")
         if textID.text:
             list["TextList"].append({
-                "TextID": int(textID.text or ''),
+                "TextID": str(textID.text or ''),
                 "TextDefault": child.find("./Single/[@Name='TextDefault']").text or '',
                 "LanguageTexts": xMLListToPythList(child.find("./List/[@Name='LanguageTexts']"))
             })

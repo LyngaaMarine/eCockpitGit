@@ -119,11 +119,14 @@ def applyObjectBuildProperties(object, propsSet):
 
 def handleFolder(creationObject, placementObject, name, path, ext):
     creationObject.create_folder(name)
-    if placementObject:
-        self = trueFind(placementObject, name)
-    else:
-        self = trueFind(creationObject, name)
+    finds = creationObject.find(name)
+    if finds:
+        self = finds[0]
+        if self is None:
+            self = trueFind(creationObject, name)
     if self:
+        if placementObject:
+            self.move(placementObject, -1)
         buildProps = json.loads(fileContent(path + ext))
         applyObjectBuildProperties(self, buildProps)
         if creationObject == placementObject:
@@ -370,7 +373,7 @@ def handleFile(creationObject, placementObject, path, file):
     objectname = decodeObjectName(split[0])
     ext = split[1]
     path = os.path.join(path, type + split[0])
-    if type == '%F%' and ext == '.txt':
+    if type == '%F%' and ext == '.json':
         handleFolder(creationObject, placementObject, objectname, path, ext)
     # Normals
     elif type == '%POU%' and ext == '.st':
@@ -444,9 +447,8 @@ def loopDir(creationObject, placementObject, path):
 # Starts script and cleanup
 loopDir(projectObject, None, os.path.join(sys.argv[1], "src"))
 plcRename()
-project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
-shutil.copyfile(os.path.join(sys.argv[1], 'ecp', "src.ecp"), os.path.join(sys.argv[1], 'ecp_at_import', "src.ecp"))
-e_system.close_e_cockpit()
+# project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
+# e_system.close_e_cockpit()
 
 if os.path.exists(tempFilePath):
     os.remove(tempFilePath)

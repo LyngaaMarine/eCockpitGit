@@ -1,0 +1,249 @@
+{
+    "libraries": [
+        {
+            "namespace": "SysTypes", 
+            "system_library": false, 
+            "is_managed": true, 
+            "name": "SysTypes, 3.1.2.0 (System)", 
+            "optional": false, 
+            "qualified_only": false
+        }
+    ], 
+    "placeholders": [
+        {
+            "system_library": false, 
+            "is_managed": false, 
+            "namespace": "SysDir", 
+            "default_resolution": "SysDir, * (System)", 
+            "is_redirected": false, 
+            "name": "#SysDir", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by default library", 
+            "placeholder_name": "SysDir", 
+            "effective_resolution": "SysDir, 3.5.15.0 (System)"
+        }, 
+        {
+            "system_library": false, 
+            "is_managed": false, 
+            "namespace": "TCP", 
+            "default_resolution": "TCP, * (3S - Smart Software Solutions GmbH)", 
+            "is_redirected": false, 
+            "name": "#TCP", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by default library", 
+            "placeholder_name": "TCP", 
+            "effective_resolution": "TCP, 3.5.15.0 (3S - Smart Software Solutions GmbH)"
+        }, 
+        {
+            "system_library": false, 
+            "is_managed": false, 
+            "namespace": "SysFile", 
+            "default_resolution": "SysFile, * (System)", 
+            "is_redirected": false, 
+            "name": "#SysFile", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by default library", 
+            "placeholder_name": "SysFile", 
+            "effective_resolution": "SysFile, 3.5.15.0 (System)"
+        }, 
+        {
+            "system_library": false, 
+            "is_managed": false, 
+            "namespace": "SysMem", 
+            "default_resolution": "SysMem, * (System)", 
+            "is_redirected": false, 
+            "name": "#SysMem", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by default library", 
+            "placeholder_name": "SysMem", 
+            "effective_resolution": "SysMem, 3.5.12.0 (System)"
+        }, 
+        {
+            "system_library": false, 
+            "is_managed": false, 
+            "namespace": "SysTimeRtc", 
+            "default_resolution": "SysTimeRtc, * (System)", 
+            "is_redirected": false, 
+            "name": "#SysTimeRtc", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by default library", 
+            "placeholder_name": "SysTimeRtc", 
+            "effective_resolution": "SysTimeRtc, 3.5.5.0 (System)"
+        }, 
+        {
+            "system_library": false, 
+            "is_managed": false, 
+            "namespace": "SysProcess", 
+            "default_resolution": "SysProcess, * (System)", 
+            "is_redirected": false, 
+            "name": "#SysProcess", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by default library", 
+            "placeholder_name": "SysProcess", 
+            "effective_resolution": "SysProcess, 3.5.16.0 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElems", 
+            "default_resolution": "VisuElems, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElems", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElems", 
+            "effective_resolution": "VisuElems, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemMeter", 
+            "default_resolution": "VisuElemMeter, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemMeter", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemMeter", 
+            "effective_resolution": "VisuElemMeter, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemsSpecialControls", 
+            "default_resolution": "VisuElemsSpecialControls, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemsSpecialControls", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemsSpecialControls", 
+            "effective_resolution": "VisuElemsSpecialControls, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemsWinControls", 
+            "default_resolution": "VisuElemsWinControls, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemsWinControls", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemsWinControls", 
+            "effective_resolution": "VisuElemsWinControls, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemTextEditor", 
+            "default_resolution": "VisuElemTextEditor, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemTextEditor", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemTextEditor", 
+            "effective_resolution": "VisuElemTextEditor, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemTrace", 
+            "default_resolution": "VisuElemTrace, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemTrace", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemTrace", 
+            "effective_resolution": "VisuElemTrace, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuNativeControl", 
+            "default_resolution": "VisuNativeControl, 3.5.16.0 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuNativeControl", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuNativeControl", 
+            "effective_resolution": "VisuNativeControl, 3.5.16.0 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemsAlarm", 
+            "default_resolution": "VisuElemsAlarm, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemsAlarm", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemsAlarm", 
+            "effective_resolution": "VisuElemsAlarm, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemCamDisplayer", 
+            "default_resolution": "VisuElemCamDisplayer, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemCamDisplayer", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemCamDisplayer", 
+            "effective_resolution": "VisuElemCamDisplayer, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElem3DPath", 
+            "default_resolution": "VisuElem3DPath, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElem3DPath", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElem3DPath", 
+            "effective_resolution": "VisuElem3DPath, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemsDateTime", 
+            "default_resolution": "VisuElemsDateTime, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemsDateTime", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemsDateTime", 
+            "effective_resolution": "VisuElemsDateTime, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "VisuElemXYChart", 
+            "default_resolution": "VisuElemXYChart, 3.5.16.30 (System)", 
+            "is_redirected": false, 
+            "name": "#System_VisuElemXYChart", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "System_VisuElemXYChart", 
+            "effective_resolution": "VisuElemXYChart, 3.5.16.30 (System)"
+        }, 
+        {
+            "system_library": true, 
+            "is_managed": false, 
+            "namespace": "visuinputs", 
+            "default_resolution": "visuinputs, 3.5.16.30 (system)", 
+            "is_redirected": false, 
+            "name": "#system_visuinputs", 
+            "qualified_only": false, 
+            "resolution_info": "Resolved by active visualization profile", 
+            "placeholder_name": "system_visuinputs", 
+            "effective_resolution": "VisuInputs, 3.5.16.30 (System)"
+        }
+    ], 
+    "BuildProperties": {
+        "external": false, 
+        "compiler_defines": "", 
+        "link_always": false, 
+        "exclude_from_build": false, 
+        "enable_system_call": false
+    }
+}

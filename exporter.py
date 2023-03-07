@@ -10,12 +10,11 @@ import json
 shutil.copyfile(os.path.join(sys.argv[1], 'ecp', "src.ecp"), os.path.join(sys.argv[1], 'ecp_at_export', "src.ecp"))
 project = e_projects.open_project(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
 
+
 ###########################################################################################################################################
 ###########################################################################################################################################
 ###########################################################################################################################################
 # Helpers
-
-
 def tryPrintObjectName(text, obj):
     return
     try:
@@ -92,7 +91,6 @@ timeStampFinder = re.compile(r"(<Single Name=\"Timestamp\" Type=\"long\">)(\d+)(
 
 
 def handleNativeExport(object, path, recursive):
-    #print('handleNativeExport->path', path)
     object.export_native(path, recursive)
     editedFile = timeStampFinder.sub('\\1 0 \\3', fileContent(path))
     writeDataToFile(editedFile, path)
@@ -131,7 +129,6 @@ def handleFolder(object, path):
 # Normals / Members
 def handleTextType(object, path, designator):
     path = os.path.join(path, designator + encodeObjectName(object))
-    #print('handleTextType->path', path)
     if designator == '%POU%':
         textExportDeclImpl(object, path)
     elif designator == '%METH%':
@@ -174,42 +171,30 @@ def handleProperty(object, path):
 
 def handlePersistentVariables(object, path):
     path = os.path.join(path, "%PV%" + encodeObjectName(object))
-    #print('handlePersistentVariables->path', path)
     handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
 
+
 ###########################################################################################################################################
 # Specials
-
-
 def handleTextList(object, path, isGlobal):
     if isGlobal:
-        path = os.path.join(path, "%AGTL%" + encodeObjectName(object))
+        path = os.path.join(path, "%GTL%" + encodeObjectName(object))
     else:
         path = os.path.join(path, "%TL%" + encodeObjectName(object))
-    #print('handleTextList->path', path)
-    object.export_native(path + '.xml', False)
-    tree = ET.parse(path + '.xml')
-    root = tree.getroot()
-    list = {"BuildProperties": getObjectBuildProperties(object), "TextList": [], "LanguageList": []}
-    textList = root.find('./StructuredView/Single/List2/Single/Single/List[@Name="TextList"]')
-    for child in textList:
-        textID = child.find("./Single/[@Name='TextID']")
-        if textID.text:
-            list["TextList"].append({
-                "TextID": str(textID.text or ''),
-                "TextDefault": child.find("./Single/[@Name='TextDefault']").text or '',
-                "LanguageTexts": xMLListToPythList(child.find("./List/[@Name='LanguageTexts']"))
-            })
-    languageList = root.find('./StructuredView/Single/List2/Single/Single/List[@Name="Languages"]')
-    list["LanguageList"] = xMLListToPythList(languageList)
-    writeDataToFile(json.dumps(list, indent=4), path + '.json')
-    os.remove(path + '.xml')
+    allInfo = {"BuildProperties": getObjectBuildProperties(object), "TextList": [], "LanguageList": []}
+    for row in object.rows:
+        texts = []
+        for i in range(row.languagetextcount()):
+            texts.append(row.languagetext(i))
+        allInfo["TextList"].append({"TextID": row.id, "TextDefault": row.defaulttext, "LanguageTexts": texts})
+    for i in range(object.languagecount()):
+        allInfo["LanguageList"].append(object.getlanguage(i))
+    writeDataToFile(json.dumps(allInfo, indent=4), path + '.json')
 
 
 def handleImagePool(object, path):
     path = os.path.join(path, "%IMP%" + encodeObjectName(object))
-    #print('handleImagePool->path', path)
     object.export_native(path + '.xml', False)
     tree = ET.parse(path + '.xml')
     os.remove(path + '.xml')
@@ -234,60 +219,40 @@ def handleImagePool(object, path):
 
 
 def handleProjectSettings(object, path):
-    #print('handleProjectSettings->path', path)
     handleNativeExport(object, os.path.join(path, "%PS%" + encodeObjectName(object)) + '.xml', False)
 
 
 def handleLibrary(object, path):
-    path = os.path.join(path, "%ALIB%" + encodeObjectName(object))
+    path = os.path.join(path, "%LIB%" + encodeObjectName(object))
     references = object.references
     list = {"BuildProperties": getObjectBuildProperties(object), "libraries": [], "placeholders": []}
     for ref in references:
         if ref.is_placeholder:
-            list['placeholders'].append({
-                "is_managed": ref.is_managed,
-                "name": ref.name,
-                "namespace": ref.namespace,
-                "system_library": ref.system_library,
-                "qualified_only": ref.qualified_only,
-                "placeholder_name": ref.placeholder_name,
-                "default_resolution": ref.default_resolution,
-                "effective_resolution": ref.effective_resolution,
-                "is_redirected": ref.is_redirected,
-                "resolution_info": ref.resolution_info,
-            })
+            list['placeholders'].append(
+                {"is_managed": ref.is_managed, "name": ref.name, "namespace": ref.namespace, "system_library": ref.system_library, "qualified_only": ref.qualified_only,
+                 "placeholder_name": ref.placeholder_name, "default_resolution": ref.default_resolution, "effective_resolution": ref.effective_resolution, "is_redirected": ref.is_redirected,
+                 "resolution_info": ref.resolution_info, })
         else:
-            list['libraries'].append({
-                "is_managed": ref.is_managed,
-                "name": ref.name,
-                "namespace": ref.namespace,
-                "system_library": ref.system_library,
-                "qualified_only": ref.qualified_only,
-                "optional": ref.optional,
-            })
+            list['libraries'].append({"is_managed": ref.is_managed, "name": ref.name, "namespace": ref.namespace,
+                                     "system_library": ref.system_library, "qualified_only": ref.qualified_only, "optional": ref.optional, })
     writeDataToFile(json.dumps(list, indent=4), path + '.json')
 
 
 def handleSymbols(object, path):
-    #print('handleSymbols->path', path)
     handleNativeExport(object, os.path.join(path, "%SYM%" + encodeObjectName(object)) + '.xml', False)
+
 
 ###########################################################################################################################################
 # Visu
-
-
 def handleVisualization(object, path):
-    #print('handleVisualization->path', path)
     handleNativeExport(object, os.path.join(path, "%VISU%" + encodeObjectName(object)) + '.xml', False)
 
 
 def handleVisualizationManager(object, path):
-    #print('handleVisualizationManager->path', path)
-    handleNativeExport(object, os.path.join(path, "%VIMA%" + encodeObjectName(object)) + '.xml', False)
+    handleNativeExport(object, os.path.join(path, "%VIMA%" + encodeObjectName(object)) + '.xml', True)
 
 
 def handleVisuStyle(object, path):
-    #print('handleVisuStyle->path', path)
     handleNativeExport(object, os.path.join(path, "%VS%" + encodeObjectName(object)) + '.xml', False)
 
 
@@ -295,7 +260,6 @@ def handleVisuStyle(object, path):
 # PLC
 def handlePLCKBUS(object, path):
     tempPath = os.path.join(path, "%PLCKBUS%" + encodeObjectName(object))
-    #print('handlePLCKBUS->path', tempPath)
     object.export_native(tempPath + '.xml', False)
     tree = ET.parse(tempPath + '.xml')
     os.remove(tempPath + '.xml')
@@ -335,46 +299,39 @@ def handlePLCKBUS(object, path):
 
 def handlePLCLogic(object, path):
     path = os.path.join(path, "%PLOG%" + encodeObjectName(object))
-    #print('handlePLCLogic->path', path)
     handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
 
 
 def handleApplication(object, path):
     path = os.path.join(path, "%APP%" + encodeObjectName(object))
-    #print('handleApplication->path', path)
     handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
 
 
 def handleTaskConfiguration(object, path):
     path = os.path.join(path, "%TC%" + encodeObjectName(object))
-    #print('handleTaskConfiguration->path', path)
     handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
 
 
 def handleTask(object, path):
     path = os.path.join(path, "%TSK%" + encodeObjectName(object))
-    #print('handleTask->path', path)
     handleNativeExport(object, path + '.xml', False)
 
 
 def handleConnection(object, path):
-    #print('handleConnection->path', path)
-    handleNativeExport(object, os.path.join(path, "%CONN%" + encodeObjectName(object)) + '.xml', False)
+    path = os.path.join(path, "%CONN%" + encodeObjectName(object))
+    handleNativeExport(object, path + '.xml', False)
     loopObjects(object, path)
+
 
 ###########################################################################################################################################
 ###########################################################################################################################################
 ###########################################################################################################################################
 # Loopers
-
-
 def handleObject(object, path):
-    tryPrintObjectName('handleObject->object', object)
     type = str(object.type)
-    #print('handleObject->type', type)
     if type == '738bea1e-99bb-4f04-90bb-a7a567e74e3a':  # Folder
         handleFolder(object, path)
     # Normals
@@ -430,21 +387,6 @@ def handleObject(object, path):
         handleTaskConfiguration(object, path)
     elif type == '98a2708a-9b18-4f31-82ed-a1465b24fa2d':  # Task
         handleTask(object, path)
-    # Unsupported
-    # elif type == 'a56744ff-693f-4597-95f9-0e1c529fffc2':  # External File
-    #     #print('handleObject->UnsupportedType(External File)', type)
-    # elif type == '9031c721-d39f-4557-8a8f-ab12b4a71ebc':  # Unit Conversion
-    #     #print('handleObject->UnsupportedType(Unit Conversion)', type)
-    # elif type == '9031c721-d39f-4557-8a8f-ab12b4a71ebc':  # RecipeManager
-    #     #print('handleObject->UnsupportedType(RecipeManager)', type)
-    # elif type == '9031c721-d39f-4557-8a8f-ab12b4a71ebc':  # Trace
-    #     #print('handleObject->UnsupportedType(Trace)', type)
-    # elif type == '9031c721-d39f-4557-8a8f-ab12b4a71ebc':  # Trend Recording Manager
-    #     #print('handleObject->UnsupportedType(Trend Recording Manager)', type)
-    # else:
-    #     path = os.path.join(path, "%UNKNOWN%" + encodeObjectName(object))
-    #     #print('Unknown type ' + object.get_name() + ' ' + str(type))
-    #     return path
 
 
 def loopObjects(object, path):
@@ -461,4 +403,4 @@ if os.path.exists(root):
     shutil.rmtree(root)
 loopObjects(project, root)
 
-e_system.close_e_cockpit()
+# e_system.close_e_cockpit()

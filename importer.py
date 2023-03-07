@@ -5,7 +5,6 @@ import os
 import re
 import json
 import time
-import shutil
 
 # Creates project and gets reference to project object
 project = e_projects.create_new_project()
@@ -130,9 +129,9 @@ def handleFolder(creationObject, placementObject, name, path, ext):
         buildProps = json.loads(fileContent(path + ext))
         applyObjectBuildProperties(self, buildProps)
         if creationObject == placementObject:
-            loopDir(creationObject, self, path)
+            loopDir(creationObject, self, path, False)
         else:
-            loopDir(self, None, path)
+            loopDir(self, None, path, False)
 
 
 ###########################################################################################################################################
@@ -140,7 +139,7 @@ def handleFolder(creationObject, placementObject, name, path, ext):
 def handlePOU(creationObject, name, path, ext):
     pou = creationObject.create_pou(name, PouType.Program)
     writeDeclerationAndImplementationToObject(pou, fileContent(path + ext))
-    loopDir(pou, pou, path)
+    loopDir(pou, pou, path, False)
 
 
 def handleDUT(creationObject, name, path, ext):
@@ -148,7 +147,7 @@ def handleDUT(creationObject, name, path, ext):
     parts = fileContent(path + ext).split('\n', 1)
     applyObjectBuildProperties(pou, json.loads(parts[0]))
     pou.textual_declaration.replace(parts[1])
-    loopDir(pou, pou, path)
+    loopDir(pou, pou, path, False)
 
 
 def handleGVL(creationObject, name, path, ext):
@@ -156,7 +155,7 @@ def handleGVL(creationObject, name, path, ext):
     parts = fileContent(path + ext).split('\n', 1)
     applyObjectBuildProperties(pou, json.loads(parts[0]))
     pou.textual_declaration.replace(parts[1])
-    loopDir(pou, pou, path)
+    loopDir(pou, pou, path, False)
 
 
 def handleInterface(creationObject, name, path, ext):
@@ -164,14 +163,14 @@ def handleInterface(creationObject, name, path, ext):
     parts = fileContent(path + ext).split('\n', 1)
     applyObjectBuildProperties(pou, json.loads(parts[0]))
     pou.textual_declaration.replace(parts[1])
-    loopDir(pou, pou, path)
+    loopDir(pou, pou, path, False)
 
 
 def handlePersistentVariables(creationObject, name, path, ext):
     creationObject.import_native(path + ext)
     pou = trueFind(creationObject, name)
     if pou:
-        loopDir(pou, pou, path)
+        loopDir(pou, pou, path, False)
 
 
 ###########################################################################################################################################
@@ -230,14 +229,7 @@ def handleTransition(creationObject, placementObject, name, path, ext):
 
 ###########################################################################################################################################
 # Specials
-def handleExternalFile(creationObject, placementObject, name, path, ext):
-    extData = """<ExportFile><StructuredView Guid="{21af5390-2942-461a-bf89-951aaf6999f1}"><Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable"><Null Name="Profile" /><List2 Name="EntryList"><Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable"><Single Name="IsRoot" Type="bool">True</Single><Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable"><Single Name="Guid" Type="System.Guid">fa9ab52e-878c-4f0a-a8df-974f770d9d0f</Single><Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Single Name="Name" Type="string">""" + name + \
-        """</Single><Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" /><Single Name="TypeGuid" Type="System.Guid">a56744ff-693f-4597-95f9-0e1c529fffc2</Single><Null Name="EmbeddedTypeGuids" /><Single Name="Timestamp" Type="long">0</Single></Single><Single Name="Object" Type="{a56744ff-693f-4597-95f9-0e1c529fffc2}" Method="IArchivable"><Single Name="FileId" Type="string">00000000-0000-0000-0000-000000000000|""" + fileContent(path + ext) + """</Single></Single><Single Name="ParentSVNodeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Array Name="Path" Type="string" /><Single Name="Index" Type="int">-1</Single></Single></List2><Null Name="ProfileName" /></Single></StructuredView></ExportFile>"""
-    writeTempFile(extData)
-    creationObject.import_native(tempFilePath)
-
-
-def handleTextList(creationObject, placementObject, name, path, ext, isGlobal):
+def handleTextList(creationObject, name, path, ext, isGlobal):
     textListJson = json.loads(fileContent(path + ext))
     if isGlobal:
         typeGUID = "63784cbb-9ba0-45e6-9d69-babf3f040511"
@@ -259,8 +251,7 @@ def handleTextList(creationObject, placementObject, name, path, ext, isGlobal):
     creationObject.import_native(tempFilePath)
 
 
-def handleImagePool(creationObject, placementObject, name, path, ext):
-    #print('handleImagePool->name,path,ext', name, path, ext)
+def handleImagePool(creationObject, name, path, ext):
     jsonData = json.loads(fileContent(path + ext))
     extData = """<ExportFile><StructuredView Guid="{21af5390-2942-461a-bf89-951aaf6999f1}"><Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable"><Null Name="Profile" /><List2 Name="EntryList"><Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable"><Single Name="IsRoot" Type="bool">True</Single><Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable"><Single Name="Guid" Type="System.Guid">f46998ba-2626-4ec2-9a83-574e14c52f23</Single><Single Name="ParentGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Single Name="Name" Type="string">""" + \
         name + """</Single><Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" /><Single Name="TypeGuid" Type="System.Guid">bb0b9044-714e-4614-ad3e-33cbdf34d16b</Single><Null Name="EmbeddedTypeGuids" /><Single Name="Timestamp" Type="long">0</Single></Single><Single Name="Object" Type="{bb0b9044-714e-4614-ad3e-33cbdf34d16b}" Method="IArchivable"><Single Name="UniqueIdGenerator" Type="string">10</Single><List Name="BitmapPool" Type="System.Collections.ArrayList">"""
@@ -276,12 +267,11 @@ def handleImagePool(creationObject, placementObject, name, path, ext):
     creationObject.import_native(tempFilePath)
 
 
-def handleProjectSettings(creationObject, placementObject, name, path, ext):
-    #print('handleProjectSettings->name,path,ext', name, path, ext)
+def handleProjectSettings(creationObject, path, ext):
     creationObject.import_native(path + ext)
 
 
-def handleLibraryManager(creationObject, placementObject, name, path, ext):
+def handleLibraryManager(creationObject, path, ext):
     manager = creationObject.get_library_manager()
     jsonData = json.loads(fileContent(path + ext))
     for library in jsonData["libraries"]:
@@ -302,11 +292,11 @@ def handleLibraryManager(creationObject, placementObject, name, path, ext):
 
 ###########################################################################################################################################
 # Visu
-def handleVisu(creationObject, placementObject, name, path, ext):
+def handleVisu(creationObject, path, ext):
     creationObject.import_native(path + ext)
 
 
-def handleVisuManager(creationObject, placementObject, name, path, ext):
+def handleVisuManager(creationObject, name, path, ext):
     creationObject.import_native(path + ext)
 
 
@@ -315,7 +305,7 @@ def handleVisuManager(creationObject, placementObject, name, path, ext):
 plclist = []
 
 
-def handlePLC(creationObject, placementObject, name, path, ext):
+def handlePLC(name, path, ext):
     jsonData = json.loads(fileContent(path + ext))
     deviceTypes = e_device_catalog.find_device_type(jsonData["ordernumber"], jsonData["version"])
     plc = project.add_device(deviceTypes[0], 1)[0]
@@ -325,7 +315,7 @@ def handlePLC(creationObject, placementObject, name, path, ext):
         type = e_device_catalog.find_device_type(module["ordernumber"], module["version"])
         plc.add_module(type[0], index, 1)
     plc.import_io_mappings_from_csv(os.path.join(path, '%KBUS%Kbus.csv'))
-    loopDir(plc, None, path)
+    loopDir(plc, None, path, False)
 
 
 def plcRename():
@@ -334,28 +324,28 @@ def plcRename():
         plc['plc'].rename(plc["name"])
 
 
-def handlePLCLogic(creationObject, placementObject, name, path, ext):
+def handlePLCLogic(creationObject,  name, path, ext):
     creationObject.import_native(path + ext)
     self = trueFind(creationObject, name)
     if self:
-        loopDir(self, None, path)
+        loopDir(self, None, path, False)
 
 
-def handleApplication(creationObject, placementObject, name, path, ext):
+def handleApplication(creationObject,  name, path):
     device = trueFindDevice(creationObject.parent.get_name())
     project.import_app_native([device.device_guid], path + '.xml')
     app = trueFind(creationObject, name)
-    loopDir(app, None, path)
+    loopDir(app, None, path, True)
 
 
-def handleTaskConfiguration(creationObject, placementObject, name, path, ext):
+def handleTaskConfiguration(creationObject,  name, path):
     creationObject.import_native(path + '.xml')
     obj = trueFind(creationObject, name)
     if obj:
-        loopDir(obj, None, path)
+        loopDir(obj, None, path, False)
 
 
-def handleTask(creationObject, placementObject, name, path, ext):
+def handleTask(creationObject, path):
     creationObject.import_native(path + '.xml')
 
 ###########################################################################################################################################
@@ -365,8 +355,6 @@ def handleTask(creationObject, placementObject, name, path, ext):
 
 
 def handleFile(creationObject, placementObject, path, file):
-    tryPrintObjectName('handleFile->creationObject', creationObject)
-    tryPrintObjectName('handleFile->placementObject', placementObject)
     search = re.search("%.+%", file)
     type = search.group()
     split = os.path.splitext(file[search.span()[1]:])
@@ -396,45 +384,46 @@ def handleFile(creationObject, placementObject, path, file):
     elif type == '%TRAN%' and ext == '.st':
         handleTransition(creationObject, placementObject, objectname, path, ext)
     # Specials
-    elif type == '%EF%' and ext == '.txt':  # External File
-        handleExternalFile(creationObject, placementObject, objectname, path, ext)
     elif type == '%TL%' and ext == '.json':  # Text List
-        handleTextList(creationObject, placementObject, objectname, path, ext, False)
-    elif type == '%AGTL%' and ext == '.json':  # Global Text List
-        handleTextList(creationObject, placementObject, objectname, path, ext, True)
+        handleTextList(creationObject,  objectname, path, ext, False)
+    elif type == '%GTL%' and ext == '.json':  # Global Text List
+        handleTextList(creationObject,  objectname, path, ext, True)
     elif type == '%IMP%' and ext == '.json':  # Image Pool
-        handleImagePool(creationObject, placementObject, objectname, path, ext)
+        handleImagePool(creationObject, objectname, path, ext)
     elif type == '%PS%' and ext == '.xml':  # Project Settings
-        handleProjectSettings(creationObject, placementObject, objectname, path, ext)
-    elif type == '%ALIB%' and ext == '.json':  # Library Manager
-        handleLibraryManager(creationObject, placementObject, objectname, path, ext)
+        handleProjectSettings(creationObject,  path, ext)
+    elif type == '%LIB%' and ext == '.json':  # Library Manager
+        handleLibraryManager(creationObject, path, ext)
     # Visu
     elif type == '%VISU%' and ext == '.xml':
-        handleVisu(creationObject, placementObject, objectname, path, ext)
+        handleVisu(creationObject,  path, ext)
     elif type == '%VIMA%' and ext == '.xml':
-        handleVisuManager(creationObject, placementObject, objectname, path, ext)
+        handleVisuManager(creationObject, objectname, path, ext)
+    elif type == '%WV%' and ext == '.xml':
+        handleWebVisu(creationObject, path, ext)
     # PLC
     elif type == '%PLC%' and ext == '.json':
-        handlePLC(creationObject, placementObject, objectname, path, ext)
+        handlePLC(objectname, path, ext)
     elif type == '%PLOG%' and ext == '.xml':
-        handlePLCLogic(creationObject, placementObject, objectname, path, ext)
+        handlePLCLogic(creationObject, objectname, path, ext)
     elif type == '%APP%' and ext == '.xml':
-        handleApplication(creationObject, placementObject, objectname, path, ext)
+        handleApplication(creationObject, objectname, path)
     elif type == '%TC%' and ext == '.xml':
-        handleTaskConfiguration(creationObject, placementObject, objectname, path, ext)
+        handleTaskConfiguration(creationObject,  objectname, path)
     elif type == '%TSK%' and ext == '.xml':
-        handleTask(creationObject, placementObject, objectname, path, ext)
-    # Unknowns
-    else:
-        return
-        #print('Unknown ' + file + ' ' + path)
+        handleTask(creationObject,  path)
 
 
-def loopDir(creationObject, placementObject, path):
-    #print('loopDir->path', path)
+objectOrder = ['%LIB%Library Manager.json', '%GTL%GlobalTextList.json', '%TC%Task configuration.xml', '%VIMA%Visualization Manager.xml']
+
+
+def loopDir(creationObject, placementObject, path, sort):
     if os.path.exists(path):
-        #print('loopDir->looping path')
         for root, dirs, files in os.walk(path):
+            if sort:
+                ordered = [element for element in objectOrder if element in files]
+                ordered.extend(y for y in files if y not in ordered)
+                files = ordered
             for file in files:
                 handleFile(creationObject, placementObject, path, file)
             break
@@ -445,7 +434,7 @@ def loopDir(creationObject, placementObject, path):
 ########################################################################################################
 
 # Starts script and cleanup
-loopDir(projectObject, None, os.path.join(sys.argv[1], "src"))
+loopDir(projectObject, None, os.path.join(sys.argv[1], "src"), True)
 plcRename()
 # project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
 # e_system.close_e_cockpit()

@@ -436,8 +436,8 @@ def loopDir(creationObject, placementObject, path, sort):
 # Starts script and cleanup
 loopDir(projectObject, None, os.path.join(sys.argv[1], "src"), True)
 plcRename()
-# project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
-# e_system.close_e_cockpit()
+project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
+e_system.close_e_cockpit()
 
 if os.path.exists(tempFilePath):
     os.remove(tempFilePath)

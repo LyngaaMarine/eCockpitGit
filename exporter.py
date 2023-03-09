@@ -403,4 +403,4 @@ if os.path.exists(root):
     shutil.rmtree(root)
 loopObjects(project, root)
 
-# e_system.close_e_cockpit()
+e_system.close_e_cockpit()

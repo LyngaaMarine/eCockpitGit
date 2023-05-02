@@ -2,8 +2,8 @@
 ## Limitations
 * Unit Conversion, External File, RecipeManager, Trace, Trend Recording Manager, Alarm Configuration Objects are unsupported
 * Library Manager, GlobalTextList, Task Configuration, Visualization Manager must exist at the root of their respective structures
-* Visualization Manager, Task Configuration, PLC Logic, Project Settings are stored in the codesys XML format, and will not merge correctly, so changes to these must be handled manually
-* WebVisu's will not import, so these must be added manually after import
+* Visualization, Visualization Manager, Task Configuration, PLC Logic, Project Settings are stored in the codesys XML format, and will not merge correctly, so changes to these must be handled manually
+* WebVisu objects will not import, so these must be added manually after import
 ## How it works
 ### Exporter
 The exporter script opens the src.ecp file located in the ecp folder, the runs through every object in the project, and exports the content of the files to seperate files located in the src folder, it also copies the ecp project to the ecp_backup folder, then deletes the src.ecp file.

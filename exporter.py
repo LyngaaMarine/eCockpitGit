@@ -439,4 +439,4 @@ project = e_projects.open_project(os.path.join(srcdir, "src.ecp"))
 loopObjects(project, root)
 
 # Close project
-# e_system.close_e_cockpit()
+e_system.close_e_cockpit()

@@ -1,0 +1,61 @@
+{
+    "TextList": [
+        {
+            "TextID": "a1",
+            "TextDefault": "tree",
+            "LanguageTexts": [
+                "tra",
+                "tree",
+                "uu"
+            ]
+        },
+        {
+            "TextID": "b2",
+            "TextDefault": "road",
+            "LanguageTexts": [
+                "vej",
+                "road‰",
+                "aaa"
+            ]
+        },
+        {
+            "TextID": "c3",
+            "TextDefault": "apple",
+            "LanguageTexts": [
+                "aeble",
+                "apple",
+                "qqq"
+            ]
+        },
+        {
+            "TextID": "d4",
+            "TextDefault": "name",
+            "LanguageTexts": [
+                "navn",
+                "nam",
+                "oo"
+            ]
+        },
+        {
+            "TextID": "e5",
+            "TextDefault": "sick",
+            "LanguageTexts": [
+                "syk‰",
+                "sick",
+                "pp"
+            ]
+        }
+    ],
+    "LanguageList": [
+        "DKQ",
+        "UK",
+        "yaya"
+    ],
+    "BuildProperties": {
+        "external": false,
+        "compiler_defines": "",
+        "link_always": false,
+        "exclude_from_build": false,
+        "enable_system_call": false
+    }
+}

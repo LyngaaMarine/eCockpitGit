@@ -5,13 +5,8 @@ import os
 import re
 import json
 import time
+import io
 
-# Creates project and gets reference to project object
-project = e_projects.create_new_project()
-project.create_folder('_creationfolder_')
-creationfolder = project.find('_creationfolder_')[0]
-projectObject = creationfolder.parent
-creationfolder.remove()
 
 ###########################################################################################################################################
 ###########################################################################################################################################
@@ -71,7 +66,7 @@ def checkIsTypeWhoCanHaveFolderAndMember(object):
 
 
 def fileContent(path):
-    f = open(path, 'r')
+    f = io.open(file=path, mode='r', encoding='utf-8')
     data = f.read()
     f.close()
     return data
@@ -81,7 +76,7 @@ tempFilePath = os.path.join(sys.argv[1], "tempFile")
 
 
 def writeTempFile(data):
-    f = open(tempFilePath, 'w')
+    f = io.open(file=tempFilePath, mode='w', encoding='utf-8')
     f.write(data)
     f.close()
 
@@ -230,7 +225,10 @@ def handleTransition(creationObject, placementObject, name, path, ext):
 ###########################################################################################################################################
 # Specials
 def handleTextList(creationObject, name, path, ext, isGlobal):
-    textListJson = json.loads(fileContent(path + ext))
+    print('handleTextList->creationObject, name, path, ext, isGlobal', creationObject, name, path, ext, isGlobal)
+    loaded = fileContent(path + ext)
+    print('handleTextList->loaded', loaded)
+    textListJson = json.loads(loaded)
     if isGlobal:
         typeGUID = "63784cbb-9ba0-45e6-9d69-babf3f040511"
     else:
@@ -429,15 +427,35 @@ def loopDir(creationObject, placementObject, path, sort):
             break
 
 
-########################################################################################################
-########################################################################################################
-########################################################################################################
+#######################################################################
+#     _____           _       _      _____ _             _
+#    / ____|         (_)     | |    / ____| |           | |
+#   | (___   ___ _ __ _ _ __ | |_  | (___ | |_ __ _ _ __| |_ ___
+#    \___ \ / __| '__| | '_ \| __|  \___ \| __/ _` | '__| __/ __|
+#    ____) | (__| |  | | |_) | |_   ____) | || (_| | |  | |_\__ \
+#   |_____/ \___|_|  |_| .__/ \__| |_____/ \__\__,_|_|   \__|___/
+#                      | |
+#                      |_|
+#######################################################################
 
-# Starts script and cleanup
+# Creates project and gets reference to project object
+project = e_projects.create_new_project()
+project.create_folder('_creationfolder_')
+creationfolder = project.find('_creationfolder_')[0]
+projectObject = creationfolder.parent
+creationfolder.remove()
+
+
+# Loops files in src directory
 loopDir(projectObject, None, os.path.join(sys.argv[1], "src"), True)
 plcRename()
+
+# Save Project
 project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
+
+# Close project
 e_system.close_e_cockpit()
 
+# Cleanup
 if os.path.exists(tempFilePath):
     os.remove(tempFilePath)

@@ -1,5 +1,6 @@
 # We enable the new python 3 print syntax
 from __future__ import print_function
+import io
 import sys
 import os
 import re
@@ -7,14 +8,19 @@ import shutil
 import xml.etree.ElementTree as ET
 import json
 
-shutil.copyfile(os.path.join(sys.argv[1], 'ecp', "src.ecp"), os.path.join(sys.argv[1], 'ecp_at_export', "src.ecp"))
-project = e_projects.open_project(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
+#############################################################
+#    ______                _   _
+#   |  ____|              | | (_)
+#   | |__ _   _ _ __   ___| |_ _  ___  _ __  ___
+#   |  __| | | | '_ \ / __| __| |/ _ \| '_ \/ __|
+#   | |  | |_| | | | | (__| |_| | (_) | | | \__ \
+#   |_|   \__,_|_| |_|\___|\__|_|\___/|_| |_|___/
+###########################################################################################################################################
+###########################################################################################################################################
+###########################################################################################################################################
+# Helper Functions
 
 
-###########################################################################################################################################
-###########################################################################################################################################
-###########################################################################################################################################
-# Helpers
 def tryPrintObjectName(text, obj):
     return
     try:
@@ -29,7 +35,6 @@ def encodeMatch(match):
 
 def encodeObjectName(object):
     name = re.sub(r"[^A-Za-z0-9 _-]", encodeMatch, object.get_name())
-    print('encodeObjectName', name)
     return name
 
 
@@ -50,6 +55,12 @@ def fileContent(path):
 def writeDataToFile(data, path):
     f = open(path, 'w')
     f.write(data)
+    f.close()
+
+
+def writeDataToFileUTF8(data, path):
+    f = io.open(file=path, mode='w', encoding='utf-8')
+    f.write(data.encode().decode('unicode_escape'))
     f.close()
 
 
@@ -116,12 +127,13 @@ def getObjectBuildProperties(object):
 ###########################################################################################################################################
 ###########################################################################################################################################
 ###########################################################################################################################################
-# Handlers
+# Object Handlers
 
-
+###########################################################################################################################################
+# Folder
 def handleFolder(object, path):
     path = os.path.join(path, "%F%" + encodeObjectName(object))
-    writeDataToFile(json.dumps(getObjectBuildProperties(object)), path + '.json')
+    writeDataToFileUTF8(json.dumps(getObjectBuildProperties(object)), path + '.json')
     loopObjects(object, path)
 
 
@@ -190,7 +202,7 @@ def handleTextList(object, path, isGlobal):
         allInfo["TextList"].append({"TextID": row.id, "TextDefault": row.defaulttext, "LanguageTexts": texts})
     for i in range(object.languagecount()):
         allInfo["LanguageList"].append(object.getlanguage(i))
-    writeDataToFile(json.dumps(allInfo, indent=4), path + '.json')
+    writeDataToFileUTF8(json.dumps(allInfo, indent=4), path + '.json')
 
 
 def handleImagePool(object, path):
@@ -215,7 +227,7 @@ def handleImagePool(object, path):
                 "autoUpdateMode": updateMode.text or '',
                 "data": item.find('./Single[@Name="Object"]/Array[@Name="Data"]').text or '',
                 "frozen": item.find('./Single[@Name="Object"]/Single[@Name="Frozen"]').text or ''})
-    writeDataToFile(json.dumps(list, indent=4), path + '.json')
+    writeDataToFileUTF8(json.dumps(list, indent=4), path + '.json')
 
 
 def handleProjectSettings(object, path):
@@ -235,7 +247,7 @@ def handleLibrary(object, path):
         else:
             list['libraries'].append({"is_managed": ref.is_managed, "name": ref.name, "namespace": ref.namespace,
                                      "system_library": ref.system_library, "qualified_only": ref.qualified_only, "optional": ref.optional, })
-    writeDataToFile(json.dumps(list, indent=4), path + '.json')
+    writeDataToFileUTF8(json.dumps(list, indent=4), path + '.json')
 
 
 def handleSymbols(object, path):
@@ -293,7 +305,7 @@ def handlePLCKBUS(object, path):
                     'ordernumber': deviceInfo.find('./Single[@Name="OrderNumber"]').text or '',
                     'version': versionInfo.text or '',
                 })
-        writeDataToFile(json.dumps(list, indent=4), path + '.json')
+        writeDataToFileUTF8(json.dumps(list, indent=4), path + '.json')
         loopObjects(object, path)
 
 
@@ -398,9 +410,33 @@ def loopObjects(object, path):
             handleObject(child, path)
 
 
+#######################################################################
+#     _____           _       _      _____ _             _
+#    / ____|         (_)     | |    / ____| |           | |
+#   | (___   ___ _ __ _ _ __ | |_  | (___ | |_ __ _ _ __| |_ ___
+#    \___ \ / __| '__| | '_ \| __|  \___ \| __/ _` | '__| __/ __|
+#    ____) | (__| |  | | |_) | |_   ____) | || (_| | |  | |_\__ \
+#   |_____/ \___|_|  |_| .__/ \__| |_____/ \__\__,_|_|   \__|___/
+#                      | |
+#                      |_|
+#######################################################################
+# Backup project before export
+srcdir = os.path.join(sys.argv[1], 'ecp')
+backupdir = os.path.join(sys.argv[1], 'ecp_at_export')
+if not os.path.exists(backupdir):
+    os.makedirs(backupdir)
+shutil.copyfile(os.path.join(srcdir, "src.ecp"), os.path.join(backupdir, "src.ecp"))
+
+# Empty src directory
 root = os.path.join(sys.argv[1], "src")
 if os.path.exists(root):
     shutil.rmtree(root)
+
+# Open project file file
+project = e_projects.open_project(os.path.join(srcdir, "src.ecp"))
+
+# Loop all project objects
 loopObjects(project, root)
 
-e_system.close_e_cockpit()
+# Close project
+# e_system.close_e_cockpit()

@@ -202,7 +202,7 @@ def handleTextList(object, path, isGlobal):
         allInfo["TextList"].append({"TextID": row.id, "TextDefault": row.defaulttext, "LanguageTexts": texts})
     for i in range(object.languagecount()):
         allInfo["LanguageList"].append(object.getlanguage(i))
-    writeDataToFileUTF8(json.dumps(allInfo, indent=4), path + '.json')
+    writeDataToFile(json.dumps(allInfo, indent=4), path + '.json')
 
 
 def handleImagePool(object, path):
@@ -227,7 +227,7 @@ def handleImagePool(object, path):
                 "autoUpdateMode": updateMode.text or '',
                 "data": item.find('./Single[@Name="Object"]/Array[@Name="Data"]').text or '',
                 "frozen": item.find('./Single[@Name="Object"]/Single[@Name="Frozen"]').text or ''})
-    writeDataToFileUTF8(json.dumps(list, indent=4), path + '.json')
+    writeDataToFile(json.dumps(list, indent=4), path + '.json')
 
 
 def handleProjectSettings(object, path):

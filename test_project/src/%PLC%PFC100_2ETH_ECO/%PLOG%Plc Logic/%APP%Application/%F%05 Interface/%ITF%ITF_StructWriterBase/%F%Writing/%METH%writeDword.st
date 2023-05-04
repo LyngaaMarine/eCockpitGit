@@ -1,7 +1,0 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
-//This method writes a dint value to the buffer
-METHOD writeDword
-VAR_INPUT
-	value			:DWORD;
-END_VAR
-!__IMPLEMENTATION__!

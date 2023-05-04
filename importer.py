@@ -81,16 +81,19 @@ def writeTempFile(data):
     f.close()
 
 
-def writeDeclerationAndImplementationToObject(object, data):
+def writeDeclerationAndImplementationToObject(object, data, defferEnable):
     parts = data.split('\n', 1)
-    applyObjectBuildProperties(object, json.loads(parts[0]))
+    applyObjectBuildProperties(object, json.loads(parts[0]), defferEnable)
     parts = parts[1].split('!__IMPLEMENTATION__!', 1)
     object.textual_declaration.replace(parts[0][:-1])
     if object.has_textual_implementation:
         object.textual_implementation.append(parts[1][1:])
 
 
-def applyObjectBuildProperties(object, propsSet):
+defferedEnable = []
+
+
+def applyObjectBuildProperties(object, propsSet, defferEnable):
     props = object.build_properties
     if props:
         if props.external_is_valid and 'external' in propsSet:
@@ -101,9 +104,18 @@ def applyObjectBuildProperties(object, propsSet):
             props.compiler_defines = propsSet['compiler_defines']
         if props.link_always_is_valid and 'link_always' in propsSet:
             props.link_always = propsSet['link_always']
-        if props.exclude_from_build_is_valid and 'exclude_from_build' in propsSet:
-            props.exclude_from_build = propsSet['exclude_from_build']
-    return list
+        if props.exclude_from_build_is_valid:
+            if 'exclude_from_build' in propsSet:
+                if defferEnable:
+                    props.exclude_from_build = True
+                    defferedEnable.append([props, propsSet['exclude_from_build']])
+                else:
+                    props.exclude_from_build = propsSet['exclude_from_build']
+
+
+def finishedDefferedEnable():
+    for item in defferedEnable:
+        item[0].exclude_from_build = item[1]
 
 ###########################################################################################################################################
 ###########################################################################################################################################
@@ -122,7 +134,7 @@ def handleFolder(creationObject, placementObject, name, path, ext):
         if placementObject:
             self.move(placementObject, -1)
         buildProps = json.loads(fileContent(path + ext))
-        applyObjectBuildProperties(self, buildProps)
+        applyObjectBuildProperties(self, buildProps, False)
         if creationObject == placementObject:
             loopDir(creationObject, self, path, False)
         else:
@@ -133,14 +145,14 @@ def handleFolder(creationObject, placementObject, name, path, ext):
 # Normals
 def handlePOU(creationObject, name, path, ext):
     pou = creationObject.create_pou(name, PouType.Program)
-    writeDeclerationAndImplementationToObject(pou, fileContent(path + ext))
+    writeDeclerationAndImplementationToObject(pou, fileContent(path + ext), True)
     loopDir(pou, pou, path, False)
 
 
 def handleDUT(creationObject, name, path, ext):
     pou = creationObject.create_dut(name, DutType.Structure)
     parts = fileContent(path + ext).split('\n', 1)
-    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    applyObjectBuildProperties(pou, json.loads(parts[0]), True)
     pou.textual_declaration.replace(parts[1])
     loopDir(pou, pou, path, False)
 
@@ -148,7 +160,7 @@ def handleDUT(creationObject, name, path, ext):
 def handleGVL(creationObject, name, path, ext):
     pou = creationObject.create_gvl(name)
     parts = fileContent(path + ext).split('\n', 1)
-    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    applyObjectBuildProperties(pou, json.loads(parts[0]), True)
     pou.textual_declaration.replace(parts[1])
     loopDir(pou, pou, path, False)
 
@@ -156,7 +168,7 @@ def handleGVL(creationObject, name, path, ext):
 def handleInterface(creationObject, name, path, ext):
     pou = creationObject.create_interface(name)
     parts = fileContent(path + ext).split('\n', 1)
-    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    applyObjectBuildProperties(pou, json.loads(parts[0]), True)
     pou.textual_declaration.replace(parts[1])
     loopDir(pou, pou, path, False)
 
@@ -175,7 +187,7 @@ def handleProperty(creationObject, placementObject, name, path, ext):
     if placementObject:
         pou.move(placementObject, -1)
     parts = fileContent(path + ext).split('\n', 1)
-    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    applyObjectBuildProperties(pou, json.loads(parts[0]), True)
     parts = parts[1].split('!__GETTER__!', 1)
     pou.textual_declaration.replace(parts[0][:-1])
     parts = parts[1].split('!__SETTER__!', 1)
@@ -200,7 +212,7 @@ def handleProperty(creationObject, placementObject, name, path, ext):
 def handleAction(creationObject, placementObject, name, path, ext):
     pou = creationObject.create_action(name)
     parts = fileContent(path + ext).split('\n', 1)
-    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    applyObjectBuildProperties(pou, json.loads(parts[0]), True)
     if placementObject:
         pou.move(placementObject)
     pou.textual_implementation.replace(parts[1])
@@ -210,13 +222,13 @@ def handleMethod(creationObject, placementObject, name, path, ext):
     pou = creationObject.create_method(name)
     if placementObject:
         pou.move(placementObject)
-    writeDeclerationAndImplementationToObject(pou, fileContent(path + ext))
+    writeDeclerationAndImplementationToObject(pou, fileContent(path + ext), True)
 
 
 def handleTransition(creationObject, placementObject, name, path, ext):
     pou = creationObject.create_transition(name)
     parts = fileContent(path + ext).split('\n', 1)
-    applyObjectBuildProperties(pou, json.loads(parts[0]))
+    applyObjectBuildProperties(pou, json.loads(parts[0]), True)
     if placementObject:
         pou.move(placementObject)
     pou.textual_implementation.replace(parts[1])
@@ -285,7 +297,7 @@ def handleLibraryManager(creationObject, path, ext):
                 lib = librarymanager.find_library(placeholder["effective_resolution"])
             if lib:
                 manager.add_placeholder(placeholder["namespace"], lib[0])
-    applyObjectBuildProperties(manager, jsonData["BuildProperties"])
+    applyObjectBuildProperties(manager, jsonData["BuildProperties"], False)
 
 
 ###########################################################################################################################################
@@ -449,13 +461,14 @@ creationfolder.remove()
 # Loops files in src directory
 loopDir(projectObject, None, os.path.join(sys.argv[1], "src"), True)
 plcRename()
+finishedDefferedEnable()
+
+# Cleanup
+if os.path.exists(tempFilePath):
+    os.remove(tempFilePath)
 
 # Save Project
 project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
 
 # Close project
 e_system.close_e_cockpit()
-
-# Cleanup
-if os.path.exists(tempFilePath):
-    os.remove(tempFilePath)

@@ -23,6 +23,8 @@ To end working and commit changes, run the ecpTosrc.bat file, which will convert
 The project is not completely bullet proof, and there may be error codes, this is why both the working file ecp/src.ecp, the file when exported ecp_at_export/src.ecp and the file when imported ecp_at_import/src.ecp are stored. Any errors discovered should be registered as issues in https://github.com/LyngaaMarine/eCockpitGit/issues
 
 # Changelog
+* ## 0.0.7 24-05-23
+  #### Added automatic backup of ecp file when importing, to prevent accedential loss of ecp progress.
 * ## 0.0.6 04-05-23
   #### Importer Performance gain
 * ## 0.0.5 03-05-23

@@ -6,6 +6,7 @@ import re
 import json
 import time
 import io
+import shutil
 
 
 ###########################################################################################################################################
@@ -457,6 +458,11 @@ creationfolder = project.find('_creationfolder_')[0]
 projectObject = creationfolder.parent
 creationfolder.remove()
 
+srcdir = os.path.join(sys.argv[1], 'ecp')
+backupdir = os.path.join(sys.argv[1], 'ecp_at_import')
+if not os.path.exists(backupdir):
+    os.makedirs(backupdir)
+shutil.copyfile(os.path.join(srcdir, "src.ecp"), os.path.join(backupdir, "src.ecp"))
 
 # Loops files in src directory
 loopDir(projectObject, None, os.path.join(sys.argv[1], "src"), True)
@@ -468,7 +474,7 @@ if os.path.exists(tempFilePath):
     os.remove(tempFilePath)
 
 # Save Project
-project.save_as(os.path.join(sys.argv[1], 'ecp', "src.ecp"))
+project.save_as(os.path.join(srcdir, "src.ecp"))
 
 # Close project
 e_system.close_e_cockpit()

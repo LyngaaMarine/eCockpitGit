@@ -1,0 +1,815 @@
+<ExportFile>
+  <StructuredView Guid="{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">36ba4075-28ae-47a6-bf5c-dcca7bb7cf5f</Single>
+        <Single Name="ParentGuid" Type="System.Guid">6c8ff23e-2a62-4ff1-8187-ed1a0f587147</Single>
+        <Single Name="Name" Type="string">Application</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">639b491f-5557-464c-af91-1471bac9f549</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long"> 0 </Single>
+      </Single>
+      <Single Name="Object" Type="{639b491f-5557-464c-af91-1471bac9f549}" Method="IArchivable">
+        <Single Name="DynamicMemory" Type="int">3000000</Single>
+        <Single Name="DownloadContent" Type="bool">True</Single>
+        <Single Name="StopParentAppsOnException" Type="bool">False</Single>
+        <Single Name="GuidNetVarGVL" Type="System.Guid">83bccace-8e48-4825-bd21-241b9d9ee6ed</Single>
+        <Single Name="GuidMemSettings" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+        <Single Name="BootAppSettings" Type="{2c29ea75-7cea-4f41-bab2-3128068c5387}" Method="IArchivable">
+          <Single Name="CreateAtDownload" Type="bool">False</Single>
+          <Single Name="CreateAtOnlineChange" Type="bool">False</Single>
+          <Single Name="EnableSystemCall" Type="bool">False</Single>
+          <Single Name="VerifyAfterCreation" Type="bool">False</Single>
+        </Single>
+        <Single Name="OverrideTargetMemorySizes" Type="bool">False</Single>
+        <Single Name="TargetInputSize" Type="int">65536</Single>
+        <Single Name="TargetOutputSize" Type="int">65536</Single>
+        <Single Name="TargetMemoryize" Type="int">24576</Single>
+        <Single Name="StaticSize" Type="int">0</Single>
+        <Single Name="AllowUserDefinedStaticSize" Type="bool">False</Single>
+        <Single Name="X509CommonName" Type="string"></Single>
+        <Single Name="X509EncryptionThumbprint" Type="string"></Single>
+        <Null Name="X509EncryptionThumbprints" />
+        <Single Name="SignDownloadWithX509Certificate" Type="bool">False</Single>
+        <Single Name="FirmCode" Type="uint">0</Single>
+        <Single Name="ProductCode" Type="uint">0</Single>
+        <Single Name="KeepOnParentOnlineChange" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">6c8ff23e-2a62-4ff1-8187-ed1a0f587147</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">PFC100_2ETH_ECO</Single>
+        <Single Type="string">PLC Logic</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">False</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">9f457eb8-d9ee-067e-f3b2-f7a4594202d3</Single>
+        <Single Name="ParentGuid" Type="System.Guid">36ba4075-28ae-47a6-bf5c-dcca7bb7cf5f</Single>
+        <Single Name="Name" Type="string">__VisualizationStyle</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties">
+          <Entry>
+            <Key>
+              <Single Type="System.Guid">a67e96c6-3fd3-4d25-a9ff-723c6b2f78cb</Single>
+            </Key>
+            <Value>
+              <Single Type="{a67e96c6-3fd3-4d25-a9ff-723c6b2f78cb}" Method="IArchivable">
+                <Single Name="DownloadOnlyUsedImages" Type="bool">True</Single>
+                <Single Name="Internal" Type="bool">False</Single>
+                <Null Name="SymbolTextList" />
+                <Single Name="DownloadByVisu" Type="bool">True</Single>
+              </Single>
+            </Value>
+          </Entry>
+        </Dictionary>
+        <Single Name="TypeGuid" Type="System.Guid">8e687a04-7ca7-42d3-be06-fcbda676c5ef</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long"> 0 </Single>
+      </Single>
+      <Single Name="Object" Type="{8e687a04-7ca7-42d3-be06-fcbda676c5ef}" Method="IArchivable">
+        <Single Name="UniqueIdGenerator" Type="string">145</Single>
+        <List Name="BitmapPool" Type="System.Collections.ArrayList">
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">CheckboxChecked</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\CheckboxChecked.bmp</Single>
+            <Single Name="ItemID" Type="int">2</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">CheckboxUnchecked</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\CheckboxUnchecked.bmp</Single>
+            <Single Name="ItemID" Type="int">3</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Blue-Horizontal</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Blue-Horizontal.bmp</Single>
+            <Single Name="ItemID" Type="int">4</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Blue-Vertical</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Blue-Vertical.bmp</Single>
+            <Single Name="ItemID" Type="int">5</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Gray-Horizontal</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Gray-Horizontal.bmp</Single>
+            <Single Name="ItemID" Type="int">6</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Gray-Vertical</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Gray-Vertical.bmp</Single>
+            <Single Name="ItemID" Type="int">7</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Green-Horizontal</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Green-Horizontal.bmp</Single>
+            <Single Name="ItemID" Type="int">8</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Green-Vertical</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Green-Vertical.bmp</Single>
+            <Single Name="ItemID" Type="int">9</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Red-Horizontal</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Red-Horizontal.bmp</Single>
+            <Single Name="ItemID" Type="int">10</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Red-Vertical</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Red-Vertical.bmp</Single>
+            <Single Name="ItemID" Type="int">11</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Yellow-Horizontal</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Yellow-Horizontal.bmp</Single>
+            <Single Name="ItemID" Type="int">12</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-BarDisplayImage-Yellow-Vertical</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-BarDisplayImage-Yellow-Vertical.bmp</Single>
+            <Single Name="ItemID" Type="int">13</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Blue-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Blue-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">14</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Blue-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Blue-On.bmp</Single>
+            <Single Name="ItemID" Type="int">15</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Gray-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Gray-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">16</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Gray-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Gray-On.bmp</Single>
+            <Single Name="ItemID" Type="int">17</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Green-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Green-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">18</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Green-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Green-On.bmp</Single>
+            <Single Name="ItemID" Type="int">19</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Red-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Red-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">20</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Red-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Red-On.bmp</Single>
+            <Single Name="ItemID" Type="int">21</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Yellow-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Yellow-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">22</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Lamp-Lamp1-Yellow-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Lamp-Lamp1-Yellow-On.bmp</Single>
+            <Single Name="ItemID" Type="int">23</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Blue-Bottom</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Blue-Bottom.bmp</Single>
+            <Single Name="ItemID" Type="int">24</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Blue-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Blue-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">25</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Blue-Right</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Blue-Right.bmp</Single>
+            <Single Name="ItemID" Type="int">26</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Blue-Top</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Blue-Top.bmp</Single>
+            <Single Name="ItemID" Type="int">27</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Gray-Bottom</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Gray-Bottom.bmp</Single>
+            <Single Name="ItemID" Type="int">28</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Gray-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Gray-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">29</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Gray-Right</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Gray-Right.bmp</Single>
+            <Single Name="ItemID" Type="int">30</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Gray-Top</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Gray-Top.bmp</Single>
+            <Single Name="ItemID" Type="int">31</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Green-Bottom</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Green-Bottom.bmp</Single>
+            <Single Name="ItemID" Type="int">32</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Green-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Green-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">33</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Green-Right</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Green-Right.bmp</Single>
+            <Single Name="ItemID" Type="int">34</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Green-Top</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Green-Top.bmp</Single>
+            <Single Name="ItemID" Type="int">35</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Red-Bottom</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Red-Bottom.bmp</Single>
+            <Single Name="ItemID" Type="int">36</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Red-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Red-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">37</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Red-Right</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Red-Right.bmp</Single>
+            <Single Name="ItemID" Type="int">38</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Red-Top</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Red-Top.bmp</Single>
+            <Single Name="ItemID" Type="int">39</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Yellow-Bottom</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Yellow-Bottom.bmp</Single>
+            <Single Name="ItemID" Type="int">40</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Yellow-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Yellow-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">41</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Yellow-Right</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Yellow-Right.bmp</Single>
+            <Single Name="ItemID" Type="int">42</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter180-Yellow-Top</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter180-Yellow-Top.bmp</Single>
+            <Single Name="ItemID" Type="int">43</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter360-Blue</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter360-Blue.bmp</Single>
+            <Single Name="ItemID" Type="int">44</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter360-Gray</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter360-Gray.bmp</Single>
+            <Single Name="ItemID" Type="int">45</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter360-Green</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter360-Green.bmp</Single>
+            <Single Name="ItemID" Type="int">46</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter360-Red</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter360-Red.bmp</Single>
+            <Single Name="ItemID" Type="int">47</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter360-Yellow</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter360-Yellow.bmp</Single>
+            <Single Name="ItemID" Type="int">48</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Blue-BottomLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Blue-BottomLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">49</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Blue-BottomRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Blue-BottomRight.bmp</Single>
+            <Single Name="ItemID" Type="int">50</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Blue-TopLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Blue-TopLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">51</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Blue-TopRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Blue-TopRight.bmp</Single>
+            <Single Name="ItemID" Type="int">52</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Gray-BottomLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Gray-BottomLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">53</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Gray-BottomRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Gray-BottomRight.bmp</Single>
+            <Single Name="ItemID" Type="int">54</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Gray-TopLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Gray-TopLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">55</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Gray-TopRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Gray-TopRight.bmp</Single>
+            <Single Name="ItemID" Type="int">56</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Green-BottomLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Green-BottomLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">57</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Green-BottomRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Green-BottomRight.bmp</Single>
+            <Single Name="ItemID" Type="int">58</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Green-TopLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Green-TopLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">59</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Green-TopRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Green-TopRight.bmp</Single>
+            <Single Name="ItemID" Type="int">60</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Red-BottomLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Red-BottomLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">61</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Red-BottomRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Red-BottomRight.bmp</Single>
+            <Single Name="ItemID" Type="int">62</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Red-TopLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Red-TopLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">63</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Red-TopRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Red-TopRight.bmp</Single>
+            <Single Name="ItemID" Type="int">64</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Yellow-BottomLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Yellow-BottomLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">65</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Yellow-BottomRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Yellow-BottomRight.bmp</Single>
+            <Single Name="ItemID" Type="int">66</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Yellow-TopLeft</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Yellow-TopLeft.bmp</Single>
+            <Single Name="ItemID" Type="int">67</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Meter-Meter90-Yellow-TopRight</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Meter-Meter90-Yellow-TopRight.bmp</Single>
+            <Single Name="ItemID" Type="int">68</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Potentiometer-Potentiometer360-Blue</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Potentiometer-Potentiometer360-Blue.bmp</Single>
+            <Single Name="ItemID" Type="int">69</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Potentiometer-Potentiometer360-Gray</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Potentiometer-Potentiometer360-Gray.bmp</Single>
+            <Single Name="ItemID" Type="int">70</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Potentiometer-Potentiometer360-Green</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Potentiometer-Potentiometer360-Green.bmp</Single>
+            <Single Name="ItemID" Type="int">71</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Potentiometer-Potentiometer360-Red</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Potentiometer-Potentiometer360-Red.bmp</Single>
+            <Single Name="ItemID" Type="int">72</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Potentiometer-Potentiometer360-Yellow</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Potentiometer-Potentiometer360-Yellow.bmp</Single>
+            <Single Name="ItemID" Type="int">73</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Blue-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Blue-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">74</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Blue-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Blue-On.bmp</Single>
+            <Single Name="ItemID" Type="int">75</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Gray-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Gray-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">76</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Gray-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Gray-On.bmp</Single>
+            <Single Name="ItemID" Type="int">77</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Green-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Green-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">78</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Green-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Green-On.bmp</Single>
+            <Single Name="ItemID" Type="int">79</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Red-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Red-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">80</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Red-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Red-On.bmp</Single>
+            <Single Name="ItemID" Type="int">81</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Yellow-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Yellow-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">82</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-DipSwitch-Yellow-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-DipSwitch-Yellow-On.bmp</Single>
+            <Single Name="ItemID" Type="int">83</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Blue-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Blue-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">84</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Blue-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Blue-On.bmp</Single>
+            <Single Name="ItemID" Type="int">85</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Gray-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Gray-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">86</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Gray-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Gray-On.bmp</Single>
+            <Single Name="ItemID" Type="int">87</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Green-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Green-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">88</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Green-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Green-On.bmp</Single>
+            <Single Name="ItemID" Type="int">89</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Red-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Red-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">90</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Red-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Red-On.bmp</Single>
+            <Single Name="ItemID" Type="int">91</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Yellow-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Yellow-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">92</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PowerSwitch-Yellow-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PowerSwitch-Yellow-On.bmp</Single>
+            <Single Name="ItemID" Type="int">93</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Blue-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Blue-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">94</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Blue-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Blue-On.bmp</Single>
+            <Single Name="ItemID" Type="int">95</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Gray-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Gray-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">96</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Gray-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Gray-On.bmp</Single>
+            <Single Name="ItemID" Type="int">97</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Green-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Green-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">98</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Green-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Green-On.bmp</Single>
+            <Single Name="ItemID" Type="int">99</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Red-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Red-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">100</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Red-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Red-On.bmp</Single>
+            <Single Name="ItemID" Type="int">101</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Yellow-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Yellow-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">102</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitch-Yellow-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitch-Yellow-On.bmp</Single>
+            <Single Name="ItemID" Type="int">103</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Blue-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Blue-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">104</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Blue-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Blue-On.bmp</Single>
+            <Single Name="ItemID" Type="int">105</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Gray-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Gray-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">106</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Gray-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Gray-On.bmp</Single>
+            <Single Name="ItemID" Type="int">107</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Green-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Green-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">108</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Green-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Green-On.bmp</Single>
+            <Single Name="ItemID" Type="int">109</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Red-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Red-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">110</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Red-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Red-On.bmp</Single>
+            <Single Name="ItemID" Type="int">111</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Yellow-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Yellow-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">112</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-PushSwitchLed-Yellow-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-PushSwitchLed-Yellow-On.bmp</Single>
+            <Single Name="ItemID" Type="int">113</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Blue-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Blue-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">114</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Blue-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Blue-On.bmp</Single>
+            <Single Name="ItemID" Type="int">115</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Gray-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Gray-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">116</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Gray-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Gray-On.bmp</Single>
+            <Single Name="ItemID" Type="int">117</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Green-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Green-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">118</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Green-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Green-On.bmp</Single>
+            <Single Name="ItemID" Type="int">119</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Red-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Red-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">120</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Red-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Red-On.bmp</Single>
+            <Single Name="ItemID" Type="int">121</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Yellow-Off</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Yellow-Off.bmp</Single>
+            <Single Name="ItemID" Type="int">122</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RockerSwitch-Yellow-On</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RockerSwitch-Yellow-On.bmp</Single>
+            <Single Name="ItemID" Type="int">123</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Blue-Down</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Blue-Down.bmp</Single>
+            <Single Name="ItemID" Type="int">124</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Blue-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Blue-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">125</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Blue-RightUp</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Blue-RightUp.bmp</Single>
+            <Single Name="ItemID" Type="int">126</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Blue-RUp-ColorOff</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Blue-RUp-ColorOff.bmp</Single>
+            <Single Name="ItemID" Type="int">127</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Gray-Down</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Gray-Down.bmp</Single>
+            <Single Name="ItemID" Type="int">128</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Gray-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Gray-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">129</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Gray-RightUp</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Gray-RightUp.bmp</Single>
+            <Single Name="ItemID" Type="int">130</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Gray-RUp-ColorOff</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Gray-RUp-ColorOff.bmp</Single>
+            <Single Name="ItemID" Type="int">131</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Green-Down</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Green-Down.bmp</Single>
+            <Single Name="ItemID" Type="int">132</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Green-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Green-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">133</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Green-RightUp</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Green-RightUp.bmp</Single>
+            <Single Name="ItemID" Type="int">134</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Green-RUp-ColorOff</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Green-RUp-ColorOff.bmp</Single>
+            <Single Name="ItemID" Type="int">135</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Red-Down</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Red-Down.bmp</Single>
+            <Single Name="ItemID" Type="int">136</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Red-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Red-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">137</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Red-RightUp</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Red-RightUp.bmp</Single>
+            <Single Name="ItemID" Type="int">138</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Red-RUp-ColorOff</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Red-RUp-ColorOff.bmp</Single>
+            <Single Name="ItemID" Type="int">139</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Yellow-Down</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Yellow-Down.bmp</Single>
+            <Single Name="ItemID" Type="int">140</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Yellow-Left</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Yellow-Left.bmp</Single>
+            <Single Name="ItemID" Type="int">141</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Yellow-RightUp</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Yellow-RightUp.bmp</Single>
+            <Single Name="ItemID" Type="int">142</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">Element-Switch-RotarySwitch-Yellow-RUp-ColorOff</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\Element-Switch-RotarySwitch-Yellow-RUp-ColorOff.bmp</Single>
+            <Single Name="ItemID" Type="int">143</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">RadioButtonChecked</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\RadioButtonChecked.bmp</Single>
+            <Single Name="ItemID" Type="int">144</Single>
+          </Single>
+          <Single Type="{215b2719-0347-4e4d-ba85-8bcd66946f66}" Method="IArchivable">
+            <Single Name="BitmapID" Type="string">RadioButtonUnchecked</Single>
+            <Single Name="FileID" Type="string">5ce3da45-db07-42e7-a21c-a00fff4ed8f6|C:\ProgramData\WAGO Software\Temporary Files\VisuStyleDefaultImages_9a93ba22-be34-4a45-b8d7-4cb8e040a160\RadioButtonUnchecked.bmp</Single>
+            <Single Name="ItemID" Type="int">145</Single>
+          </Single>
+        </List>
+        <Single Name="GuidInit" Type="System.Guid">e2e92bf6-1984-05c0-ead1-8aa8506f8dfc</Single>
+        <Single Name="GuidReInit" Type="System.Guid">167223bb-dd05-07ea-c0d6-79709817a0d7</Single>
+        <Single Name="GuidExitX" Type="System.Guid">56867af8-3068-02f3-edfa-1cd9e82fe78e</Single>
+        <Single Name="ValidIds" Type="bool">False</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">36ba4075-28ae-47a6-bf5c-dcca7bb7cf5f</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">PFC100_2ETH_ECO</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+  </List2>
+  <Null Name="ProfileName" />
+</Single>  </StructuredView>
+</ExportFile>

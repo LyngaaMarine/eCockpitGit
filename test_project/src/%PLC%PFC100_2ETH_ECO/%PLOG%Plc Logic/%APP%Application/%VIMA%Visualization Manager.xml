@@ -1,0 +1,698 @@
+<ExportFile>
+  <StructuredView Guid="{d9b2b2cc-ea99-4c3b-aa42-1e5c49e65b84}">
+<Single xml:space="preserve" Type="{3daac5e4-660e-42e4-9cea-3711b98bfb63}" Method="IArchivable">
+  <Null Name="Profile" />
+  <List2 Name="EntryList">
+    <Single Type="{6198ad31-4b98-445c-927f-3258a0e82fe3}" Method="IArchivable">
+      <Single Name="IsRoot" Type="bool">True</Single>
+      <Single Name="MetaObject" Type="{81297157-7ec9-45ce-845e-84cab2b88ade}" Method="IArchivable">
+        <Single Name="Guid" Type="System.Guid">854a0b6b-8bcb-49f0-8526-8a9d12d98a0e</Single>
+        <Single Name="ParentGuid" Type="System.Guid">36ba4075-28ae-47a6-bf5c-dcca7bb7cf5f</Single>
+        <Single Name="Name" Type="string">Visualization Manager</Single>
+        <Dictionary Type="{2c41fa04-1834-41c1-816e-303c7aa2c05b}" Name="Properties" />
+        <Single Name="TypeGuid" Type="System.Guid">4d3fdb8f-ab50-4c35-9d3a-d4bb9bb9a628</Single>
+        <Null Name="EmbeddedTypeGuids" />
+        <Single Name="Timestamp" Type="long"> 0 </Single>
+      </Single>
+      <Single Name="Object" Type="{4d3fdb8f-ab50-4c35-9d3a-d4bb9bb9a628}" Method="IArchivable">
+        <Single Name="UseUnicodeStrings" Type="{19611221-ebd3-4607-86d2-9822fbe84c30}">Disabled</Single>
+        <Single Name="UseOverlay" Type="{05125339-dc8c-4673-b403-e21bec548370}">Disabled</Single>
+        <Single Name="ViewSettings" Type="{ec9b2ec6-92a2-4856-be72-7866fb274c64}" Method="IArchivable">
+          <Null Name="StartVisu" />
+          <Single Name="StartVisu33" Type="string">Visualization</Single>
+          <Single Name="OpenTargetvisu" Type="bool">False</Single>
+          <Single Name="BestFit" Type="bool">False</Single>
+          <Single Name="ClientSizeMode" Type="{c37fe731-4f69-4d98-82fe-4f9aefbe200d}">AutoDetect</Single>
+          <Single Name="ClientSizeX" Type="int">2000</Single>
+          <Single Name="ClientSizeY" Type="int">2000</Single>
+          <Single Name="ExtendedSettings" Type="bool">False</Single>
+          <Single Name="PaintBufferSize" Type="int">50000</Single>
+          <Single Name="MemorybufferSize" Type="int">400000</Single>
+          <Single Name="VisuInternal" Type="bool">False</Single>
+          <Single Name="CurrentVisuGlobal" Type="bool">False</Single>
+          <Single Name="FileTransferMode" Type="bool">True</Single>
+          <Single Name="VisuStyle" Type="string">LMStyle, 0.0.0.1 (Lyngaa Marine)</Single>
+          <Single Name="MaxNumOfClients" Type="int">100</Single>
+          <Null Name="Language" />
+          <Single Name="NumpadDialog" Type="string">VisuDialogs.Numpad</Single>
+          <Single Name="KeypadDialog" Type="string">VisuDialogs.Keypad</Single>
+          <Single Name="InputWithLimitsDialog" Type="string">VisuDialogs.TextinputWithLimits</Single>
+          <Single Name="UseInputWithLimits" Type="bool">False</Single>
+          <Single Name="TouchHandlingActive" Type="bool">False</Single>
+          <Single Name="SemiTransparentDrawingActive" Type="bool">True</Single>
+          <Single Name="UpdateColorvariablesAfterActivationDone" Type="bool">True</Single>
+          <Single Name="TransferSvgAndConvertedImages" Type="bool">False</Single>
+          <Single Name="LoginDialog" Type="string">VisuUserManagement.VUM_Login</Single>
+          <Single Name="ChangePasswordDialog" Type="string">VisuUserManagement.VUM_ChangePassword</Single>
+          <Single Name="ChangeConfigDialog" Type="string">VisuUserManagement.VUM_UserManagement</Single>
+          <Single Name="GuidShowChangePasswordDialogFunction" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="GuidShowChangeConfigDialogFunction" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single>
+          <Single Name="UseStandardKeyboardHandling" Type="bool">False</Single>
+          <Single Name="PaintDeactiveElementsGrayedOut" Type="bool">True</Single>
+          <Null Name="GlobalOpenNumpadKeypadSettings" />
+          <Single Name="UseBackgroundForModalDialog" Type="bool">True</Single>
+          <Single Name="AnimationDuration" Type="int">200</Single>
+        </Single>
+        <Single Name="RegisterDesc" Type="{40d6dd8d-dfd0-493a-8e29-c9a35e1e6539}" Method="IArchivable">
+          <Dictionary Type="{7df88604-7ac5-4e36-91c4-55e4fdad3e68}" Name="FbMethods">
+            <Entry>
+              <Key>
+                <Single Type="string">FB_Init</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">4d8fc6b9-73f5-451a-a4d0-f9c54ff57b7c</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">FB_Exit</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">49346e75-b24a-434a-9525-4447deadd3a4</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">FB_Reinit</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">1194727b-908e-4b4c-93b3-cfd81dc8e95a</Single>
+              </Value>
+            </Entry>
+          </Dictionary>
+          <Single Name="FbName" Type="string">NotImportant</Single>
+          <Single Name="FbGuid" Type="System.Guid">92f0eeb7-0506-48dc-9083-cb777983ca3e</Single>
+        </Single>
+        <Single Name="TargetProperties" Type="{997fedbb-1888-4256-b61c-2933d8056bfd}" Method="IArchivable">
+          <Single Name="AvailableKeys" Type="{c91fc5aa-1e38-43b2-9a05-c52cc5d7f5b6}" Method="IArchivable">
+            <Single Name="Modifiers" Type="int">7</Single>
+            <Single Name="DevType" Type="int">4096</Single>
+            <Single Name="DevId" Type="string">1006 1101</Single>
+            <Single Name="DevVersion" Type="string">5.16.3.16</Single>
+            <Single Name="BaseProvider" Type="System.Guid">cb73a13e-6ccc-4bc6-8859-f5aa98bb116b</Single>
+            <List Name="Keys" Type="System.Collections.ArrayList">
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">48</Single>
+                <Single Name="CanonicalName" Type="string">0</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">49</Single>
+                <Single Name="CanonicalName" Type="string">1</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">50</Single>
+                <Single Name="CanonicalName" Type="string">2</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">51</Single>
+                <Single Name="CanonicalName" Type="string">3</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">52</Single>
+                <Single Name="CanonicalName" Type="string">4</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">53</Single>
+                <Single Name="CanonicalName" Type="string">5</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">54</Single>
+                <Single Name="CanonicalName" Type="string">6</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">55</Single>
+                <Single Name="CanonicalName" Type="string">7</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">56</Single>
+                <Single Name="CanonicalName" Type="string">8</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">57</Single>
+                <Single Name="CanonicalName" Type="string">9</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">65</Single>
+                <Single Name="CanonicalName" Type="string">A</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">107</Single>
+                <Single Name="CanonicalName" Type="string">ADDITION</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">66</Single>
+                <Single Name="CanonicalName" Type="string">B</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">8</Single>
+                <Single Name="CanonicalName" Type="string">BACKSPACE</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">67</Single>
+                <Single Name="CanonicalName" Type="string">C</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">110</Single>
+                <Single Name="CanonicalName" Type="string">COMMA</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">68</Single>
+                <Single Name="CanonicalName" Type="string">D</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">46</Single>
+                <Single Name="CanonicalName" Type="string">DELETE</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">111</Single>
+                <Single Name="CanonicalName" Type="string">DIVIDE</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">40</Single>
+                <Single Name="CanonicalName" Type="string">DOWN</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">69</Single>
+                <Single Name="CanonicalName" Type="string">E</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">35</Single>
+                <Single Name="CanonicalName" Type="string">END</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">27</Single>
+                <Single Name="CanonicalName" Type="string">ESCAPE</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">70</Single>
+                <Single Name="CanonicalName" Type="string">F</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">112</Single>
+                <Single Name="CanonicalName" Type="string">F1</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">121</Single>
+                <Single Name="CanonicalName" Type="string">F10</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">122</Single>
+                <Single Name="CanonicalName" Type="string">F11</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">123</Single>
+                <Single Name="CanonicalName" Type="string">F12</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">113</Single>
+                <Single Name="CanonicalName" Type="string">F2</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">114</Single>
+                <Single Name="CanonicalName" Type="string">F3</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">115</Single>
+                <Single Name="CanonicalName" Type="string">F4</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">116</Single>
+                <Single Name="CanonicalName" Type="string">F5</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">117</Single>
+                <Single Name="CanonicalName" Type="string">F6</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">118</Single>
+                <Single Name="CanonicalName" Type="string">F7</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">119</Single>
+                <Single Name="CanonicalName" Type="string">F8</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">120</Single>
+                <Single Name="CanonicalName" Type="string">F9</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">71</Single>
+                <Single Name="CanonicalName" Type="string">G</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">72</Single>
+                <Single Name="CanonicalName" Type="string">H</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">36</Single>
+                <Single Name="CanonicalName" Type="string">HOME</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">73</Single>
+                <Single Name="CanonicalName" Type="string">I</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">45</Single>
+                <Single Name="CanonicalName" Type="string">INSERT</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">74</Single>
+                <Single Name="CanonicalName" Type="string">J</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">75</Single>
+                <Single Name="CanonicalName" Type="string">K</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">76</Single>
+                <Single Name="CanonicalName" Type="string">L</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">37</Single>
+                <Single Name="CanonicalName" Type="string">LEFT</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">77</Single>
+                <Single Name="CanonicalName" Type="string">M</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">106</Single>
+                <Single Name="CanonicalName" Type="string">MULTIPLY</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">78</Single>
+                <Single Name="CanonicalName" Type="string">N</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">96</Single>
+                <Single Name="CanonicalName" Type="string">NUM0</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">97</Single>
+                <Single Name="CanonicalName" Type="string">NUM1</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">98</Single>
+                <Single Name="CanonicalName" Type="string">NUM2</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">99</Single>
+                <Single Name="CanonicalName" Type="string">NUM3</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">100</Single>
+                <Single Name="CanonicalName" Type="string">NUM4</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">101</Single>
+                <Single Name="CanonicalName" Type="string">NUM5</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">102</Single>
+                <Single Name="CanonicalName" Type="string">NUM6</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">103</Single>
+                <Single Name="CanonicalName" Type="string">NUM7</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">104</Single>
+                <Single Name="CanonicalName" Type="string">NUM8</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">105</Single>
+                <Single Name="CanonicalName" Type="string">NUM9</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">79</Single>
+                <Single Name="CanonicalName" Type="string">O</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">80</Single>
+                <Single Name="CanonicalName" Type="string">P</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">19</Single>
+                <Single Name="CanonicalName" Type="string">PAUSE</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">42</Single>
+                <Single Name="CanonicalName" Type="string">PRINT</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">81</Single>
+                <Single Name="CanonicalName" Type="string">Q</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">82</Single>
+                <Single Name="CanonicalName" Type="string">R</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">13</Single>
+                <Single Name="CanonicalName" Type="string">RETURN_KEY</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">39</Single>
+                <Single Name="CanonicalName" Type="string">RIGHT</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">83</Single>
+                <Single Name="CanonicalName" Type="string">S</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">32</Single>
+                <Single Name="CanonicalName" Type="string">SPACE</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">109</Single>
+                <Single Name="CanonicalName" Type="string">SUBTRACT</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">84</Single>
+                <Single Name="CanonicalName" Type="string">T</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">9</Single>
+                <Single Name="CanonicalName" Type="string">TAB</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">85</Single>
+                <Single Name="CanonicalName" Type="string">U</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">38</Single>
+                <Single Name="CanonicalName" Type="string">UP</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">86</Single>
+                <Single Name="CanonicalName" Type="string">V</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">87</Single>
+                <Single Name="CanonicalName" Type="string">W</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">88</Single>
+                <Single Name="CanonicalName" Type="string">X</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">89</Single>
+                <Single Name="CanonicalName" Type="string">Y</Single>
+              </Single>
+              <Single Type="{11a86981-4b02-4f98-b432-96e385cb41b7}" Method="IArchivable">
+                <Single Name="FromBase" Type="bool">True</Single>
+                <Single Name="KeyCode" Type="int">90</Single>
+                <Single Name="CanonicalName" Type="string">Z</Single>
+              </Single>
+            </List>
+          </Single>
+        </Single>
+        <Single Name="ConfiguredHotkeys" Type="{6b108d46-58af-4e41-a3f4-174d8f160cc4}" Method="IArchivable">
+          <Single Name="IdMin" Type="long">481037385728</Single>
+          <Single Name="IdMax" Type="long">549755813887</Single>
+          <Single Name="Id" Type="long">481037385728</Single>
+          <Single Name="IdMask" Type="long">549754765312</Single>
+          <Single Name="IdStep" Type="long">1048576</Single>
+          <List2 Name="Inputs" />
+        </Single>
+        <Single Name="DefInpHandlerGuids" Type="{40d6dd8d-dfd0-493a-8e29-c9a35e1e6539}" Method="IArchivable">
+          <Dictionary Type="{7df88604-7ac5-4e36-91c4-55e4fdad3e68}" Name="FbMethods">
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteLooseCapture</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">ed80ba56-d0ad-468f-b82a-5cb82df99637</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">Init</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">a6284761-d27c-487d-a440-712d7170cc4f</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">FB_Exit</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">c2c267b1-ab7e-446d-b0f5-9c0f62daf80c</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteMouseDblClick</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">181a4c9b-db93-462e-bf08-6552d4c31ae4</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteMouseDown</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">07e6242f-1e58-4dd6-8454-cf86b173cdd1</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteMouseUp</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">2db73881-0b3b-485f-9600-5d2832c933cb</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteMouseEnter</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">709586fb-9aa0-4958-99f9-b6332385b86f</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">FB_Reinit</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">c675fd27-ed07-4efb-9be8-7daebf66262b</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">GetElementInfo</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">d06b95aa-657c-4d34-9885-fd7e8b712d76</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">abstrGetDefaultCursor</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">f58ee058-c033-41f6-9f89-894ebe540b63</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteDialogClosed</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">d3232d30-ea43-4b56-b925-a02de92d8478</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteKeyUp</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">ac41ae13-8b49-48f9-abc3-c013b399e6e1</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteKeyDown</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">f51e8cb3-61b6-4d57-ba29-072daace46bf</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteMouseMove</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">981b2698-3300-418b-a2f0-69c9ac120aa6</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">Initialize</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">f47003f1-c87d-4dee-861d-549d9ed4c2cd</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteMouseLeave</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">f049651c-83ae-480c-93cf-001faa5bff1a</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">FB_Init</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">6179b195-cdfd-45cd-9ca4-d26a0114d6f8</Single>
+              </Value>
+            </Entry>
+            <Entry>
+              <Key>
+                <Single Type="string">ExecuteMouseClick</Single>
+              </Key>
+              <Value>
+                <Single Type="System.Guid">265c5387-cd7b-4ec9-86ac-b7f2d4bfe257</Single>
+              </Value>
+            </Entry>
+          </Dictionary>
+          <Single Name="FbName" Type="string">NotImportant</Single>
+          <Single Name="FbGuid" Type="System.Guid">3b4e5eaf-4a68-43d6-94b1-2f0123308f52</Single>
+        </Single>
+        <Null Name="InstantiationStorage" />
+        <Null Name="VisuUserManagement" />
+        <Single Name="UseLocalUserMgmt" Type="bool">True</Single>
+        <Single Name="UseUserMgmtInPlc" Type="bool">True</Single>
+        <Null Name="RemoteUserMgmtPath" />
+        <Null Name="FontsConfig" />
+        <Null Name="FontDownloadConfig" />
+        <Null Name="VisuInitializationCode" />
+        <Null Name="FontSettings" />
+        <Single Name="GuidVisuSettingsPou" Type="System.Guid">603b07c0-375a-4f27-a098-8ff6fdfb32a6</Single>
+        <Single Name="GuidVisuSettingsPouInit" Type="System.Guid">1d9b36aa-9a8e-4d51-be11-ae5869347d10</Single>
+        <Single Name="GuidVisuSettingsPouReInit" Type="System.Guid">dd383b98-945e-46b0-8a5b-d117aa22ff59</Single>
+        <Single Name="GuidVisuSettingsPouBoolMethod" Type="System.Guid">c172dff5-aaba-4d24-b3a8-d60d78f5da17</Single>
+        <Single Name="GuidVisuSettingsPouDIntMethod" Type="System.Guid">4e2fa656-0d5d-4ce2-bc0c-5b5abb065b04</Single>
+        <Single Name="GuidVisuSettingsPouStringMethod" Type="System.Guid">879f5f60-eaa7-4032-afeb-53917c7f0769</Single>
+        <Single Name="GuidVisuSettingsPouReservedMethod" Type="System.Guid">4c7a2c34-c494-4da2-a096-dbbc6d882afe</Single>
+        <Single Name="GuidMemManInitPou" Type="System.Guid">6ba1da69-f731-41e1-b033-38bea4e4ca05</Single>
+        <Single Name="GuidMemManInitPouInit" Type="System.Guid">ca32d9e8-d70b-40a3-8618-c24d6abe545e</Single>
+        <Single Name="GuidMemManInitPouReInit" Type="System.Guid">84c922fa-dd90-4d18-a693-d95ed3689d35</Single>
+        <Single Name="GuidStartVisuInitPou" Type="System.Guid">c29e3dfa-ff90-4294-94da-0d81db5f6687</Single>
+        <Single Name="GuidStartVisuInitPouInit" Type="System.Guid">f94b5f32-41d2-4426-9098-a8afe7a2981d</Single>
+        <Single Name="GuidStartVisuInitPouReInit" Type="System.Guid">0dfe8800-3b05-40be-b955-7ffec0e22755</Single>
+        <Single Name="GuidVisuGVL0" Type="System.Guid">c2f30867-b52b-43dd-9125-d953fbb67230</Single>
+        <Single Name="GuidVisuGVL1" Type="System.Guid">71b13ad2-0d0a-4e2f-b68c-df3f421450ab</Single>
+        <Single Name="GuidVisuGVL2" Type="System.Guid">db17c3d9-de8f-4072-a47c-bb126a7ba777</Single>
+        <Single Name="GuidVisuGVL_3" Type="System.Guid">aaa6ffbe-e6e8-42d1-addb-4766954badca</Single>
+        <Single Name="GuidReservedPou" Type="System.Guid">29721cb7-df50-4351-a00c-e48d93421d67</Single>
+        <Single Name="GuidVisuGVL3" Type="System.Guid">acf1268e-1133-4185-8920-0095a2c5ddf4</Single>
+        <Single Name="GuidReservedPouInit" Type="System.Guid">e08a94c7-8868-45df-a05b-fdec5e6fec75</Single>
+        <Single Name="GuidVisuGVL4" Type="System.Guid">f5b6acf3-648f-4d83-9b29-d829f581b35c</Single>
+        <Single Name="GuidVisuGVL5" Type="System.Guid">e900a8a5-5f4c-4937-a36f-a918b27dc90e</Single>
+        <Single Name="GuidLicenseGVL" Type="System.Guid">b0ab33ae-9cf0-4aaa-9a07-481b7805f6a8</Single>
+        <Single Name="GuidGlobalClientManagerGVL" Type="System.Guid">57e0785a-5d60-4e0e-9274-4e3c7955edaa</Single>
+        <Single Name="GuidVisuUserMgmtInitPou" Type="System.Guid">539afffc-9427-49dd-aa02-6d9ac8097a67</Single>
+        <Single Name="GuidVisuUserMgmtInitPouInit" Type="System.Guid">41c3796b-03ae-4267-914c-20f4aeb27436</Single>
+        <Single Name="GuidBeforeCompileCommonGVL" Type="System.Guid">a9fc5e5f-64b4-47eb-967f-def8d283897a</Single>
+        <Single Name="GuidVisuGVL6" Type="System.Guid">cbc9cc2f-fb51-4b78-9ef9-85b6f1cbc159</Single>
+        <Single Name="GuidReservedPouMethod1" Type="System.Guid">f8e8588f-b53b-4f2f-9f1b-1ec76bc733c9</Single>
+        <Single Name="GuidReservedPouReInit" Type="System.Guid">b7319e24-bd9a-4716-b73b-00fcaccb9fb6</Single>
+        <Single Name="GuidReservedPouMethod0" Type="System.Guid">6f96775f-0f3b-42a3-819d-a6c3ac197825</Single>
+        <Single Name="GuidReservedPouMethod2" Type="System.Guid">ea6ec65a-c117-4bd2-9584-88b8c37e94cd</Single>
+      </Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">36ba4075-28ae-47a6-bf5c-dcca7bb7cf5f</Single>
+      <Array Name="Path" Type="string">
+        <Single Type="string">PFC100_2ETH_ECO</Single>
+        <Single Type="string">PLC Logic</Single>
+        <Single Type="string">Application</Single>
+      </Array>
+      <Single Name="Index" Type="int">-1</Single>
+    </Single>
+  </List2>
+  <Null Name="ProfileName" />
+</Single>  </StructuredView>
+</ExportFile>

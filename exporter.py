@@ -22,7 +22,6 @@ import json
 
 
 def tryPrintObjectName(text, obj):
-    return
     try:
         print(text, obj.get_name())
     except:
@@ -73,7 +72,9 @@ def xMLListToPythList(element):
 
 def textExportDeclImpl(object, path):
     f = open(path + ".st", "w")
-    f.write(json.dumps(getObjectBuildProperties(object), indent=2) + "\n")
+    f.write(
+        json.dumps(getObjectBuildProperties(object), indent=2) + "\n!__DECLARATION__!\n"
+    )
     if object.has_textual_declaration:
         f.write(object.textual_declaration.text.encode("utf-8"))
     f.write("\n!__IMPLEMENTATION__!\n")
@@ -84,7 +85,9 @@ def textExportDeclImpl(object, path):
 
 def textExportDecl(object, path):
     f = open(path + ".st", "w")
-    f.write(json.dumps(getObjectBuildProperties(object), indent=2) + "\n")
+    f.write(
+        json.dumps(getObjectBuildProperties(object), indent=2) + "\n!__DECLARATION__!\n"
+    )
     if object.has_textual_declaration:
         f.write(object.textual_declaration.text.encode("utf-8"))
     f.close()
@@ -92,7 +95,9 @@ def textExportDecl(object, path):
 
 def textExportImpl(object, path):
     f = open(path + ".st", "w")
-    f.write(json.dumps(getObjectBuildProperties(object), indent=2) + "\n")
+    f.write(
+        json.dumps(getObjectBuildProperties(object), indent=2) + "\n!__DECLARATION__!\n"
+    )
     if object.has_textual_implementation:
         f.write(object.textual_implementation.text.encode("utf-8"))
     f.close()
@@ -450,7 +455,10 @@ def handleObject(object, path):
     # Normals
     elif type == "6f9dac99-8de1-4efc-8465-68ac443b7d08":  # POU
         handleTextType(object, path, "%POU%")
-    elif type == "2db5746d-d284-4425-9f7f-2663a34b0ebc":  # DUT
+    elif (
+        type == "2db5746d-d284-4425-9f7f-2663a34b0ebc"
+        or type == "40989022-e4d2-4dc7-89d2-9a412930b20e"
+    ):  # DUT
         handleTextType(object, path, "%DUT%")
     elif type == "ffbfa93a-b94d-45fc-a329-229860183b1d":  # GVL
         handleTextType(object, path, "%GVL%")

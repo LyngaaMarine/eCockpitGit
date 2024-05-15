@@ -38,7 +38,7 @@
         <Single Name="Event" Type="string"></Single>
         <Single Name="ExternalEvent" Type="string">LocalBusEvent_1</Single>
         <Single Name="TaskGuid" Type="System.Guid">6ac251f3-873d-4738-9c48-7935f124c39e</Single>
-        <Single Name="EventPOUGuid" Type="System.Guid">47c80ef4-1b86-44e9-9dfa-7221eb0bfa1e</Single>
+        <Single Name="EventPOUGuid" Type="System.Guid">a451f3dc-0452-41d4-8dcb-d31956e14a1a</Single>
         <List Name="PouList" Type="{33f568bb-4a2c-48cb-a762-34cca3066d03}">
           <Single Type="{f194d1ef-7376-42ce-a729-4a5485a97a46}" Method="IArchivable">
             <Single Name="Name" Type="string">ProjectDuringBoot</Single>

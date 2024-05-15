@@ -1,4 +1,11 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+{
+  "external": false, 
+  "compiler_defines": "", 
+  "link_always": false, 
+  "exclude_from_build": false, 
+  "enable_system_call": false
+}
+!__DECLARATION__!
 //This method checks if there is a backslash in front of the code, then checks if there is an backslash in front of that and so on, if the amount of backslashes is even or if there are none it returns true
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 06-07-20 | Creation

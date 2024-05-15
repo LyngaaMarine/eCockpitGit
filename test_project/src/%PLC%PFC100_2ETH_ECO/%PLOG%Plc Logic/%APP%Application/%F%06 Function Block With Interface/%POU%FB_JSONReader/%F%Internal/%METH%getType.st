@@ -1,4 +1,11 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+{
+  "external": false, 
+  "compiler_defines": "", 
+  "link_always": false, 
+  "exclude_from_build": false, 
+  "enable_system_call": false
+}
+!__DECLARATION__!
 //This method checks what type the json value is, it must be given the first byte after the colon
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 04-07-20 | Creation

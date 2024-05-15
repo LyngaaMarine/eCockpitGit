@@ -1,4 +1,11 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+{
+  "external": false, 
+  "compiler_defines": "", 
+  "link_always": false, 
+  "exclude_from_build": false, 
+  "enable_system_call": false
+}
+!__DECLARATION__!
 //This method finds the key of the given name in the object
 //Returns cursor to where it was before if no tag is found
 // |**Version**|**Author**| **Date** |**Changes**

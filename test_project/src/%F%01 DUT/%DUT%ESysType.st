@@ -1,4 +1,8 @@
-{"external": false, "exclude_from_build": false}
+{
+  "external": false, 
+  "exclude_from_build": false
+}
+!__DECLARATION__!
 TYPE ESysType :
 (
 //Bit

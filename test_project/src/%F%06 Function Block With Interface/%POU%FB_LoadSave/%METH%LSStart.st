@@ -1,4 +1,11 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+{
+  "external": false, 
+  "compiler_defines": "", 
+  "link_always": false, 
+  "exclude_from_build": false, 
+  "enable_system_call": false
+}
+!__DECLARATION__!
 //This initializes the manager with the correct values
 //Returns code for result, 0 = OK, 1 = File doesn't exist, but created, 2 = File doesn't exist, 3 = File doesn't exist, and cannot be created, 4 = Unknown file error
 // |**Version**|**Author**| **Date** |**Changes**

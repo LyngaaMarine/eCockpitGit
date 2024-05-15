@@ -1,4 +1,11 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+{
+  "external": false, 
+  "compiler_defines": "", 
+  "link_always": false, 
+  "exclude_from_build": false, 
+  "enable_system_call": false
+}
+!__DECLARATION__!
 //This method writes a string of a fixed size to the buffer as raw data without qoutes and escape characters
 //Should only be used for copying data
 // |**Version**|**Author**| **Date** |**Changes** 

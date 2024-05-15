@@ -22,7 +22,7 @@
                       <Single Type="System.Guid">21af5390-2942-461a-bf89-951aaf6999f1</Single>
                     </Key>
                     <Value>
-                      <Single Type="System.Guid">d7add38e-546d-4255-9543-174a60b0c22d</Single>
+                      <Single Type="System.Guid">898b3a71-73c2-4a03-b3e6-fd647e3e3390</Single>
                     </Value>
                   </Entry>
                 </Dictionary>
@@ -2014,18 +2014,18 @@
                               </Entry>
                               <Entry>
                                 <Key>
-                                  <Single Type="string">''NORMAL__COMMENT</Single>
-                                </Key>
-                                <Value>
-                                  <Single Type="string"> There is no more information than the parent provides</Single>
-                                </Value>
-                              </Entry>
-                              <Entry>
-                                <Key>
                                   <Single Type="string">DefaultArraySize</Single>
                                 </Key>
                                 <Value>
                                   <Single Type="string">500</Single>
+                                </Value>
+                              </Entry>
+                              <Entry>
+                                <Key>
+                                  <Single Type="string">''NORMAL__COMMENT</Single>
+                                </Key>
+                                <Value>
+                                  <Single Type="string"> There is no more information than the parent provides</Single>
                                 </Value>
                               </Entry>
                             </Dictionary>
@@ -2090,6 +2090,14 @@
                         <Dictionary Type="{02a85e84-ef2d-46fc-93f2-acb0bbff3eda}" Name="TypeNodeAttributesData">
                           <Entry>
                             <Key>
+                              <Single Type="string">PolygonPoints</Single>
+                            </Key>
+                            <Value>
+                              <Single Type="string"></Single>
+                            </Value>
+                          </Entry>
+                          <Entry>
+                            <Key>
                               <Single Type="string">DescriptionTextId</Single>
                             </Key>
                             <Value>
@@ -2150,14 +2158,6 @@
                             </Key>
                             <Value>
                               <Single Type="string">True</Single>
-                            </Value>
-                          </Entry>
-                          <Entry>
-                            <Key>
-                              <Single Type="string">PolygonPoints</Single>
-                            </Key>
-                            <Value>
-                              <Single Type="string"></Single>
                             </Value>
                           </Entry>
                         </Dictionary>
@@ -3896,18 +3896,18 @@
                               </Entry>
                               <Entry>
                                 <Key>
-                                  <Single Type="string">DefaultArraySize</Single>
-                                </Key>
-                                <Value>
-                                  <Single Type="string">500</Single>
-                                </Value>
-                              </Entry>
-                              <Entry>
-                                <Key>
                                   <Single Type="string">''NORMAL__COMMENT</Single>
                                 </Key>
                                 <Value>
                                   <Single Type="string"> There is no more information than the parent provides</Single>
+                                </Value>
+                              </Entry>
+                              <Entry>
+                                <Key>
+                                  <Single Type="string">DefaultArraySize</Single>
+                                </Key>
+                                <Value>
+                                  <Single Type="string">500</Single>
                                 </Value>
                               </Entry>
                             </Dictionary>
@@ -3972,14 +3972,6 @@
                         <Dictionary Type="{02a85e84-ef2d-46fc-93f2-acb0bbff3eda}" Name="TypeNodeAttributesData">
                           <Entry>
                             <Key>
-                              <Single Type="string">PolygonPoints</Single>
-                            </Key>
-                            <Value>
-                              <Single Type="string"></Single>
-                            </Value>
-                          </Entry>
-                          <Entry>
-                            <Key>
                               <Single Type="string">DescriptionTextId</Single>
                             </Key>
                             <Value>
@@ -4040,6 +4032,14 @@
                             </Key>
                             <Value>
                               <Single Type="string">True</Single>
+                            </Value>
+                          </Entry>
+                          <Entry>
+                            <Key>
+                              <Single Type="string">PolygonPoints</Single>
+                            </Key>
+                            <Value>
+                              <Single Type="string"></Single>
                             </Value>
                           </Entry>
                         </Dictionary>
@@ -5075,7 +5075,7 @@
           <Single Name="Version" Type="int">2</Single>
         </Single>
       </Single>
-      <Single Name="ParentSVNodeGuid" Type="System.Guid">d7add38e-546d-4255-9543-174a60b0c22d</Single>
+      <Single Name="ParentSVNodeGuid" Type="System.Guid">898b3a71-73c2-4a03-b3e6-fd647e3e3390</Single>
       <Array Name="Path" Type="string">
         <Single Type="string">08 Visualization</Single>
       </Array>

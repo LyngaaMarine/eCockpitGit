@@ -1,4 +1,11 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+{
+  "external": false, 
+  "compiler_defines": "", 
+  "link_always": false, 
+  "exclude_from_build": false, 
+  "enable_system_call": false
+}
+!__DECLARATION__!
 METHOD PROTECTED MD5_Transform : BOOL
 //MD5 basic transformation. Transform state according to first 64 bytes at Buffer
 VAR_INPUT

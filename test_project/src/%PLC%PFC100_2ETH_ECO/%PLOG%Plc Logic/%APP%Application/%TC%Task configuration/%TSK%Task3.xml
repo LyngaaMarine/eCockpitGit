@@ -38,7 +38,7 @@
         <Single Name="Event" Type="string"></Single>
         <Single Name="ExternalEvent" Type="string"></Single>
         <Single Name="TaskGuid" Type="System.Guid">494ff130-9e47-4750-b30a-76189aa7f6e3</Single>
-        <Single Name="EventPOUGuid" Type="System.Guid">c562452a-4807-45ed-9bb1-e014a7c8cf1c</Single>
+        <Single Name="EventPOUGuid" Type="System.Guid">59dffee9-d5db-49b1-93e8-c31c87e35d31</Single>
         <List Name="PouList" Type="{33f568bb-4a2c-48cb-a762-34cca3066d03}" />
         <Single Name="Implicit" Type="bool">False</Single>
         <Single Name="WithinSPSTimeSlicing" Type="bool">True</Single>

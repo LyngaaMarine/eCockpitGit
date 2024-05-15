@@ -1,61 +1,61 @@
 {
-    "TextList": [
-        {
-            "TextID": "a1", 
-            "TextDefault": "tree", 
-            "LanguageTexts": [
-                "tra", 
-                "tree", 
-                "uu"
-            ]
-        }, 
-        {
-            "TextID": "b2", 
-            "TextDefault": "road", 
-            "LanguageTexts": [
-                "vej", 
-                "road\u2030", 
-                "aaa"
-            ]
-        }, 
-        {
-            "TextID": "c3", 
-            "TextDefault": "apple", 
-            "LanguageTexts": [
-                "aeble\r\r\nasdf", 
-                "apple", 
-                "qqq"
-            ]
-        }, 
-        {
-            "TextID": "d4", 
-            "TextDefault": "name", 
-            "LanguageTexts": [
-                "navn", 
-                "nam\r\r\nassgd", 
-                "oo"
-            ]
-        }, 
-        {
-            "TextID": "e5", 
-            "TextDefault": "sick", 
-            "LanguageTexts": [
-                "syk\u2030", 
-                "sick", 
-                "0sadf\r\r\nbb\r\r\nfsdf\r\r\nhh"
-            ]
-        }
-    ], 
-    "LanguageList": [
-        "DKQ", 
-        "UK", 
-        "yaya"
-    ], 
-    "BuildProperties": {
-        "external": false, 
-        "compiler_defines": "", 
-        "link_always": false, 
-        "exclude_from_build": false, 
-        "enable_system_call": false
+  "TextList": [
+    {
+      "TextID": "a1", 
+      "TextDefault": "tree", 
+      "LanguageTexts": [
+        "tra", 
+        "tree", 
+        "uu"
+      ]
+    }, 
+    {
+      "TextID": "b2", 
+      "TextDefault": "road", 
+      "LanguageTexts": [
+        "vej", 
+        "road\u2030", 
+        "aaa"
+      ]
+    }, 
+    {
+      "TextID": "c3", 
+      "TextDefault": "apple", 
+      "LanguageTexts": [
+        "aeble\r\nasdf", 
+        "apple", 
+        "qqq"
+      ]
+    }, 
+    {
+      "TextID": "d4", 
+      "TextDefault": "name", 
+      "LanguageTexts": [
+        "navn", 
+        "nam\r\nassgd", 
+        "oo"
+      ]
+    }, 
+    {
+      "TextID": "e5", 
+      "TextDefault": "sick", 
+      "LanguageTexts": [
+        "syk\u2030", 
+        "sick", 
+        "0sadf\r\nbb\r\nfsdf\r\nhh"
+      ]
     }
+  ], 
+  "LanguageList": [
+    "DKQ", 
+    "UK", 
+    "yaya"
+  ], 
+  "BuildProperties": {
+    "external": false, 
+    "compiler_defines": "", 
+    "link_always": false, 
+    "exclude_from_build": false, 
+    "enable_system_call": false
+  }
 }

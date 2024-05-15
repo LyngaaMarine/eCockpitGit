@@ -1,4 +1,11 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+{
+  "external": false, 
+  "compiler_defines": "", 
+  "link_always": false, 
+  "exclude_from_build": false, 
+  "enable_system_call": false
+}
+!__DECLARATION__!
 //This function, returns the lenght of a string of any size
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 13-06-18 | Creation

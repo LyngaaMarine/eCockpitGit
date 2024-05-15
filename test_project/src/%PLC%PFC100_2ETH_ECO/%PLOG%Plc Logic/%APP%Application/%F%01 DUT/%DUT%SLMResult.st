@@ -1,4 +1,8 @@
-{"external": false, "exclude_from_build": false}
+{
+  "external": false, 
+  "exclude_from_build": false
+}
+!__DECLARATION__!
 //This struct contains a standard result code and text
 // |**Version**|**Author**| **Date** |**Changes**
 // | 1         | NSN      | 20-11-20 | Creation

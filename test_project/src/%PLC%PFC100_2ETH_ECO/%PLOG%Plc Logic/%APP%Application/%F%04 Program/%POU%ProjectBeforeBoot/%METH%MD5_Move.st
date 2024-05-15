@@ -1,4 +1,11 @@
-{"external": false, "compiler_defines": "", "link_always": false, "exclude_from_build": false, "enable_system_call": false}
+{
+  "external": false, 
+  "compiler_defines": "", 
+  "link_always": false, 
+  "exclude_from_build": false, 
+  "enable_system_call": false
+}
+!__DECLARATION__!
 METHOD PROTECTED MD5_Move : BOOL
 //Function copy "uiNumberOfBytes" of memory from "Source" to "Destination"
 //The function works even if source and destination overlaps

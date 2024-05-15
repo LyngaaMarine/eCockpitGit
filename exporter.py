@@ -165,7 +165,9 @@ def handleTextType(object, path, designator):
 def handleProperty(object, path):
     path = os.path.join(path, "%PRO%" + encodeObjectName(object))
     f = open(path + ".st", "w")
-    f.write(json.dumps(getObjectBuildProperties(object), indent=2) + "\n")
+    f.write(
+        json.dumps(getObjectBuildProperties(object), indent=2) + "\n!__DECLARATION__!\n"
+    )
     if object.has_textual_declaration:
         f.write(object.textual_declaration.text.encode("utf-8"))
     f.write("\n!__GETTER__!\n")
@@ -214,7 +216,7 @@ def handleTextList(object, path, isGlobal):
     for row in object.rows:
         texts = []
         for i in range(row.languagetextcount()):
-            texts.append(row.languagetext(i))
+            texts.append(row.languagetext(i).replace("\r\r\r\n", "\r\n"))
         allInfo["TextList"].append(
             {"TextID": row.id, "TextDefault": row.defaulttext, "LanguageTexts": texts}
         )

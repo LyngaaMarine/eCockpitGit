@@ -7,6 +7,7 @@ import json
 import time
 import io
 import shutil
+import traceback
 
 
 ###########################################################################################################################################
@@ -286,6 +287,7 @@ def handleTextList(creationObject, name, path, ext, isGlobal):
         + """</List><Single Name="GuidInit" Type="System.Guid">5b0e1823-2581-4969-a09b-b5fab15da65a</Single><Single Name="GuidReInit" Type="System.Guid">ab41cbd1-b3fd-4a03-a7f2-7e9c62eaa18b</Single><Single Name="GuidExitX" Type="System.Guid">ab21c0f1-2032-4360-bbfd-2e5e86925933</Single></Single><Single Name="ParentSVNodeGuid" Type="System.Guid">00000000-0000-0000-0000-000000000000</Single><Array Name="Path" Type="string" /><Single Name="Index" Type="int">-1</Single></Single></List2><Null Name="ProfileName" /></Single></StructuredView></ExportFile>"""
     )
     writeTempFile(extData)
+    creationObject.import_native(tempFilePath)
 
 
 def handleImagePool(creationObject, name, path, ext):
@@ -486,7 +488,9 @@ def handleFile(creationObject, placementObject, path, file):
             handleTask(creationObject, path)
     except Exception as e:
         print("Error: ", e)
+        traceback.print_exc()
         tryPrintObjectName("Error in: ", creationObject)
+        raise e
 
 
 objectOrder = [
@@ -547,4 +551,4 @@ if os.path.exists(tempFilePath):
 project.save_as(os.path.join(srcdir, "src.ecp"))
 
 # Close project
-e_system.close_e_cockpit()
+# e_system.close_e_cockpit()

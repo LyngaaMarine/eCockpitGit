@@ -1,4 +1,8 @@
-{"exclude_from_build": false, "link_always": false}
+{
+  "exclude_from_build": false, 
+  "link_always": false
+}
+!__DECLARATION__!
 {attribute 'qualified_only'}
 VAR_GLOBAL CONSTANT
 	aPathLenght						:INT 			:=		200;			//The size of the standard path variable
